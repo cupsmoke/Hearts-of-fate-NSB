@@ -1,0 +1,8 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_HUN_Emergency_Law_gui"
+		texturefile = "gfx/interface/goals/HUN_Emergency_Law.dds"
+	}	
+}

@@ -1,0 +1,42 @@
+scripted_gui = {
+
+	HOF_hun_power_balance_view_ui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "HOF_hun_power_balance_view"
+		visible = {
+            tag = HUN
+        }
+		effects = {
+			view_button_click = {
+				# add_stability = 0.2
+				if = {
+					limit = {
+						has_country_flag = show_power_balance_context
+					}
+					clr_country_flag = show_power_balance_context
+				}
+				else = {
+					set_country_flag = show_power_balance_context
+				}
+			}	
+		}
+
+	}
+	HOF_hun_power_balance_context_ui = {
+		context_type = player_context
+		# parent_window_token = politics_tab
+		window_name = "HOF_hun_power_balance_context"
+		visible = {
+            tag = HUN
+			has_country_flag = show_power_balance_context
+        }
+		effects = {
+			view_button_click = {
+				# add_stability = 0.2
+			}	
+		}
+
+	}
+}
+
