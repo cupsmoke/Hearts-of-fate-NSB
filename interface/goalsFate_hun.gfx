@@ -1,384 +1,306 @@
-spriteTypes = {	
-
+spriteTypes = {
 	SpriteType = {
 		name = "GFX_HUN_Flag_From_Wall"
 		texturefile = "gfx/interface/goals/HUN_Flag_From_Wall.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_Arpad_Line"
 		texturefile = "gfx/interface/goals/HUN_Arpad_Line.dds"
 	}
-
-  SpriteType = {
+	SpriteType = {
 		name = "GFX_SLO_Tuka_Government"
 		texturefile = "gfx/interface/goals/SLO_Tuka_Government.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_expand_the_Levente"
 		texturefile = "gfx/interface/goals/HUN_expand_the_Levente.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_ROM_Head_Hung_low"
 		texturefile = "gfx/interface/goals/ROM_Head_Hung_low.dds"
 	}
-
 	SpriteType = {
-	name = "GFX_HUN_Greater_Hungary"
-	texturefile = "gfx/interface/goals/HUN_Greater_Hungary.dds"
+		name = "GFX_HUN_Greater_Hungary"
+		texturefile = "gfx/interface/goals/HUN_Greater_Hungary.dds"
 	}
-
 	SpriteType = {
-	name = "GFX_HUN_SocDem_Hungary"
-	texturefile = "gfx/interface/goals/HUN_SocDem_Hungary.dds"
+		name = "GFX_HUN_SocDem_Hungary"
+		texturefile = "gfx/interface/goals/HUN_SocDem_Hungary.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_KRA_war"
 		texturefile = "gfx/interface/goals/KRA_war.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_ROM_Police_The_Buffer"
 		texturefile = "gfx/interface/goals/ROM_Police_The_Buffer.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_SER_focus_death_to_fascism"
-		texturefile = "gfx/interface/goals/SER_focus_death_to_fascism.dds"			
+		texturefile = "gfx/interface/goals/SER_focus_death_to_fascism.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_Emergency_Law"
 		texturefile = "gfx/interface/goals/HUN_Emergency_Law.dds"
 	}
-
 	SpriteType = {
-	name = "GFX_HUN_21st_Hungary"
-	texturefile = "gfx/interface/goals/HUN_21st_Hungary.dds"
+		name = "GFX_HUN_21st_Hungary"
+		texturefile = "gfx/interface/goals/HUN_21st_Hungary.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_soldier"
 		texturefile = "gfx/interface/goals/HUN_soldier.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_Military_Junta"
 		texturefile = "gfx/interface/goals/HUN_Military_Junta.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_armed_forces"
 		texturefile = "gfx/interface/goals/HUN_armed_forces.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_skilled_fighters"
 		texturefile = "gfx/interface/goals/GENERIC_skilled_fighters.dds"
 	}
-
-  SpriteType = {
-    name = "GFX_deploy_reserve_division_big"
-    texturefile = "gfx/interface/goals/ROM_deploy_reserve_divisions.dds"	
-  }
-
-  SpriteType = {
-    name = "GFX_hungarianzyrintank2"
-    texturefile = "gfx/interface/goals/zyrinltank2.dds"	
-  }
-
-  SpriteType = {
-    name = "GFX_hungarianturantank1"
-    texturefile = "gfx/interface/goals/hungaryturantank.dds"	
-  }
-
+	SpriteType = {
+		name = "GFX_deploy_reserve_division_big"
+		texturefile = "gfx/interface/goals/ROM_deploy_reserve_divisions.dds"
+	}
+	SpriteType = {
+		name = "GFX_hungarianzyrintank2"
+		texturefile = "gfx/interface/goals/zyrinltank2.dds"
+	}
+	SpriteType = {
+		name = "GFX_hungarianturantank1"
+		texturefile = "gfx/interface/goals/hungaryturantank.dds"
+	}
 	SpriteType = {
 		name = "GFX_GOAL_infantry_equipment"
 		texturefile = "gfx/interface/goals/GOAL_infantry_equipment.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_goal_generic_partisans"
 		texturefile = "gfx/interface/goals/r56_goal_generic_partisans.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_expand_rapid_corps"
 		texturefile = "gfx/interface/goals/HUN_expand_rapid_corps.dds"
 	}
-
-
 	spriteType = {
 		name = "GFX_GER_consolidate_production_lines"
 		texturefile = "gfx/interface/goals/GER_consolidation_of_production_lines.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Tank_through_Wall"
 		texturefile = "gfx/interface/goals/GENERIC_Tank_through_Wall.dds"
 	}
-
-  SpriteType = {
-    name = "GFX_HUN_grenadier_training_forgun"
-    texturefile = "gfx/interface/goals/HUN_grenadier_training.dds"	
-  }
-
+	SpriteType = {
+		name = "GFX_HUN_grenadier_training_forgun"
+		texturefile = "gfx/interface/goals/HUN_grenadier_training.dds"
+	}
 	SpriteType = {
 		name = "GFX_HUN_elite_paratroopers"
 		texturefile = "gfx/interface/goals/HUN_elite_paratroopers.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_recovery"
 		texturefile = "gfx/interface/goals/HUN_recovery.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_socialist_agriculture"
 		texturefile = "gfx/interface/goals/GENERIC_socialist_agriculture.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_agriculture"
 		texturefile = "gfx/interface/goals/GENERIC_agriculture.dds"
 	}
-
 	SpriteType = {
-    name = "GFX_GENERIC_agricultural_subsidies"
-    texturefile = "gfx/interface/goals/GENERIC_agricultural_subsidies.dds"
+		name = "GFX_GENERIC_agricultural_subsidies"
+		texturefile = "gfx/interface/goals/GENERIC_agricultural_subsidies.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Strong_Farming"
 		texturefile = "gfx/interface/goals/GENERIC_Strong_Farming.dds"
 	}
-
 	spriteType = {
 		name = "GFX_r56_goal_generic_bills"
 		texturefile = "gfx/interface/goals/r56_goal_generic_bills.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Modernize_The_Farmers"
-		texturefile = "gfx/interface/goals/GENERIC_Modernize_The_Farmers.dds"			
+		texturefile = "gfx/interface/goals/GENERIC_Modernize_The_Farmers.dds"
 	}
-
-  SpriteType = {
-    name = "GFX_SLO_german_control"
-    texturefile = "gfx/interface/goals/SLO_german_control.dds"	
-  } 
-
 	SpriteType = {
-	name = "GFX_GENERIC_Oil_Planning"
-	texturefile = "gfx/interface/goals/GENERIC_Oil_Planning.dds"
+		name = "GFX_SLO_german_control"
+		texturefile = "gfx/interface/goals/SLO_german_control.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_GENERIC_Oil_Planning"
+		texturefile = "gfx/interface/goals/GENERIC_Oil_Planning.dds"
+	}
 	SpriteType = {
 		name = "GFX_GENERIC_Oil_Production"
 		texturefile = "gfx/interface/goals/GENERIC_Oil_Production.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Communist_Icon"
 		texturefile = "gfx/interface/goals/GENERIC_Communist_Icon.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_The_Noose"
 		texturefile = "gfx/interface/goals/GENERIC_The_Noose.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Global_Revolution"
 		texturefile = "gfx/interface/goals/GENERIC_Global_Revolution.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_SOV_leninism"
 		texturefile = "gfx/interface/goals/SOV_leninism.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_SOV_stalinism"
 		texturefile = "gfx/interface/goals/SOV_stalinism.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_SOV_NKVD_remain"
 		texturefile = "gfx/interface/goals/SOV_NKVD_remain.dds"
 	}
-
-	 SpriteType = {
+	SpriteType = {
 		name = "GFX_GENERIC_Socialist_Revolution"
 		texturefile = "gfx/interface/goals/GENERIC_Socialist_Revolution.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Trading"
 		texturefile = "gfx/interface/goals/GENERIC_Trading.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GEN_economic_friendship"
 		texturefile = "gfx/interface/goals/GEN_economic_friendship.dds"
 	}
-
 	SpriteType = {
-	name = "GFX_GENERIC_economic_prosperity"
-	texturefile = "gfx/interface/goals/GENERIC_economic_prosperity.dds"
+		name = "GFX_GENERIC_economic_prosperity"
+		texturefile = "gfx/interface/goals/GENERIC_economic_prosperity.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_New_Hungarian_State"
 		texturefile = "gfx/interface/goals/HUN_New_Hungarian_State.dds"
 	}
-
-	spriteType = { 
-    name = "GFX_BUL_fight_for_our_ancestors" 
-    texturefile = "gfx/interface/goals/BUL_fight_for_our_ancestors.dds" 
+	spriteType = {
+		name = "GFX_BUL_fight_for_our_ancestors"
+		texturefile = "gfx/interface/goals/BUL_fight_for_our_ancestors.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_ALB_Children_of_Skanderbeg"
-		texturefile = "gfx/interface/goals/ALB_Children_of_Skanderbeg.dds"			
+		texturefile = "gfx/interface/goals/ALB_Children_of_Skanderbeg.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Adapt_Constitution"
 		texturefile = "gfx/interface/goals/GENERIC_Adapt_Constitution.dds"
 	}
-
 	SpriteType = {
-    name = "GFX_GENERIC_Axe"
-    texturefile = "gfx/interface/goals/GENERIC_Axe.dds"
+		name = "GFX_GENERIC_Axe"
+		texturefile = "gfx/interface/goals/GENERIC_Axe.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GER_global_industry"
 		texturefile = "gfx/interface/goals/GER_global_industry.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Political_Purge"
 		texturefile = "gfx/interface/goals/GENERIC_Political_Purge.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Workers_Right"
 		texturefile = "gfx/interface/goals/GENERIC_Workers_Right.dds"
 	}
-
-	spriteType = { 
-    name = "GFX_SAF_Seize_Land" 
-    texturefile = "gfx/interface/goals/SAF_Seize_Land.dds" 
+	spriteType = {
+		name = "GFX_SAF_Seize_Land"
+		texturefile = "gfx/interface/goals/SAF_Seize_Land.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_HUN_Prepare_For_Great_Hungary"
 		texturefile = "gfx/interface/goals/HUN_Prepare_For_Great_Hungary.dds"
 	}
-
 	SpriteType = {
-    name = "GFX_HUN_Horthy_Soldiers"
-    texturefile = "gfx/interface/goals/HUN_Horthy_Soldiers.dds"
+		name = "GFX_HUN_Horthy_Soldiers"
+		texturefile = "gfx/interface/goals/HUN_Horthy_Soldiers.dds"
 	}
-
-  SpriteType = {
+	SpriteType = {
 		name = "GFX_SLO_Slovakian_Investments"
 		texturefile = "gfx/interface/goals/SLO_Slovakian_Investments.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_orange_industry"
 		texturefile = "gfx/interface/goals/GENERIC_orange_industry.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Oil_Wells"
 		texturefile = "gfx/interface/goals/GENERIC_Oil_Wells.tga"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Steel_Shovel"
 		texturefile = "gfx/interface/goals/GENERIC_Steel_Shovel.dds"
 	}
-
 	SpriteType = {
-    name = "GFX_HUN_expansion_outward"
-    texturefile = "gfx/interface/goals/HUN_expansion_outward.dds"
+		name = "GFX_HUN_expansion_outward"
+		texturefile = "gfx/interface/goals/HUN_expansion_outward.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GENERIC_Catholic_Education"
 		texturefile = "gfx/interface/goals/GENERIC_Catholic_Education.dds"
 	}
-
 	SpriteType = {
-    name = "GFX_HUN_Liberal_Hungary"
-    texturefile = "gfx/interface/goals/HUN_Liberal_Hungary.dds"
+		name = "GFX_HUN_Liberal_Hungary"
+		texturefile = "gfx/interface/goals/HUN_Liberal_Hungary.dds"
 	}
-
 	SpriteType = {
-    name = "GFX_GENERIC_government_power"
-    texturefile = "gfx/interface/goals/GENERIC_government_power.tga"
+		name = "GFX_GENERIC_government_power"
+		texturefile = "gfx/interface/goals/GENERIC_government_power.tga"
 	}
-
 	SpriteType = {
-    name = "GFX_ENG_vote_upper_assembly"
-    texturefile = "gfx/interface/goals/ENG_vote_upper_assembly.tga"
+		name = "GFX_ENG_vote_upper_assembly"
+		texturefile = "gfx/interface/goals/ENG_vote_upper_assembly.tga"
 	}
-
-  SpriteType = {
-    name = "GFX_USA_expand_welfare"
-    texturefile = "gfx/interface/goals/USA_expand_welfare.tga"
-  }
-
+	SpriteType = {
+		name = "GFX_USA_expand_welfare"
+		texturefile = "gfx/interface/goals/USA_expand_welfare.tga"
+	}
 	SpriteType = {
 		name = "GFX_GENERIC_dam"
 		texturefile = "gfx/interface/goals/GENERIC_dam.tga"
-	}  
-
+	}
 	SpriteType = {
 		name = "GFX_focus_HUN_dream_of_Danube_Federation"
 		texturefile = "gfx/interface/goals/focus_HUN_dream_of_Danube_Federation.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_focus_HUN_Operation_Cachtice"
 		texturefile = "gfx/interface/goals/focus_HUN_Operation_Cachtice.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_focus_HUN_Bathory_Triumph"
 		texturefile = "gfx/interface/goals/focus_HUN_Bathory_Triumph.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_focus_HUN_Bathory_Cult_of_Personality"
 		texturefile = "gfx/interface/goals/focus_HUN_Bathory_Cult_of_Personality.dds"
 	}
- 
 	SpriteType = {
 		name = "GFX_focus_HUN_Attila"
 		texturefile = "gfx/interface/goals/focus_HUN_Attila.png"
 	}
-
 	SpriteType = {
 		name = "GFX_focus_HUN_Cross_and_triangle"
 		texturefile = "gfx/interface/goals/focus_HUN_Cross_and_triangle.png"
 	}
-
 	SpriteType = {
 		name = "GFX_focus_HUN_Attila_Exclamation_mark"
 		texturefile = "gfx/interface/goals/focus_HUN_Attila_Exclamation_mark.png"
 	}
-
 	SpriteType = {
 		name = "GFX_focus_HUN_Attila_question_mark"
 		texturefile = "gfx/interface/goals/focus_HUN_Attila_question_mark.png"
 	}
- 
 }

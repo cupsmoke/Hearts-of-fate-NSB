@@ -35,6 +35,21 @@ scripted_gui = {
 			view_button_click = {
 				# add_stability = 0.2
 			}	
+			button_close_click = {
+				clr_country_flag = show_power_balance_context
+
+			}
+		}
+		properties = {
+			left_value = {
+				image = "[GetHunLeftValue]"
+			}
+			center_value = {
+				image = "[GetHunCenterValue]"
+			}
+			right_value = {
+				image = "[GetHunRightValue]"
+			}
 		}
 
 	}
