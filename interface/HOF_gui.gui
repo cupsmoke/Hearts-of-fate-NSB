@@ -14,15 +14,42 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "HOF_hun_power_balance_context"
-		position = { x = 410  y = 235 }
-		size = { width = 100% height= 100% }
+		name = "HOF_hun_power_balance_window"
+		position = { x = 540  y = 100 }
+		size = { width = 565 height= 600 }
+		fade_time = 100
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+		orientation = left
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_w_close"
+		}
+		containerWindowType = {
+			name = "HOF_hun_power_balance_container"
+			position = { x = 10 y = 50 }
+			size = { width = 545 height = 540 }
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
 
-		buttonType = {
-			name = "view_button"
-			position = { x = 33 y = 4 }
-			spriteType = "GFX_HUN_Emergency_Law_gui"
-			scale = 0.6
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+
+			gridboxtype = {
+				name = "KR_china_tags_grid"
+				position = { x = 10 y = 0 }
+				size = { width = 442 height = 100%% }
+				slotsize = { width = 442 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
 		}
 
 	}
