@@ -7,9 +7,22 @@ scripted_gui = {
 		visible = {
             tag = HUN
         }
+		trigger = {
+			red_ring_visible = {
+				not = {
+					has_country_flag = HUN_GUI_first_blood
+				}
+			}
+		}
 		effects = {
 			view_button_click = {
-				# add_stability = 0.2
+				if = {
+					not = {
+						has_country_flag = HUN_GUI_first_blood
+					}
+					set_country_flag = HUN_GUI_first_blood
+				}
+
 				if = {
 					limit = {
 						has_country_flag = show_power_balance_context
