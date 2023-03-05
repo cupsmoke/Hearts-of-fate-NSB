@@ -3,19 +3,25 @@ spriteTypes = {
 		name = "GFX_GUI_sun_shine_bg"
 		texturefile = "gfx/interface/gui_hof/sun_shine_bg.png"
 	}
-    frameAnimatedSpriteType = {
-        name = "GFX_GUI_show_red_ring"
-        texturefile = "gfx/interface/gui_hof/show_red_ring.dds"
-        noOfFrames = 2
-        # effectFile = "<path>"
-        
-		animation_rate_fps = 2
-        looping = yes
-        play_on_show = yes
-        pause_on_loop = 0.0
-		allwaystransparent = yes
-    }
+
 	#HUN
+
+	SpriteType = {
+		name = "GFX_GUI_HUN_open_button"
+		texturefile = "gfx/interface/gui_hof/HUN/open_button.png"
+	}
+	SpriteType = {
+		name = "GFX_Hun_left_symbol"
+		texturefile = "gfx/interface/gui_hof/HUN/Hun_left_symbol.png"
+	}
+	SpriteType = {
+		name = "GFX_Hun_center_symbol"
+		texturefile = "gfx/interface/gui_hof/HUN/Hun_center_symbol.png"
+	}
+	SpriteType = {
+		name = "GFX_Hun_right_symbol"
+		texturefile = "gfx/interface/gui_hof/HUN/Hun_right_symbol.png"
+	}
 	SpriteType = {
 		name = "GFX_Hun_influence_level_1"
 		texturefile = "gfx/interface/gui_hof/HUN/Hun_influence_level_1.png"
