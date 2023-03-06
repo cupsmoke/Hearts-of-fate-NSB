@@ -20,7 +20,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 64 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_berlin_icon
@@ -29,7 +29,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 219 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_kremlin_icon
@@ -38,7 +38,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 16 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_paris_icon
@@ -47,7 +47,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 122 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_camelot_icon
@@ -56,7 +56,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 2 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_rome_icon
@@ -65,7 +65,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 141 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_stockholm_icon
@@ -74,7 +74,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 282 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_tokyo_icon
@@ -83,7 +83,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 361 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_washington_icon
@@ -154,7 +154,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 64 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_berlin_effect
@@ -163,7 +163,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 219 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_kremlin_effect
@@ -172,7 +172,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 16 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_paris_effect
@@ -181,7 +181,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 122 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_camelot_effect
@@ -190,7 +190,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 2 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_rome_effect
@@ -199,7 +199,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 141 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_stockholm_effect
@@ -208,7 +208,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 282 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_tokyo_effect
@@ -217,7 +217,7 @@ defined_text = {
 		trigger = {
 			check_variable = { v = 361 }
 			ROOT = {
-				has_full_control_of_state = v
+				controls_state = v
 			}
 		}
 		localization_key = HOF_gui_washington_effect

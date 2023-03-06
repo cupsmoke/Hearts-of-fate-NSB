@@ -11,6 +11,52 @@ on_actions = {
 				add_to_array = { HOF_city_list = 282 } #Tokyo
 				add_to_array = { HOF_city_list = 361 } #Washington
 			}
+			every_country = {
+				limit = {
+					controls_state = 64
+				}
+				add_ideas = Berlin
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 16
+					}
+				}
+				ROOT = {
+					add_ideas = Paris
+				}
+				FROM = {
+					if = {
+						limit = {
+							has_idea = Paris
+						}
+						remove_ideas = Paris
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 64
+					}
+				}
+				ROOT = {
+					add_ideas = Berlin
+				}
+				FROM = {
+					if = {
+						limit = {
+							has_idea = Berlin
+						}
+						remove_ideas = Berlin
+					}
+				}
+			}
 		}
 	}
 }

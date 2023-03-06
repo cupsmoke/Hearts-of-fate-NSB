@@ -122,7 +122,6 @@ scripted_gui = {
 		window_name = "HOF_city_window"
 		visible = {
 			has_country_flag = show_city_context
-            
         }
 		# 
 		effects = {
