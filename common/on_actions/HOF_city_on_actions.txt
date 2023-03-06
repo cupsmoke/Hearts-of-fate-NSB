@@ -1,0 +1,16 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				add_to_array = { HOF_city_list = 64 } #Berlin
+				add_to_array = { HOF_city_list = 219 } #Kremlin
+				add_to_array = { HOF_city_list = 16 } #Paris
+				add_to_array = { HOF_city_list = 122 } #Camelot
+				add_to_array = { HOF_city_list = 2 } #Rome
+				add_to_array = { HOF_city_list = 141 } #Stockholm
+				add_to_array = { HOF_city_list = 282 } #Tokyo
+				add_to_array = { HOF_city_list = 361 } #Washington
+			}
+		}
+	}
+}

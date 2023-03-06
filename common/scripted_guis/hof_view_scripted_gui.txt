@@ -99,7 +99,7 @@ scripted_gui = {
 		# parent_window_token = politics_tab
 		window_name = "HOF_city_view"
 		visible = {
-            tag = UKR
+            always = yes
         }
 
 		effects = {
@@ -113,9 +113,8 @@ scripted_gui = {
 				else = {
 					set_country_flag = show_city_context
 				}
-			}	
+			}
 		}
-
 	}
 	HOF_city_window_ui = {
 		context_type = player_context
@@ -125,15 +124,24 @@ scripted_gui = {
 			has_country_flag = show_city_context
             
         }
-
+		# 
 		effects = {
 			button_close_click = {
-
 				clr_country_flag = show_city_context
-
 			}	
 		}
-
+		dynamic_lists = {
+			HOF_city_grid = {
+				array = HOF_city_list
+				change_scope = yes
+				entry_container = HOF_city_name_entry
+			} 
+			HOF_city_icon_grid = {
+				array = HOF_city_list
+				change_scope = no
+				entry_container = "[GetHofCityList]"
+			}
+		}
 	}
 }
 
