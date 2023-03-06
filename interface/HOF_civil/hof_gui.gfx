@@ -47,6 +47,11 @@ spriteTypes = {
 
 	##city
 	SpriteType = {
+		name = "GFX_city_button"
+		texturefile = "gfx/interface/gui_hof/city/city_button.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_city_Berlin"
 		texturefile = "gfx/texticons/Berlin.png"
 		noOfFrames = 2

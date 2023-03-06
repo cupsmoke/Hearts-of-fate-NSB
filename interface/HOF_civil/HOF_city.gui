@@ -11,8 +11,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "view_button"
-			position = { x = -45 y = -55 } 
-			spriteType = "GFX_GUI_HUN_open_button"
+			position = { x = -45 y = -45 } 
+			spriteType = "GFX_city_button"
 			# pdx_tooltip = "show_HUN_gui"
 			orientation = CENTER 
 			scale = 0.9
@@ -45,7 +45,7 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "HOF_city_list_container"
-			position = { x = 50 y = 100 }
+			position = { x = 45 y = 100 }
 			size = { width = 545 height = 100 }
 			margin = { top = 10 bottom = 10 }
 			Orientation = upper_left
