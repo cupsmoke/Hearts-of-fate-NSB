@@ -1,235 +1,204 @@
 ideas = {
-     country = {
-     Paris = { 
+	country = {
+		Paris = {
 			allowed = {
-		    or = {
-				 original_tag = ENG
-				 original_tag = IRQ
-		         original_tag = RUS
-		         original_tag = GER
-		         original_tag = JAP
-		         original_tag = SOV
-		         original_tag = FRA
-		         original_tag = USA
-		         original_tag = SWE
-	         	 original_tag = ITA
-		    }
+				or = {
+					original_tag = ENG
+					original_tag = IRQ
+					original_tag = RUS
+					original_tag = GER
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = USA
+					original_tag = SWE
+					original_tag = ITA
+				}
 				always = no
 			}
-			
 			available = {
 				has_full_control_of_state = 16
 			}
-			
 			removal_cost = -1
-
 			picture = a_Paris
-
 			modifier = {
 				army_artillery_attack_factor = 0.05
 			}
 		}
-	Moscow = { 
+		Moscow = {
 			allowed = {
-		    or = {
-				 original_tag = ENG
-				 original_tag = IRQ
-		         original_tag = RUS
-		         original_tag = GER
-		         original_tag = JAP
-		         original_tag = SOV
-		         original_tag = FRA
-		         original_tag = USA
-		         original_tag = SWE
-	         	 original_tag = ITA
-		    }
+				or = {
+					original_tag = ENG
+					original_tag = IRQ
+					original_tag = RUS
+					original_tag = GER
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = USA
+					original_tag = SWE
+					original_tag = ITA
+				}
 				always = no
 			}
-			
 			available = {
 				has_full_control_of_state = 219
 			}
-			
 			removal_cost = -1
-
 			picture = Kremlin
-
 			modifier = {
-			training_time_army_factor = -0.05
+				training_time_army_factor = -0.05
 			}
 		}
-    Berlin = { 
+		Berlin = {
 			allowed = {
-		    or = {
-				 original_tag = ENG
-				 original_tag = IRQ
-		         original_tag = RUS
-		         original_tag = GER
-		         original_tag = JAP
-		         original_tag = SOV
-		         original_tag = FRA
-		         original_tag = USA
-		         original_tag = SWE
-	         	 original_tag = ITA
-		    }
+				or = {
+					original_tag = ENG
+					original_tag = IRQ
+					original_tag = RUS
+					original_tag = GER
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = USA
+					original_tag = SWE
+					original_tag = ITA
+				}
 				always = no
 			}
-			
 			available = {
 				has_full_control_of_state = 64
 			}
-			
 			removal_cost = -1
-
 			picture = a_Berlin
-
 			modifier = {
-			army_armor_attack_factor = 0.05
+				army_armor_attack_factor = 0.05
 			}
 		}
-	Camelot = { 
+		Camelot = {
 			allowed = {
-		    or = {
-				 original_tag = ENG
-				 original_tag = IRQ
-		         original_tag = RUS
-		         original_tag = GER
-		         original_tag = JAP
-		         original_tag = SOV
-		         original_tag = FRA
-		         original_tag = USA
-		         original_tag = SWE
-	         	 original_tag = ITA
-		    }
+				or = {
+					original_tag = ENG
+					original_tag = IRQ
+					original_tag = RUS
+					original_tag = GER
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = USA
+					original_tag = SWE
+					original_tag = ITA
+				}
 				always = no
 			}
-			
 			available = {
 				has_full_control_of_state = 122
 			}
-			
 			removal_cost = -1
-
 			picture = Camelot
-
 			modifier = {
-			industrial_capacity_dockyard = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
-    Stockholm = { 
+		Stockholm = {
 			allowed = {
-		    or = {
-				 original_tag = ENG
-				 original_tag = IRQ
-		         original_tag = RUS
-		         original_tag = GER
-		         original_tag = JAP
-		         original_tag = SOV
-		         original_tag = FRA
-		         original_tag = USA
-		         original_tag = SWE
-	         	 original_tag = ITA
-		    }
+				or = {
+					original_tag = ENG
+					original_tag = IRQ
+					original_tag = RUS
+					original_tag = GER
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = USA
+					original_tag = SWE
+					original_tag = ITA
+				}
 				always = no
 			}
-			
 			available = {
 				has_full_control_of_state = 141
 			}
-			
 			removal_cost = -1
-
 			picture = Stockholm
-
 			modifier = {
-			attrition = -0.02
+				attrition = -0.02
 			}
 		}
-	 Tokyo = { 
+		Tokyo = {
 			allowed = {
-		    or = {
-				 original_tag = ENG
-				 original_tag = IRQ
-		         original_tag = RUS
-		         original_tag = GER
-		         original_tag = JAP
-		         original_tag = SOV
-		         original_tag = FRA
-		         original_tag = USA
-		         original_tag = SWE
-	         	 original_tag = ITA
-		    }
+				or = {
+					original_tag = ENG
+					original_tag = IRQ
+					original_tag = RUS
+					original_tag = GER
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = USA
+					original_tag = SWE
+					original_tag = ITA
+				}
 				always = no
 			}
-			
 			available = {
 				has_full_control_of_state = 282
 			}
-			
 			removal_cost = -1
-
 			picture = a_Tokyo
 			modifier = {
-			army_infantry_attack_factor = 0.05
+				army_infantry_attack_factor = 0.05
 			}
 		}
-	Washington = { 
+		Washington = {
 			allowed = {
-		    or = {
-				 original_tag = ENG
-				 original_tag = IRQ
-		         original_tag = RUS
-		         original_tag = GER
-		         original_tag = JAP
-		         original_tag = SOV
-		         original_tag = FRA
-		         original_tag = USA
-		         original_tag = SWE
-	         	 original_tag = ITA
-		    }
+				or = {
+					original_tag = ENG
+					original_tag = IRQ
+					original_tag = RUS
+					original_tag = GER
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = USA
+					original_tag = SWE
+					original_tag = ITA
+				}
 				always = no
 			}
-			
 			available = {
 				has_full_control_of_state = 361
 			}
-			
 			removal_cost = -1
-
 			picture = Washington
-
 			modifier = {
-			industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.05
 			}
 		}
-		Rome = { 
+		Rome = {
 			allowed = {
-		    or = {
-				 original_tag = ENG
-				 original_tag = IRQ
-		         original_tag = RUS
-		         original_tag = GER
-		         original_tag = JAP
-		         original_tag = SOV
-		         original_tag = FRA
-		         original_tag = USA
-		         original_tag = SWE
-	         	 original_tag = ITA
-		    }
+				or = {
+					original_tag = ENG
+					original_tag = IRQ
+					original_tag = RUS
+					original_tag = GER
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = FRA
+					original_tag = USA
+					original_tag = SWE
+					original_tag = ITA
+				}
 				always = no
 			}
-			
 			available = {
 				has_full_control_of_state = 2
 			}
-			
 			removal_cost = -1
-
 			picture = Rome
-
 			modifier = {
-			land_reinforce_rate = 0.05
+				land_reinforce_rate = 0.05
 			}
 		}
-		}
+	}
 }
