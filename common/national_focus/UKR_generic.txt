@@ -1135,9 +1135,6 @@ shared_focus  = {
 	prerequisite = {
 		focus = UKR_generic_enemy_of_enemy
 	}
-	prerequisite = {
-		focus = UKR_generic_enemy_of_enemy
-	}
 	available = {
 		GER_will_support = yes
 	}

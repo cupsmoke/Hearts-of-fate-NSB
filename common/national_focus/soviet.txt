@@ -6634,7 +6634,10 @@ focus_tree = {
 		id = SOV_Update_Assault_Gear
 
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = SOV_Chances_of_the_Europa_War focus = SOV_found_the_pcdi }
+		prerequisite = { 
+			focus = SOV_Chances_of_the_Europa_War 
+			focus = SOV_found_the_pcdi 
+		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_Chances_of_the_Europa_War
@@ -6738,42 +6741,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_military_engineering_university
-		icon = GFX_focus_generic_military_academy
-		prerequisite = { focus = SOV_far_east_fortification focus = SOV_found_the_pcdi }
-
-		x = 1
-		y = 1
-		relative_position_id = SOV_far_east_fortification
-		cost = 5
-
-		ai_will_do = {
-			factor = 1500
-		}
-
-		available = {
-
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SOV_defense_industry_1_idea
-				add_idea = SOV_defense_industry_2_idea
-			}
-			custom_effect_tooltip = SOV_military_engineering_university_bunk_tt
-
-			unlock_decision_tooltip = SOV_Eastern_Front_bunk_LIT_decision
-			unlock_decision_tooltip = SOV_Eastern_Front_bunk_POL_decision
-			unlock_decision_tooltip = SOV_Eastern_Front_bunk_ROM_decision
-			unlock_decision_tooltip = SOV_improve_the_Frunze_line_decision
-			unlock_decision_tooltip = SOV_impregnable_forts_decision
-			unlock_decision_tooltip = SOV_protect_the_white_sea_baltic_canal_decision
-
-		}
-	}
 
 	focus = {
 		id = SOV_far_east_fortification
@@ -6888,6 +6855,42 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+	focus = {
+		id = SOV_military_engineering_university
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = SOV_far_east_fortification focus = SOV_found_the_pcdi }
+
+		x = 1
+		y = 1
+		relative_position_id = SOV_far_east_fortification
+		cost = 5
+
+		ai_will_do = {
+			factor = 1500
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_defense_industry_1_idea
+				add_idea = SOV_defense_industry_2_idea
+			}
+			custom_effect_tooltip = SOV_military_engineering_university_bunk_tt
+
+			unlock_decision_tooltip = SOV_Eastern_Front_bunk_LIT_decision
+			unlock_decision_tooltip = SOV_Eastern_Front_bunk_POL_decision
+			unlock_decision_tooltip = SOV_Eastern_Front_bunk_ROM_decision
+			unlock_decision_tooltip = SOV_improve_the_Frunze_line_decision
+			unlock_decision_tooltip = SOV_impregnable_forts_decision
+			unlock_decision_tooltip = SOV_protect_the_white_sea_baltic_canal_decision
+
 		}
 	}
 
@@ -7265,7 +7268,10 @@ focus_tree = {
 		id = SOV_found_the_comecon
 
 		icon = GFX_focus_SOV_the_comecon
-		prerequisite = { focus = SOV_Export_revolution focus = SOV_Expansionism }
+		prerequisite = { 
+			focus = SOV_Export_revolution 
+			focus = SOV_Expansionism 
+		}
 		x = 1
 		y = 1
 		relative_position_id = SOV_Export_revolution
@@ -7274,11 +7280,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1500
 		}
-
-		allow_branch = {
-			has_government = communism
-		}
-
 		available = {
 			num_subjects > 0
 			64 = {
