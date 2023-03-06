@@ -113,6 +113,14 @@ scripted_gui = {
 				else = {
 					set_country_flag = show_city_context
 				}
+				if = {
+					limit = {
+						ROOT = {
+							num_subjects > 0
+						}
+					}
+					check_whether_subject_has_city = yes
+				}
 			}
 		}
 	}

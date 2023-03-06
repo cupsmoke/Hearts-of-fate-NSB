@@ -19,8 +19,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 64 }
-			ROOT = {
-				controls_state = v
+			64 = {
+				controls_or_subject_of = yes
 			}
 		}
 		localization_key = HOF_gui_berlin_icon
@@ -28,8 +28,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 219 }
-			ROOT = {
-				controls_state = v
+			219 = {
+				controls_or_subject_of = yes
 			}
 		}
 		localization_key = HOF_gui_kremlin_icon
@@ -37,8 +37,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 16 }
-			ROOT = {
-				controls_state = v
+			16 = {
+				controls_or_subject_of = yes
 			}
 		}
 		localization_key = HOF_gui_paris_icon
@@ -46,8 +46,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 122 }
-			ROOT = {
-				controls_state = v
+			122 = {
+				controls_or_subject_of = yes
 			}
 		}
 		localization_key = HOF_gui_camelot_icon
@@ -55,8 +55,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
-			ROOT = {
-				controls_state = v
+			2 = {
+				controls_or_subject_of = yes
 			}
 		}
 		localization_key = HOF_gui_rome_icon
@@ -64,8 +64,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 141 }
-			ROOT = {
-				controls_state = v
+			141 = {
+				controls_or_subject_of = yes
 			}
 		}
 		localization_key = HOF_gui_stockholm_icon
@@ -73,8 +73,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 282 }
-			ROOT = {
-				controls_state = v
+			282 = {
+				controls_or_subject_of = yes
 			}
 		}
 		localization_key = HOF_gui_tokyo_icon
@@ -82,8 +82,8 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 361 }
-			ROOT = {
-				controls_state = v
+			361 = {
+				controls_or_subject_of = yes
 			}
 		}
 		localization_key = HOF_gui_washington_icon
@@ -153,72 +153,112 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = { v = 64 }
-			ROOT = {
-				controls_state = v
-			}
+			# 64 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ROOT
+			# 			is_subject_of = ROOT
+			# 		}
+			# 	}
+			# }
 		}
 		localization_key = HOF_gui_berlin_effect
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 219 }
-			ROOT = {
-				controls_state = v
-			}
+			# 219 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ROOT
+			# 			is_subject_of = ROOT
+			# 		}
+			# 	}
+			# }
 		}
 		localization_key = HOF_gui_kremlin_effect
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 16 }
-			ROOT = {
-				controls_state = v
-			}
+			# 16 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ROOT
+			# 			is_subject_of = ROOT
+			# 		}
+			# 	}
+			# }
 		}
 		localization_key = HOF_gui_paris_effect
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 122 }
-			ROOT = {
-				controls_state = v
-			}
+			# 122 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ROOT
+			# 			is_subject_of = ROOT
+			# 		}
+			# 	}
+			# }
 		}
 		localization_key = HOF_gui_camelot_effect
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 2 }
-			ROOT = {
-				controls_state = v
-			}
+			# 2 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ROOT
+			# 			is_subject_of = ROOT
+			# 		}
+			# 	}
+			# }
 		}
 		localization_key = HOF_gui_rome_effect
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 141 }
-			ROOT = {
-				controls_state = v
-			}
+			# 141 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ROOT
+			# 			is_subject_of = ROOT
+			# 		}
+			# 	}
+			# }
 		}
 		localization_key = HOF_gui_stockholm_effect
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 282 }
-			ROOT = {
-				controls_state = v
-			}
+			# 282 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ROOT
+			# 			is_subject_of = ROOT
+			# 		}
+			# 	}
+			# }
 		}
 		localization_key = HOF_gui_tokyo_effect
 	}
 	text = {
 		trigger = {
 			check_variable = { v = 361 }
-			ROOT = {
-				controls_state = v
-			}
+			# 361 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ROOT
+			# 			is_subject_of = ROOT
+			# 		}
+			# 	}
+			# }
 		}
 		localization_key = HOF_gui_washington_effect
 	}
