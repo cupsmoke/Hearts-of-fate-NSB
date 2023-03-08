@@ -53,49 +53,49 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_city_Berlin"
-		texturefile = "gfx/texticons/Berlin.png"
+		texturefile = "gfx/interface/gui_hof/city/Berlin.png"
 		noOfFrames = 2
 		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_city_Kremlin"
-		texturefile = "gfx/texticons/Kremlin.png"
+		texturefile = "gfx/interface/gui_hof/city/Kremlin.png"
 		noOfFrames = 2
 		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_city_Camelot"
-		texturefile = "gfx/texticons/Camelot.png"
+		texturefile = "gfx/interface/gui_hof/city/Camelot.png"
 		noOfFrames = 2
 		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_city_Paris"
-		texturefile = "gfx/texticons/Paris.png"
+		texturefile = "gfx/interface/gui_hof/city/Paris.png"
 		noOfFrames = 2
 		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_city_Rome"
-		texturefile = "gfx/texticons/Rome.png"
+		texturefile = "gfx/interface/gui_hof/city/Rome.png"
 		noOfFrames = 2
 		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_city_Stockholm"
-		texturefile = "gfx/texticons/Stockholm.png"
+		texturefile = "gfx/interface/gui_hof/city/Stockholm.png"
 		noOfFrames = 2
 		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_city_Tokyo"
-		texturefile = "gfx/texticons/Tokyo.png"
+		texturefile = "gfx/interface/gui_hof/city/Tokyo.png"
 		noOfFrames = 2
 		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_city_Washington"
-		texturefile = "gfx/texticons/Washington.png"
+		texturefile = "gfx/interface/gui_hof/city/Washington.png"
 		noOfFrames = 2
 		legacy_lazy_load = no
 	}
