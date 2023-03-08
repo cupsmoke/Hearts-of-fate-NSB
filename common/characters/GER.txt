@@ -2476,7 +2476,8 @@ characters={
 			ai_will_do = {
 				factor = 5.000
 			}
-			removal_cost = -1
+			# removal_cost = -1
+			can_be_fired = no
 		}		
 	}
 
@@ -2499,7 +2500,8 @@ characters={
 			ai_will_do = {
 				factor = 5.000
 			}
-			removal_cost = -1
+			# removal_cost = -1
+			can_be_fired = no
 		}		
 	}
 
@@ -2522,7 +2524,8 @@ characters={
 			ai_will_do = {
 				factor = 5.000
 			}
-			removal_cost = -1
+			# removal_cost = -1
+			can_be_fired = no
 		}		
 	}
 

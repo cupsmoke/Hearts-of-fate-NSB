@@ -1690,6 +1690,12 @@ characters={
 		}
 	}
 	RUS_entente_observe_committee={
+		name="RUS_entente_observe_committee"
+		portraits={
+			army={
+				small="GFX_idea_RUS_entente_observe_committee"
+			}
+		}
 		advisor={
 			slot = army_chief
 			idea_token = RUS_entente_observe_committee
@@ -1705,7 +1711,8 @@ characters={
 					has_completed_focus  = rus_fall_of_ussr 
 				}
 			}
-			removal_cost  = -1.000
+			# removal_cost  = -1.000
+			can_be_fired = no
 			traits  = {
 				RUS_observer_committee 
 			}
@@ -1713,12 +1720,7 @@ characters={
 			cost = 300
 
 		}
-		name="RUS_entente_observe_committee"
-		portraits={
-			army={
-				small="GFX_idea_RUS_entente_observe_committee"
-			}
-		}
+
 	}
 	RUS_nikolai_chebotaryov={
 		advisor={

@@ -1873,46 +1873,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = JAP_fuyuki_special_service
-		icon = GFX_focus_fuyuki
-		cost = 5
-		prerequisite = {
-			focus = JAP_bicycle_battalions
-		}
-		mutually_exclusive = {
-			focus = JAP_tokiwadai_special_service
-		}
-		x = 1
-		y = 1
-		relative_position_id = JAP_bicycle_battalions
-		available = {
-			has_government = democratic
-		}
-		bypass = {
-		}
-		completion_reward = {
-			add_ideas = {
-				JAP_fuyuki_special_service_idea
-			}
-			JAP_army_focus_activated = yes
-		}
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 3
-				has_war = yes
-			}
-			modifier = {
-				OR = {
-					has_war_with = CHI
-					has_war_with = BEY
-					has_war_with = SOV
-				}
-				factor = 5
-			}
-		}
-	}
+
 	focus = {
 		id = JAP_overlooking_the_scenery
 		icon = GFX_focus_overlooking_scenery
@@ -10620,6 +10581,47 @@ focus_tree = {
 					has_war_with = BEY
 					has_war_with = SOV
 				}
+				factor = 5
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_fuyuki_special_service
+		icon = GFX_focus_fuyuki
+		cost = 5
+		prerequisite = {
+			focus = JAP_bicycle_battalions
+		}
+		mutually_exclusive = {
+			focus = JAP_tokiwadai_special_service
+		}
+		x = 1
+		y = 1
+		relative_position_id = JAP_bicycle_battalions
+		available = {
+			has_government = democratic
+		}
+		bypass = {
+		}
+		completion_reward = {
+			add_ideas = {
+				JAP_fuyuki_special_service_idea
+			}
+			JAP_army_focus_activated = yes
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+			modifier = {
+				OR = {
+					has_war_with = CHI
+					has_war_with = BEY
+					has_war_with = SOV
+				} 
 				factor = 5
 			}
 		}

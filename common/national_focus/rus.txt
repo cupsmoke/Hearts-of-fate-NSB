@@ -895,6 +895,33 @@ focus_tree = {
 		}
 
 	}
+
+	focus = {
+		id = rus_restore_the_democracy
+		icon = GFX_focus_Russian_Democracy
+		cost = 5.00
+		prerequisite = {
+			focus = rus_support_from_Gosudarstvennaya_duma
+			focus = rus_forced_abdication
+		}
+		mutually_exclusive = {
+			focus = rus_power_politics
+		}
+		available = {
+			always = no
+		}
+		x = 0
+		y = 2
+		relative_position_id = rus_support_from_Gosudarstvennaya_duma
+		completion_reward = {
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = RUS_nataliya_andreyevich_rostova
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = RUS_bronya_zaychik
+			RUS_create_democratic_leaders = yes
+		}
+
+	}
 	focus = {   ###重启地方自治会
 		id = rus_reinit_Zemstvo
 		icon = GFX_goal_generic_intelligence_exchange
@@ -4634,32 +4661,7 @@ focus_tree = {
 		}
 
 	}
-	focus = {
-		id = rus_restore_the_democracy
-		icon = GFX_focus_Russian_Democracy
-		cost = 5.00
-		prerequisite = {
-			focus = rus_support_from_Gosudarstvennaya_duma
-			focus = rus_forced_abdication
-		}
-		mutually_exclusive = {
-			focus = rus_power_politics
-		}
-		available = {
-			always = no
-		}
-		x = 0
-		y = 2
-		relative_position_id = rus_support_from_Gosudarstvennaya_duma
-		completion_reward = {
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = RUS_nataliya_andreyevich_rostova
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = RUS_bronya_zaychik
-			RUS_create_democratic_leaders = yes
-		}
 
-	}
 	focus = {
 		id = rus_PSR_comes_back
 		icon = GFX_focus_generic_PSR_2

@@ -3053,12 +3053,12 @@ country_event = {##清洗贵族
 			}
 			remove_ideas = { JAP_osakabehime }
 		}
-		if = {
-			limit = {  
-				has_idea = JAP_osakabehime
-			}
-			remove_ideas = { JAP_osakabehime }
-		}
+		# if = {
+		# 	limit = {  
+		# 		has_idea = JAP_osakabehime
+		# 	}
+		# 	remove_ideas = { JAP_osakabehime }
+		# }
 		if = {
 			limit = {  
 				has_idea = JAP_hinanawi_tenshi
