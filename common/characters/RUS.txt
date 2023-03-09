@@ -49,7 +49,7 @@ characters={
 			slot = political_advisor
 			idea_token = RUS_sergey_taboritsky
 			allowed  = {
-					original_tag  = RUS
+				original_tag  = RUS
 			}
 			available  = {
 				is_puppet  = no 

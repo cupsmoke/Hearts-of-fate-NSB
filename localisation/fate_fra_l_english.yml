@@ -572,7 +572,7 @@
  
  franco_america_relationship:0 "Friendship"
  franco_america_relationship_trade:0 "Friendship-Trade"
- FRA_Pyrenees_forts:0 "Pyrenees Forts"
+ #FRA_Pyrenees_forts:0 "Pyrenees Forts"
  fra_ita_pact_refused:0 "Pact refused"
  
  spy_master:0 "Super Agent"
