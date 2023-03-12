@@ -150,15 +150,38 @@ scripted_gui = {
 			}
 		}
 	}
+	HOF_welcome_button_ui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "HOF_welcome_button"
+		visible = {
 
+        }
+		#  
+		effects = { 
+			view_button_click = {
+
+				if = {
+					limit = {
+						has_country_flag = close_welcome_window
+					}
+					clr_country_flag = close_welcome_window
+				}
+				else = {
+					set_country_flag = close_welcome_window
+				}
+				
+			}	
+		}
+	}
 	HOF_welcome_window_ui = {
 		context_type = player_context
 		# parent_window_token = politics_tab
 		window_name = "HOF_welcome_window"
 		visible = {
-			# not = {
-			# 	has_country_flag = close_welcome_window
-			# }
+			not = {
+				has_country_flag = close_welcome_window
+			}
         }
 		# 
 		effects = {
@@ -166,9 +189,11 @@ scripted_gui = {
 				set_country_flag = close_welcome_window
 			}	
 		}
-		dynamic_lists = {
+		# dynamic_lists = {
 
-		}
+		# }
+
+		
 	}
 }
 

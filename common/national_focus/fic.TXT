@@ -14,7 +14,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 1500 }	
 
-  ##########总督上任#########
+  	##########总督上任#########
 	focus = {
 		id = FIC_New_governor
 		icon = GFX_focus_hol_the_foundations_of_defense
