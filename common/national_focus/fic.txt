@@ -1720,6 +1720,9 @@ focus_tree = {
 				name = FRA_undersea_combat
 				bonus = 1
 				uses = 2
+				category = ss_tech
+			}
+		}
 		ai_will_do = {
 			factor = 15
 		}
