@@ -7871,9 +7871,7 @@ focus_tree = {
 				limit = { 
 					has_id = 8108 
 				}
-				
 				add_skill_level = 1
-				
 				add_attack = 1
 				add_defense = 1
 				add_maneuvering = 1
@@ -7884,9 +7882,7 @@ focus_tree = {
 				limit = { 
 					has_id = 8110
 				}
-				
 				add_skill_level = 1
-				
 				add_attack = 1
 				add_defense = 1
 				add_maneuvering = 1

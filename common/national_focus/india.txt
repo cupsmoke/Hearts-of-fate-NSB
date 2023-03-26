@@ -2997,7 +2997,7 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction
+			add_doctrine_cost_reduction = {
 				name = RAJ_modernizing_navy
 				cost_reduction = 1
 				uses = 1
@@ -3008,6 +3008,7 @@ focus_tree = {
 	############################
 	#### BRITISH INVESTORS #####
 	############################
+	
 	focus = {
 		id = RAJ_east_india_railways
 		icon = GFX_goal_generic_construct_infrastructure
@@ -3530,4 +3531,5 @@ focus_tree = {
 			}
 		}
 	}
+
 }

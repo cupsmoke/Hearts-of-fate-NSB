@@ -77,8 +77,12 @@ focus_tree = {
 			NOT = { has_government = fascism }
 			OR = {
 				has_full_control_of_state = 796 #North Angola
-				has_full_control_of_state = 540 #South Angola
+				has_full_control_of_state = 540 #Luanda
+				has_full_control_of_state = 891 #South West Angola
+				has_full_control_of_state = 892 #Zambesi
 				has_full_control_of_state = 544 #Mozambique
+				has_full_control_of_state = 896 #Manica e Sofala
+				has_full_control_of_state = 897 #Zambeziá-Mozambique
 			}
 		}
 
@@ -117,8 +121,12 @@ focus_tree = {
 		available = {
 			OR = {
 				has_full_control_of_state = 796 #North Angola
-				has_full_control_of_state = 540 #South Angola
+				has_full_control_of_state = 540 #Luanda
+				has_full_control_of_state = 891 #Zambesi
+				has_full_control_of_state = 892 #Southwest Angola
 				has_full_control_of_state = 544 #Mozambique
+				has_full_control_of_state = 896 #Manica e Sofala
+				has_full_control_of_state = 897 #Zambezia
 			}
 		}
 
@@ -173,6 +181,20 @@ focus_tree = {
 					}
 					transfer_state = 540
 					POR = { set_country_flag = POR_released_angola_flag }
+				}	
+				if = {
+					limit = { 
+						POR = { has_full_control_of_state = 891 }
+					}
+					transfer_state = 891
+					POR = { set_country_flag = POR_released_angola_flag }
+				}	
+				if = {
+					limit = { 
+						POR = { has_full_control_of_state = 892 }
+					}
+					transfer_state = 892
+					POR = { set_country_flag = POR_released_angola_flag }
 				}								
 			}
 
@@ -184,6 +206,20 @@ focus_tree = {
 					transfer_state = 544
 					POR = { set_country_flag = POR_released_mozambique_flag }
 				}	
+				if = {
+					limit = { 
+						POR = { has_full_control_of_state = 896 }
+					}
+					transfer_state = 896
+					POR = { set_country_flag = POR_released_mozambique_flag }
+				}
+				if = {
+					limit = { 
+						POR = { has_full_control_of_state = 897 }
+					}
+					transfer_state = 897
+					POR = { set_country_flag = POR_released_mozambique_flag }
+				}
 			}
 
 			if = {
@@ -857,7 +893,7 @@ focus_tree = {
 				limit = { has_full_control_of_state = 180 }
 				180 = {
 					add_building_construction = {
-						type = infrastructure
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
@@ -868,32 +904,10 @@ focus_tree = {
 				limit = { has_full_control_of_state = 181 }
 				181 = {
 					add_building_construction = {
-						type = infrastructure
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 1	
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 179 }
-				179 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 1	
-				}
-			}
-			if = {
-				limit = { has_full_control_of_state = 112 }
-				112 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}			
 					add_extra_state_shared_building_slots = 1	
 				}
 			}
@@ -1645,9 +1659,9 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = POR_submarine_effort
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 1
 			    category = cat_trade_interdiction			   
 			}
@@ -1877,13 +1891,12 @@ focus_tree = {
 			    uses = 2
 			    category = cv_tech	   
 			}
-
-			add_tech_bonus = {
-				name = POR_carrier_effort
-			    bonus = 1.0
-			    uses = 1
-			    category = base_strike_main   
-			}
+			add_doctrine_cost_reduction = {
+  				name = POR_carrier_effort
+  				cost_reduction = 0.5
+  				uses = 1
+  				category = base_strike_main
+  			}
 		}
 	}
 
@@ -5027,7 +5040,7 @@ focus_tree = {
 			add_war_support = 0.1
 			add_ideas = POR_national_syndicalism
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = POR_jose_hipolito_raposo_2
+			show_ideas_tooltip = POR_jose_hipolito_raposo
 			show_ideas_tooltip = POR_alberto_monsaraz
 		}
 	}
@@ -5801,7 +5814,8 @@ focus_tree = {
 				add_popularity = {
 				    ideology = fascism
 				    popularity = 0.10
-				}			
+				}	
+			}		
 			add_stability = -0.20
 		}
 	}
@@ -6111,6 +6125,7 @@ focus_tree = {
 					hidden_effect = {
 						retire_country_leader = yes
 					}
+
 					BRA_getulio_vargas = {
 						remove_country_leader_role = {
 							ideology = despotism
@@ -6125,10 +6140,7 @@ focus_tree = {
 							}
 							promote_leader = yes
 						}
-					}
-							  
-									   
-													 
+					}				     				 
 					promote_character = BRA_arlindo_veiga_dos_santos
 				}
 			}
@@ -6257,7 +6269,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Dom Duarte Nuno"
 				desc = "POLITICS_DOM_DUARTE_NUNO_DESC"
-				picture = "gfx/leaders/POR/portrait_por_duarte_nuno.dds"
+				picture = GFX_portrait_Dom_Duarte_Nuno
 				expire = "1976.12.24"
 				ideology = despotism
 				traits = { 

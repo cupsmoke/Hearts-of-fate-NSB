@@ -174,8 +174,8 @@ FRA_civil_war_south = {
 			add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {
-				ideology = socialism
-					expire = “1965.1.1.1”
+					ideology = socialism
+					expire = "1965.1.1.1"
 					traits = {
 					La_Pucelle  illiterate nationalism_symbol
 					}
@@ -283,7 +283,7 @@ FRA_civil_war_north = {
 					promote_leader = yes
 					country_leader = {
 						ideology = socialism
-						expire = “1965.1.1.1”
+						expire = "1965.1.1.1"
 						traits = {
 							La_Pucelle  illiterate
 						}
@@ -316,7 +316,7 @@ FRA_civil_war_north = {
 				promote_leader = yes
 				country_leader = {
 					ideology = stratocracy
-						expire = “1965.1.1.1”
+						expire = "1965.1.1.1"
 						traits = {
 
 						}
