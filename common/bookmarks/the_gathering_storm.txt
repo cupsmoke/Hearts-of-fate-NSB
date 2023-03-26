@@ -187,35 +187,35 @@ bookmarks = {
 			}
 		}
 		# minors from DLC ####
-		# "MEX" = {
-		# 	minor = yes
-		# 	history = "MEXICO_GATHERING_STORM_DESC"
-		# 	ideology = neutrality
-		# 	ideas = {
-		# 		MEX_church_power_2
-		# 		MEX_politicised_army
-		# 		MEX_oil_concessions
-		# 	}
-		# 	focuses = {
-		# 		MEX_focus_Lucha_libre
-		# 		MEX_focus_proclaim_aztec
-		# 		MEX_focus_sunset_invasion
-		# 	}
-		# }
-		# "POL" = {
-		# 	minor = yes
-		# 	history = "POL_GATHERING_STORM_DESC"
-		# 	ideology = democratic
-		# 	ideas = {
-		# 		POL_cud_nad_wisla
-		# 		POL_militarism_focus
-		# 	}
-		# 	focuses = {
-		# 		POL_Ask_for_Madagascar
-		# 		POL_firewatch
-		# 		POL_Glory_of_Kazimierz
-		# 	}
-		# }
+		"MEX" = {
+			minor = yes
+			history = "MEXICO_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MEX_church_power_2
+				MEX_politicised_army
+				MEX_oil_concessions
+			}
+			focuses = {
+				MEX_focus_Lucha_libre
+				MEX_focus_proclaim_aztec
+				MEX_focus_sunset_invasion
+			}
+		}
+		"POL" = {
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				POL_cud_nad_wisla
+				POL_militarism_focus
+			}
+			focuses = {
+				POL_Ask_for_Madagascar
+				POL_firewatch
+				POL_Glory_of_Kazimierz
+			}
+		}
 		"FIC" = {
 			minor = yes
 			history = "FIC_GATHERING_STORM_DESC"
