@@ -113,7 +113,7 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				RUS_rebirth_of_the_tsar_0
-				RUS_entente_observe_committee
+				RUS_sour_loser
 				rus_japanese_advisory_group
 			}
 			focuses = {
@@ -161,12 +161,11 @@ bookmarks = {
 				UKR_no_army_idea
 			}
 			focuses = {
-				UKR_Great_stick
-				UKR_Consolidate_the_Dnieper_Gang
-				UKR_carrot
+				UKR_Anarchist_loyal_to_our_cause
+				UKR_Big_two_system
+				UKR_generic_Zaporizhzhia_industrial_complex
 			}
 		}
-
 		"SWE" = {
 			minor = yes
 			history = "SWE_GATHERING_STORM_DESC"
