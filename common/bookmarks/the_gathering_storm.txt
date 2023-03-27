@@ -137,6 +137,20 @@ bookmarks = {
 				SOV_Democratic_alliance
 			}
 		}
+		"POL" = {
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				POL_cud_nad_wisla
+				POL_militarism_focus
+			}
+			focuses = {
+				POL_Ask_for_Madagascar
+				POL_firewatch
+				POL_Glory_of_Kazimierz
+			}
+		}		
 		"UKR" = {
 			minor = yes
 			history = "UKR_GATHERING_STORM_DESC"
@@ -199,20 +213,7 @@ bookmarks = {
 				MEX_focus_sunset_invasion
 			}
 		}
-		"POL" = {
-			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				POL_cud_nad_wisla
-				POL_militarism_focus
-			}
-			focuses = {
-				POL_Ask_for_Madagascar
-				POL_firewatch
-				POL_Glory_of_Kazimierz
-			}
-		}
+
 		"FIC" = {
 			minor = yes
 			history = "FIC_GATHERING_STORM_DESC"
