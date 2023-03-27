@@ -678,6 +678,14 @@ guiTypes = {
 				max_slots_vertical = 1
 				format = "UPPER_LEFT"
 			}
+			iconType = {
+				name = "hidden_01"
+				quadTextureSprite ="GFX_GUI_selection_frame"
+				position = { x = 150 y = 0 }
+				alwaystransparent = yes
+				# scale=0.696
+				# rotation=-0.04
+			}			
 		}
 
 		containerWindowType = {

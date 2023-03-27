@@ -1,5 +1,10 @@
 spriteTypes = {
 	SpriteType = {
+		name = "GFX_GUI_selection_frame"
+		texturefile = "gfx/interface/gui_hof/bookmarks/selection_frame.png"
+	}
+
+	SpriteType = {
 		name = "GFX_GUI_sun_shine_bg"
 		texturefile = "gfx/interface/gui_hof/sun_shine_bg.png"
 	}
