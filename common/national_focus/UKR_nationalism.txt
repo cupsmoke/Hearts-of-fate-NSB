@@ -1200,7 +1200,7 @@ shared_focus = {
 			}
 		    add_ideas = UKR_Social_Security_System_1_idea
 		}
-		else_if = {
+		else = {
 		    add_ideas = UKR_Social_Security_System_2_idea
 		}
 
@@ -1394,7 +1394,7 @@ shared_focus = {
 			}
 		    remove_ideas = UKR_splitted_country_2
 		}
-		else_if = {
+		else = {
 		    add_ideas = UKR_unite_country_1_idea
 		}
 		add_tech_bonus = {
@@ -1932,7 +1932,7 @@ shared_focus = {
 
 shared_focus = {
 	id = UKR_foreign_intelligence_network
-	icon = GFX_focus_conspiracy
+	icon = GFX_focus_generic_vatican_agents
 	cost = 5.00
 	x = 1
 	y = 1
@@ -1986,7 +1986,12 @@ shared_focus = {
 	relative_position_id = UKR_Threats_from_foreign_powers
 
 	completion_reward = {
-		add_ideas = UKR_Natsionalna_hvardiya_Ukrayiny_1_idea
+
+		add_to_variable = { HOF_UKR_army_dynamic_conscription = 0.01 }
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_militia_max_org_factor = 0.1 }
+
+		custom_effect_tooltip = UKR_Natsionalna_hvardiya_Ukrayiny_tt
+
 	}
 
 }
@@ -2015,10 +2020,10 @@ shared_focus = {
 	relative_position_id = UKR_Natsionalna_hvardiya_Ukrayiny
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = UKR_Natsionalna_hvardiya_Ukrayiny_1_idea
-			add_idea = UKR_Natsionalna_hvardiya_Ukrayiny_2_idea
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_conscription = 0.02 }
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_militia_max_org_factor = -0.05 }
+
+		custom_effect_tooltip = UKR_more_reservists_tt
 	}
 
 }
@@ -2051,10 +2056,13 @@ shared_focus = {
         unlock_decision_tooltip = UKR_elite_troops_Nightingale_decision
         unlock_decision_tooltip = UKR_elite_troops_Sich_decision
 
-		swap_ideas = {
-			remove_idea = UKR_Natsionalna_hvardiya_Ukrayiny_1_idea
-			add_idea = UKR_Natsionalna_hvardiya_Ukrayiny_3_idea
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_experience_gain_factor = 0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_mechanized_attack_factor = 0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_special_forces_attack_factor = 0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_special_forces_cap = 0.02 }
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_militia_attack_factor = 0.05 }
+
+		custom_effect_tooltip = UKR_elite_troops_tt
 		add_tech_bonus = {
 			name = special_forces_bonus
 			bonus = 1.0
@@ -2083,6 +2091,10 @@ shared_focus = {
 
 	available = {
         has_idea = UKR_unite_country_idea
+		has_country_leader = {
+			character = UKR_Stepan_Bandera
+			ruling_only = yes
+		}
 	}
 
 	bypass = {
@@ -2094,7 +2106,9 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 25
 
-		add_ideas = UKR_We_were_born_in_great_times_idea
+		add_war_support = 0.05
+
+		add_country_leader_trait = Bandera_inheritor_of_konovalets
 	}
 
 }
@@ -2111,7 +2125,10 @@ shared_focus = {
 	}
 
 	available = {
-
+		has_country_leader = {
+			character = UKR_Stepan_Bandera
+			ruling_only = yes
+		}
 	}
 
 	bypass = {
@@ -2123,25 +2140,7 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 25
 
-		if = {
-			limit = {
-				has_idea = UKR_We_were_born_in_great_times_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_We_were_born_in_great_times_idea
-				add_idea = UKR_indestructible_as_rock_1_idea
-			}
-		}
-
-		if = {
-			limit = {
-				has_idea = UKR_Tears_do_not_bring_freedom_1_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Tears_do_not_bring_freedom_1_idea
-				add_idea = UKR_indestructible_as_rock_2_idea
-			}
-		}
+		add_country_leader_trait = Bandera_great_commander
 	}
 
 }
@@ -2158,7 +2157,10 @@ shared_focus = {
 	}
 
 	available = {
-
+		has_country_leader = {
+			character = UKR_Stepan_Bandera
+			ruling_only = yes
+		}
 	}
 
 	bypass = {
@@ -2170,25 +2172,7 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 25
 
-		if = {
-			limit = {
-				has_idea = UKR_We_were_born_in_great_times_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_We_were_born_in_great_times_idea
-				add_idea = UKR_Tears_do_not_bring_freedom_1_idea
-			}
-		}
-
-		if = {
-			limit = {
-				has_idea = UKR_indestructible_as_rock_1_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_indestructible_as_rock_1_idea
-				add_idea = UKR_Tears_do_not_bring_freedom_2_idea
-			}
-		}
+		add_country_leader_trait = Bandera_Defender_of_Liberty
 
 	}
 
@@ -2210,6 +2194,10 @@ shared_focus = {
 	}
 
 	available = {
+		has_country_leader = {
+			character = UKR_Stepan_Bandera
+			ruling_only = yes
+		}
 
 	}
 
@@ -2222,23 +2210,21 @@ shared_focus = {
 	completion_reward = {
 		add_political_power = 50
 
+		add_country_leader_trait = Bandera_real_soldier
+		
 		if = {
 			limit = {
-				has_idea = UKR_indestructible_as_rock_2_idea
+				UKR_Roman_Shukhevych = {
+					is_corps_commander = yes
+				}
 			}
-			swap_ideas = {
-				remove_idea = UKR_indestructible_as_rock_2_idea
-				add_idea = UKR_Warriors_bring_victory_idea
-			}
-		}
+			UKR_Roman_Shukhevych = {
+				promote_leader = yes
 
-		if = {
-			limit = {
-				has_idea = UKR_Tears_do_not_bring_freedom_2_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Tears_do_not_bring_freedom_2_idea
-				add_idea = UKR_Warriors_bring_victory_idea
+				add_skill_level = 1
+				
+				add_attack = 2
+				add_planning = 1
 			}
 		}
 	}
@@ -2257,7 +2243,10 @@ shared_focus = {
 	}
 
 	available = {
-
+		has_country_leader = {
+			character = UKR_Stepan_Bandera
+			ruling_only = yes
+		}
 	}
 
 	bypass = {
@@ -2271,25 +2260,7 @@ shared_focus = {
 
         remove_ideas = UKR_Developed_agriculture_idea
 
-		if = {
-			limit = {
-				has_idea = UKR_Warriors_bring_victory_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Warriors_bring_victory_idea
-				add_idea = UKR_all_one_heart_1_idea
-			}
-		}
-
-		if = {
-			limit = {
-				has_idea = UKR_Ukraine_is_above_all_things_1_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Ukraine_is_above_all_things_1_idea
-				add_idea = UKR_all_one_heart_2_idea
-			}
-		}
+		add_country_leader_trait = Bandera_architect_of_Ukrainian_nation
 
 	}
 
@@ -2298,7 +2269,7 @@ shared_focus = {
 shared_focus = {
 	id = UKR_Ukraine_is_above_all_things
 	icon = GFX_focus_flag_ukraine
-	cost = 5.00
+	cost = 10.00
 	x = 1
 	y = 1
 
@@ -2307,6 +2278,10 @@ shared_focus = {
 	}
 
 	available = {
+		has_country_leader = {
+			character = UKR_Stepan_Bandera
+			ruling_only = yes
+		}
 
 	}
 
@@ -2320,24 +2295,11 @@ shared_focus = {
 
 		add_political_power = 25
 
-		if = {
-			limit = {
-				has_idea = UKR_Warriors_bring_victory_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Warriors_bring_victory_idea
-				add_idea = UKR_Ukraine_is_above_all_things_1_idea
-			}
-		}
+		add_war_support = 0.10
 
-		if = {
-			limit = {
-				has_idea = UKR_all_one_heart_1_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_all_one_heart_1_idea
-				add_idea = UKR_Ukraine_is_above_all_things_2_idea
-			}
+		swap_ruler_traits = {
+			remove = Bandera_great_commander
+			add = Bandera_great_commander_2
 		}
 
 	}
@@ -2347,7 +2309,7 @@ shared_focus = {
 shared_focus = {
 	id = UKR_From_the_San_to_the_Caucasus
 	icon = GFX_focus_agrarian_soldiers
-	cost = 5.00
+	cost = 10.00
 	x = 1
 	y = 1
 
@@ -2360,6 +2322,11 @@ shared_focus = {
 	}
 
 	available = {
+		surrender_progress < 0.05
+		has_country_leader = {
+			character = UKR_Stepan_Bandera
+			ruling_only = yes
+		}
 
 	}
 
@@ -2370,7 +2337,14 @@ shared_focus = {
 	relative_position_id = UKR_all_one_heart
 
 	completion_reward = {
+		swap_ruler_traits = {
+			remove = Bandera_architect_of_Ukrainian_nation
+			add = Bandera_father_of_nations
+		}
 
+		hidden_effect = {
+			play_song = "March_of_the_Ukrainian_Nationalist"
+		}
 		if = {
 			limit = {
 				234 = {

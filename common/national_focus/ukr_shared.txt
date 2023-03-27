@@ -672,12 +672,14 @@ shared_focus = {
 		custom_effect_tooltip = UKR_Call_for_civilians_tt
 		division_template = {
 			name = "militia"
+			division_names_group = UKR_GAR_01
+			template_counter = 68
 			regiments = {
-				infantry = {
+				militia = {
 					x = 0
 					y = 0
 				}
-				infantry = {
+				irregular_infantry = {
 					x = 0
 					y = 1
 				}
@@ -900,15 +902,15 @@ shared_focus = {
 		division_template = {
 			name = "anarchists"
 			regiments = {
-				infantry = {
+				irregular_infantry = {
 					x = 0
 					y = 0
 				}
-				cavalry = {
+				irregular_infantry = {
 					x = 0
 					y = 1
 				}
-				cavalry = {
+				irregular_infantry = {
 					x = 0
 					y = 2
 				}
@@ -1004,11 +1006,11 @@ shared_focus = {
 			amount = 50
 			producer = SOV
 		}
-		add_equipment_to_stockpile = {
-			type = light_tank_equipment
-			amount = 30
-			producer = SOV
-		}
+		# add_equipment_to_stockpile = {
+		# 	type = light_tank_chassis_0
+		# 	amount = 30
+		# 	producer = SOV
+		# }
 		add_equipment_to_stockpile = {
 			type = fighter_equipment
 			amount = 30

@@ -17,23 +17,31 @@ country_event = {
 		### Welcome back, Batko!
 		add_political_power = 25
 		add_war_support = 0.10
-		if = {
+		if = { 
 			limit = {
-				has_idea = UKR_independent_Army_idea
+		        NOT = { has_country_flag = UKR_NOT_communism_independence_flag }
 			}
-			swap_ideas = {
-				remove_idea = UKR_independent_Army_idea
-				add_idea = UKR_Black_army_idea
-			}
+			set_country_flag = UKR_anarchist_independence_flag
+			add_to_variable = { HOF_UKR_army_dynamic_army_org_factor = 0.1 }
+			add_to_variable = { HOF_UKR_army_dynamic_max_planning = 0.1 }
+
+			add_to_variable = { HOF_UKR_army_dynamic_democratic_drift = -0.03 }
+			add_to_variable = { HOF_UKR_army_dynamic_communism_drift = 0.07 }
+			add_to_variable = { HOF_UKR_army_dynamic_fascism_drift = -0.03 }
+			add_to_variable = { HOF_UKR_army_dynamic_neutrality_drift = -0.03 }
+
+			custom_effect_tooltip = UKR_anarchist_independence_tt
 		}
-		if = {
-			limit = {
-				has_idea = UKR_independent_Army_1_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_independent_Army_1_idea
-				add_idea = UKR_Black_army_idea
-			}
+		else = {
+			set_country_flag = UKR_anarchist_independence_2_flag
+			add_to_variable = { HOF_UKR_army_dynamic_communism_drift = 0.1 }
+
+			custom_effect_tooltip = UKR_anarchist_independence_2_tt
+		}
+		hidden_effect = {
+			#Swap dynamic modifier to change icon
+			remove_dynamic_modifier = { modifier = HOF_UKR_army_dynamic_modifier }
+			add_dynamic_modifier = { modifier = HOF_UKR_black_army_dynamic_modifier }
 		}
 
 		### Remove Some Fascist Characters
@@ -155,24 +163,10 @@ country_event = {
 			base = 40
 		}
 		
-		if = {
-			limit = {
-				has_idea = UKR_Black_army_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Black_army_idea
-				add_idea = UKR_Black_army_1_idea
-			}
-		}
-		if = {
-			limit = {
-				has_idea = UKR_Black_army_05_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Black_army_05_idea
-				add_idea = UKR_Black_army_15_idea
-			}
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_communism_drift = -0.1 }
+
+		custom_effect_tooltip = UKR_anarchist_alina_join_tt
+
 
 		hidden_effect = {
 			set_country_flag = UKR_anarchist_alina_join_flag

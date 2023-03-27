@@ -21,6 +21,13 @@ shared_focus = {
 
 		army_experience = 25
 
+		add_to_variable = { HOF_UKR_army_dynamic_experience_loss_factor = -0.25 }
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_militia_defence_factor = -0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_irregular_infantry_defence_factor = -0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_militia_max_org_factor = -0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_irregular_infantry_max_org_factor = -0.05 }
+		custom_effect_tooltip = UKR_modernization_of_the_armed_forces_tt
+
 		add_timed_idea = { idea = HUN_Preparing_Great_War_idea days = 120 }
 
 		add_tech_bonus = {
@@ -66,6 +73,173 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = UKR_Mobilize_the_Cossacks
+	icon = GFX_goal_generic_army_doctrines
+	cost = 5.00
+	x = -2
+	y = 1
+
+	prerequisite = {
+		focus = UKR_modernization_of_the_armed_forces
+	}
+
+	available = {
+		surrender_progress > 0.05
+	}
+
+	bypass = {
+
+	}
+
+	relative_position_id = UKR_modernization_of_the_armed_forces
+
+	completion_reward = {
+
+		set_country_flag = UKR_Mobilize_the_Cossacks_flag
+
+		division_template = {
+			name = "Motorized Cossacks Brigade"
+			division_names_group = UKR_MOT_01
+			is_locked = yes
+			force_allow_recruiting = yes
+			priority = 0
+			regiments = {
+				motorized = { x = 0 y = 0 }
+				motorized = { x = 0 y = 1 }
+				motorized = { x = 0 y = 2 }
+				cavalry = { x = 1 y = 0 }
+				cavalry = { x = 1 y = 1 }
+				cavalry = { x = 1 y = 2 }
+				cavalry = { x = 1 y = 3 }
+				motorized = { x = 2 y = 0 }
+				mot_artillery_brigade = { x = 2 y = 1 }
+			}
+
+			support = { 
+				engineer = { x = 0 y = 0 }
+				mot_recon = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+				anti_tank = { x = 0 y = 3 }
+			}
+
+		}
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = UKR
+				is_fully_controlled_by = ROOT
+			}
+			prioritize = {  } #
+			create_unit = {
+				division = "division_template = \"Motorized Cossacks Brigade\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 1
+			}
+		}
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = UKR
+				is_fully_controlled_by = ROOT
+			}
+			prioritize = {  } #
+			create_unit = {
+				division = "division_template = \"Motorized Cossacks Brigade\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 1
+			}
+		}
+
+	}
+
+	ai_will_do = {
+		factor = 2000
+	}
+
+}
+
+shared_focus = {
+	id = UKR_Regroup_the_Army_Armored_Cavalry_Regiment
+	icon = GFX_focus_SOV_restore_cossack_units
+	cost = 5.00
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = UKR_Mobilize_the_Cossacks
+	}
+
+	available = {
+		is_in_faction = yes
+		has_tech = mechanised_infantry
+		has_country_flag = {
+			flag = UKR_Mobilize_the_Cossacks_flag
+			days > 90
+		}
+		custom_trigger_tooltip = {
+			tooltip = UKR_Regroup_the_Army_Armored_Cavalry_Regiment_tt
+			has_country_flag = {
+				flag = UKR_Mobilize_the_Cossacks_flag
+				days > 90
+			}
+		}
+	}
+
+	bypass = {
+
+	}
+
+	relative_position_id = UKR_Mobilize_the_Cossacks
+
+	completion_reward = {
+
+		delete_unit_template_and_units = {
+			division_template = "Motorized Cossacks Brigade"
+			disband = yes
+		}
+
+		division_template = {
+			name = "Mechanized Cossacks Brigade"
+			division_names_group = UKR_MEC_01
+			priority = 0
+			regiments = {
+				mechanized = { x = 0 y = 0 }
+				mechanized = { x = 0 y = 1 }
+				mechanized = { x = 0 y = 2 }
+				mechanized = { x = 1 y = 0 }
+				mechanized = { x = 1 y = 1 }
+				mechanized = { x = 1 y = 2 }
+				mechanized = { x = 1 y = 3 }
+				mechanized = { x = 2 y = 0 }
+				mot_artillery_brigade = { x = 2 y = 1 }
+				mot_artillery_brigade = { x = 2 y = 2 }
+				medium_armor = { x = 3 y = 0 }
+			}
+
+			support = { 
+				engineer = { x = 0 y = 0 }
+				mot_recon = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+				anti_tank = { x = 0 y = 3 }
+			}
+
+		}
+
+		capital_scope = {
+			create_unit = {
+				division = "division_template = \"Mechanized Cossacks Brigade\" start_experience_factor = 0.5 start_equipment_factor = 1.0" owner = UKR count = 2
+			}
+		}
+
+	}
+
+	ai_will_do = {
+		factor = 2000
+	}
+
+}
+
+shared_focus = {
 	id = UKR_Eastern_Ukrainian_Doctrine
 	icon = GFX_goal_generic_cavalry
 	cost = 5.00
@@ -77,7 +251,7 @@ shared_focus = {
 	}
 
 	available = {
-		NOT = { has_completed_focus = UKR_Western_Ukrainian_Doctrine }
+		
 	}
 
 	bypass = {
@@ -88,7 +262,8 @@ shared_focus = {
 
 	completion_reward = {
 
-		add_ideas = UKR_Eastern_Ukrainian_Doctrine_1_idea
+		add_to_variable = { HOF_UKR_army_dynamic_army_speed_factor = 0.05 }
+		custom_effect_tooltip = UKR_Eastern_Ukrainian_Doctrine_tt
 
 		add_tech_bonus = {
 			name = UKR_Eastern_Ukrainian_Doctrine
@@ -109,9 +284,9 @@ shared_focus = {
 
 shared_focus = {
 	id = UKR_Flexible_tactical_organization
-	icon = GFX_focus_SOV_restore_cossack_units
+	icon = GFX_focus_POL_ukrainian_army
 	cost = 5.00
-	x = -1
+	x = -2
 	y = 1
 
 	prerequisite = {
@@ -129,10 +304,9 @@ shared_focus = {
 	relative_position_id = UKR_Eastern_Ukrainian_Doctrine
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = UKR_Eastern_Ukrainian_Doctrine_1_idea
-			add_idea = UKR_Eastern_Ukrainian_Doctrine_2_idea
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_planning_speed = 0.20 }
+		add_to_variable = { HOF_UKR_army_dynamic_army_morale_factor = 0.10 }
+		custom_effect_tooltip = UKR_Flexible_tactical_organization_tt
 	}
 
 }
@@ -141,7 +315,7 @@ shared_focus = {
 	id = UKR_besiege_and_annihilate
 	icon = GFX_focus_offensive_army
 	cost = 5.00
-	x = 0
+	x = 1
 	y = 1
 
 	prerequisite = {
@@ -162,10 +336,10 @@ shared_focus = {
 
 		army_experience = 10
 
-		swap_ideas = {
-			remove_idea = UKR_Eastern_Ukrainian_Doctrine_2_idea
-			add_idea = UKR_Eastern_Ukrainian_Doctrine_3_idea
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_army_speed_factor = 0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_army_armor_attack_factor = 0.10 }
+		add_to_variable = { HOF_UKR_army_dynamic_motorized_attack_factor = 0.10 }
+		custom_effect_tooltip = UKR_besiege_and_annihilate_tt
 
 		add_doctrine_cost_reduction = {
 			name = UKR_besiege_and_annihilate
@@ -182,7 +356,7 @@ shared_focus = {
 	id = UKR_modern_cavalry
 	icon = GFX_goal_generic_army_motorized
 	cost = 5.00
-	x = 1
+	x = 0
 	y = 1
 
 	prerequisite = {
@@ -218,7 +392,7 @@ shared_focus = {
 	id = UKR_dismantling_soviet_tanks
 	icon = GFX_focus_generic_heavy_armour_russian
 	cost = 5.00
-	x = 0
+	x = 1
 	y = 1
 
 	prerequisite = {
@@ -236,7 +410,24 @@ shared_focus = {
 	relative_position_id = UKR_modern_cavalry
 
 	completion_reward = {
-
+		create_equipment_variant = {
+			name = "Panz III Kyiv"
+			type = medium_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_small_cannon_2
+				turret_type_slot = tank_medium_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_diesel_engine
+				special_type_slot_1 = sloped_armor
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 8
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "GFX_SOV_basic_medium_tank_medium"
+		}
 		add_tech_bonus = {
 			name = UKR_dismantling_soviet_tanks
 			bonus = 1.0
@@ -276,7 +467,9 @@ shared_focus = {
 
 	completion_reward = {
 
-		add_ideas = UKR_air_ground_co_operation_idea
+		add_to_variable = { HOF_UKR_army_dynamic_recon_factor = 0.10 }
+		add_to_variable = { HOF_UKR_army_dynamic_air_cas_present_factor = 0.10 }
+		custom_effect_tooltip = UKR_air_ground_co_operation_tt
 
 		add_doctrine_cost_reduction = {
 			name = UKR_Create_the_National_Air_Force
@@ -325,10 +518,10 @@ shared_focus = {
 
 		army_experience = 25
 
-		swap_ideas = {
-			remove_idea = UKR_Eastern_Ukrainian_Doctrine_3_idea
-			add_idea = UKR_Eastern_Ukrainian_Doctrine_4_idea
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_army_armor_defence_factor = 0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_mechanized_attack_factor = 0.10 }
+		add_to_variable = { HOF_UKR_army_dynamic_mechanized_defence_factor = 0.10 }
+		custom_effect_tooltip = UKR_Armored_Cossack_tt
 
 		add_tech_bonus = {
 			name = UKR_Armored_Cossack
@@ -585,7 +778,194 @@ shared_focus = {
 	}
 
 }
+shared_focus = {
+	id = UKR_Mobilization_of_the_militia
+	icon = GFX_focus_generic_little_entente
+	cost = 5.00
+	x = 2
+	y = 1
 
+	prerequisite = {
+		focus = UKR_modernization_of_the_armed_forces
+	}
+
+	available = {
+		surrender_progress > 0.05
+	}
+
+	bypass = {
+
+	}
+
+	relative_position_id = UKR_modernization_of_the_armed_forces
+
+	completion_reward = {
+
+		set_country_flag = UKR_Mobilization_of_the_militia_flag
+
+		division_template = {
+			name = "National Defense Brigade"
+			division_names_group = UKR_GAR_01
+			template_counter = 68
+			is_locked = yes
+			force_allow_recruiting = yes
+			priority = 0
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				irregular_infantry = { x = 1 y = 1 }
+				irregular_infantry = { x = 1 y = 2 }
+			}
+		}
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = UKR
+				is_fully_controlled_by = ROOT
+			}
+			prioritize = {  } #
+			create_unit = {
+				division = "division_template = \"National Defense Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 2
+			}
+			create_unit = {
+				division = "division_template = \"National Defense Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 1
+			}
+		}
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = UKR
+				is_fully_controlled_by = ROOT
+			}
+			prioritize = {  } #
+			create_unit = {
+				division = "division_template = \"National Defense Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 2
+			}
+			create_unit = {
+				division = "division_template = \"National Defense Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 1
+			}
+		}
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = UKR
+				is_fully_controlled_by = ROOT
+			}
+			prioritize = {  } #
+			create_unit = {
+				division = "division_template = \"National Defense Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 2
+			}
+			create_unit = {
+				division = "division_template = \"National Defense Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = ROOT
+				count = 2
+			}
+		}
+
+	}
+
+	ai_will_do = {
+		factor = 2000
+	}
+
+}
+
+shared_focus = {
+	id = UKR_Modernized_militia_forces
+	icon = GFX_focus_generic_infiltration
+	cost = 5.00
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = UKR_Mobilization_of_the_militia
+	}
+
+	available = {
+		is_in_faction = yes
+		has_country_flag = {
+			flag = UKR_Mobilization_of_the_militia_flag
+			days > 90
+		}
+		custom_trigger_tooltip = {
+			tooltip = UKR_Modernized_militia_forces_tt
+			has_country_flag = {
+				flag = UKR_Mobilization_of_the_militia_flag
+				days > 90
+			}
+		}
+	}
+
+	bypass = {
+
+	}
+
+	relative_position_id = UKR_Mobilization_of_the_militia
+
+	completion_reward = {
+
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_militia_defence_factor = 0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05 }
+
+		custom_effect_tooltip = UKR_Modernized_militia_forces_3_tt
+
+		add_equipment_to_stockpile = { 
+			type = infantry_equipment
+			amount = 4000
+			producer = ROOT
+		}
+		add_equipment_to_stockpile = { 
+			type = support_equipment
+			amount = 500
+			producer = ROOT
+		}
+
+		custom_effect_tooltip = UKR_Modernized_militia_forces_2_tt
+
+		hidden_effect = {
+			add_units_to_division_template = {
+				template_name = "National Defense Brigade"
+
+				regiments = {
+					militia = 0
+					militia = 1
+					irregular_infantry = 0
+					artillery_brigade = 0
+				}
+
+				support = {
+					engineer = 0
+					recon = 0
+					artillery = 0
+				}
+			}
+		}
+
+		capital_scope = {
+			create_unit = {
+				division = "division_template = \"National Defense Brigade\" start_experience_factor = 0.1 start_equipment_factor = 1.0" owner = UKR count = 3
+			}
+		}
+
+	}
+
+	ai_will_do = {
+		factor = 2000
+	}
+
+}
 shared_focus = {
 	id = UKR_Western_Ukrainian_Doctrine
 	icon = GFX_goal_generic_military_sphere
@@ -598,8 +978,6 @@ shared_focus = {
 	}
 
 	available = {
-		NOT = { has_government = communism }
-		NOT = { has_completed_focus = UKR_Eastern_Ukrainian_Doctrine }
 	}
 
 	bypass = {
@@ -609,7 +987,9 @@ shared_focus = {
 	relative_position_id = UKR_modernization_of_the_armed_forces
 
 	completion_reward = {
-		add_ideas = UKR_Western_Ukrainian_Doctrine_1_idea
+		add_to_variable = { HOF_UKR_army_dynamic_max_dig_in = 5 }
+		custom_effect_tooltip = UKR_Western_Ukrainian_Doctrine_tt
+
 
 		add_tech_bonus = {
 			name = UKR_Western_Ukrainian_Doctrine
@@ -642,7 +1022,7 @@ shared_focus = {
 	id = UKR_Standardization_of_firearms
 	icon = GFX_focus_generic_military_equipment
 	cost = 5.00
-	x = -1
+	x = 0
 	y = 1
 
 	prerequisite = {
@@ -689,7 +1069,7 @@ shared_focus = {
 	id = UKR_imitation_soviet_artillery
 	icon = GFX_focus_generic_artillery_factories
 	cost = 5.00
-	x = 0
+	x = -1
 	y = 1
 
 	prerequisite = {
@@ -798,7 +1178,7 @@ shared_focus = {
 	id = UKR_trench_warfare_thinking
 	icon = GFX_goal_generic_defence
 	cost = 5.00
-	x = 1
+	x = 2
 	y = 1
 
 	prerequisite = {
@@ -816,10 +1196,10 @@ shared_focus = {
 	relative_position_id = UKR_Western_Ukrainian_Doctrine
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = UKR_Western_Ukrainian_Doctrine_1_idea
-			add_idea = UKR_Western_Ukrainian_Doctrine_2_idea
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_dig_in_speed_factor = 0.2 }
+		add_to_variable = { HOF_UKR_army_dynamic_army_infantry_defence_factor = 0.10 }
+		custom_effect_tooltip = UKR_trench_warfare_thinking_tt
+
 	}
 
 	ai_will_do = {
@@ -841,7 +1221,7 @@ shared_focus = {
 	id = UKR_Infiltration_Assault
 	icon = GFX_focus_prc_infiltration
 	cost = 5.00
-	x = 0
+	x = -1
 	y = 1
 
 	prerequisite = {
@@ -859,10 +1239,12 @@ shared_focus = {
 	relative_position_id = UKR_trench_warfare_thinking
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = UKR_Western_Ukrainian_Doctrine_2_idea
-			add_idea = UKR_Western_Ukrainian_Doctrine_3_idea
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_max_planning = 0.1 }
+		add_to_variable = { HOF_UKR_army_dynamic_army_infantry_attack_factor = 0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_army_artillery_attack_factor = 0.05 }
+		add_to_variable = { HOF_UKR_army_dynamic_land_night_attack = 0.10 }
+
+		custom_effect_tooltip = UKR_Infiltration_Assault_tt
 	}
 
 	ai_will_do = {
@@ -906,10 +1288,11 @@ shared_focus = {
 	relative_position_id = UKR_imitation_soviet_artillery
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = UKR_Western_Ukrainian_Doctrine_3_idea
-			add_idea = UKR_Western_Ukrainian_Doctrine_4_idea
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_mobilization_speed = 0.2 }
+		add_to_variable = { HOF_UKR_army_dynamic_training_time_factor = 0.1 }
+		add_to_variable = { HOF_UKR_army_dynamic_conscription_factor = 0.1 }
+
+		custom_effect_tooltip = UKR_Sich_tt
 	}
 
 	ai_will_do = {

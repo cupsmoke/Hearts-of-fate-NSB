@@ -201,24 +201,9 @@ shared_focus = {
 	y = 1
 	relative_position_id = UKR_Anarchist_New_Batko
 	completion_reward = {
-		if = {
-			limit = {
-				has_idea = UKR_Black_army_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Black_army_idea
-				add_idea = UKR_Black_army_05_idea
-			}
-		}
-		if = {
-			limit = {
-				has_idea = UKR_Black_army_1_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_Black_army_1_idea
-				add_idea = UKR_Black_army_15_idea
-			}
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_army_org_factor = 0.15 }
+
+		custom_effect_tooltip = UKR_Anarchist_Strengthen_discipline_tt
 	}
 
 }
@@ -1105,7 +1090,7 @@ shared_focus = {
 	completion_reward = {
 		UKR_Splitted_Country_Level_down = yes
 		UKR_Talulah_Artorius = {
-			add_country_leader_trait = Savior_of_People 
+			add_trait = { trait = Savior_of_People }
 		}
 	}
 

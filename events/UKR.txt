@@ -165,10 +165,7 @@ country_event = { # OUN停止活动
 
 	option = {
 		name = more_ukraine_dlc.7.a
-		swap_ideas = {
-			remove_idea = UKR_OUN_subversion_POL
-			add_idea = UKR_OUN_subversion_POL_2
-		}
+
 	}
 }
 
@@ -1084,20 +1081,18 @@ country_event = {
 
 		add_political_power = 150
 
-		#swap_ideas = {
-			#remove_idea = UKR_Developed_agriculture_idea
-			#add_idea = UKR_Promote_industrialization_idea
-		#}
+		set_country_flag = UKR_NOT_communism_independence_flag
 
-		if = {
-			limit = {
-				has_idea = UKR_independent_Army_idea
-			}
-			swap_ideas = {
-				remove_idea = UKR_independent_Army_idea
-				add_idea = UKR_independent_Army_1_idea
-			}
-		}
+		add_to_variable = { HOF_UKR_army_dynamic_army_org_factor = 0.1 }
+		add_to_variable = { HOF_UKR_army_dynamic_max_planning = 0.1 }
+
+		add_to_variable = { HOF_UKR_army_dynamic_democratic_drift = -0.03 }
+		add_to_variable = { HOF_UKR_army_dynamic_communism_drift = -0.03 }
+		add_to_variable = { HOF_UKR_army_dynamic_fascism_drift = -0.03 }
+		add_to_variable = { HOF_UKR_army_dynamic_neutrality_drift = -0.03 }
+
+		add_to_variable = { HOF_UKR_army_dynamic_surrender_limit = 0.1 }
+		custom_effect_tooltip = NOT_communism_independence_tt
 
 		if = { 
 			limit = {

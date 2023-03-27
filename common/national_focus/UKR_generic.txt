@@ -708,7 +708,7 @@ shared_focus  = {
 }
 shared_focus  = {
 	id = UKR_generic_air_war_game
-	icon = GFX_focus_agrarian_soldiers
+	icon = GFX_goal_generic_air_doctrine
 	cost = 6.00
 	prerequisite = {
 		focus = UKR_generic_Kharkiv_aviation_plant

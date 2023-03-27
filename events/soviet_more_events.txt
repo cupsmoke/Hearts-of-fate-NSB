@@ -2237,10 +2237,15 @@ country_event = {     #乌克兰叛乱
 			}
 		}
 
-    UKR = {
-      add_ideas = UKR_German_consultant_idea
-      add_ideas = UKR_independent_Army_idea
-    }
+		UKR = {
+			add_ideas = UKR_German_consultant_idea
+		}
+
+		hidden_effect = {
+			UKR = {
+				add_dynamic_modifier = { modifier = HOF_UKR_army_dynamic_modifier }
+			}
+		}
 
 	    # 忠诚步骑
 		division_template = {
