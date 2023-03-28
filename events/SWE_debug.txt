@@ -231,7 +231,7 @@ country_event = {
 	id = swe_mot.14
 	title = swe_mot.14.t
 	desc = swe_mot.14.d
-	picture = GFX_report_event_generic_Luviagelita_Edelfelt
+	picture = GFX_report_event_generic_luviagelita_edelfelt
 
 	is_triggered_only = yes
 	

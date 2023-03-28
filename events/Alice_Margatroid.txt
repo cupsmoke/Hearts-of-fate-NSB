@@ -1,42 +1,44 @@
 ###########################
 # Alice Margatroid Events
 ###########################
-
 add_namespace = alice_event
-
 country_event = {
 	id = alice_event.1
 	title = alice_event.1.t
 	desc = alice_event.1.d
 	picture = GFX_report_event_touhou_alice_has_reply
-	
 	is_triggered_only = yes
 	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 1
 	}
-	
-	option = {	
+	option = {
 		name = alice_event.1.a
-		ai_chance = { base = 10 }
-    country_event = { id = alice_event.2  hours = 3 }
-
+		ai_chance = {
+			base = 10
+		}
+		country_event = {
+			id = alice_event.2
+			hours = 3
+		}
 	}
 }
-
 
 country_event = {
 	id = alice_event.2
 	title = alice_event.2.t
 	desc = alice_event.2.d
 	picture = GFX_report_event_generic_darnic_22
-	
 	is_triggered_only = yes
-	
-	option = {	
+	option = {
 		name = alice_event.2.a
-		ai_chance = { base = 10 }
-    country_event = { id = alice_event.3  days = 3 }
+		ai_chance = {
+			base = 10
+		}
+		country_event = {
+			id = alice_event.3
+			days = 3
+		}
 	}
 }
 
@@ -45,18 +47,23 @@ country_event = {
 	title = alice_event.3.t
 	desc = alice_event.3.d
 	picture = GFX_report_event_touhou_alice_has_reply
-	
 	is_triggered_only = yes
-	
-	option = {	
+	option = {
 		name = alice_event.3.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		set_global_flag = rom_alice_invited
 		custom_effect_tooltip = available_theorist
 		show_ideas_tooltip = alice_margatroid
-		add_ideas = { ROM_Homunculus_workshop }
+		add_ideas = {
+			ROM_Homunculus_workshop
+		}
 		hidden_effect = {
-			country_event = { id = alice_event.5  days = 24 }
+			country_event = {
+				id = alice_event.5
+				days = 24
+			}
 			set_variable = {
 				var = ROM_Alice_power
 				value = 0
@@ -70,65 +77,76 @@ country_event = {
 	title = alice_event.4.t
 	desc = alice_event.4.d
 	picture = GFX_report_event_touhou_alice_need_reply
-	
 	trigger = {
 		original_tag = ROM
-    has_civil_war = no
-    date > 1936.6.1
-    has_global_flag = rom_alice_invited
-    NOT = { has_global_flag = ger_alice_invited }
-	}	
-    fire_only_once = yes
-
+		has_civil_war = no
+		date > 1936.6.1
+		has_global_flag = rom_alice_invited
+		NOT = {
+			has_global_flag = ger_alice_invited
+		}
+	}
+	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 1
 	}
-	
-	option = {	
+	option = {
 		name = alice_event.4.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		add_political_power = 5
 	}
 }
-
 
 country_event = {
 	id = alice_event.5
 	title = alice_event.5.t
 	desc = alice_event.5.d
 	picture = GFX_report_event_generic_darnic_germany
-	
 	is_triggered_only = yes
-	
 	fire_only_once = yes
-	
 	mean_time_to_happen = {
 		days = 1
 	}
-	
-	option = {	 ### Organize Engineering Station
+	option = {
+		### Organize Engineering Station
 		name = alice_event.5.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		hidden_effect = {
-			country_event = { id = alice_event.6  days = 7 }
+			country_event = {
+				id = alice_event.6
+				days = 7
+			}
 			add_to_variable = {
 				var = ROM_Alice_power
 				value = 1
 			}
 		}
 		add_political_power = -50
-		add_ideas = { ROM_Bucharest_Engineering_Station }
-
+		add_ideas = {
+			ROM_Bucharest_Engineering_Station
+		}
 	}
-	option = {	# Better no
+	option = {
+		# Better no
 		name = alice_event.5.b
 		trigger = {
-			NOT = { has_country_flag = ROM_Alice_Margatroid_Coup_happened }
+			NOT = {
+				has_country_flag = ROM_Alice_Margatroid_Coup_happened
+			}
 		}
-		ai_chance = { base = 0 }
+		ai_chance = {
+			base = 0
+		}
 		add_political_power = 5
 		hidden_effect = {
-			country_event = { id = alice_event.6  days = 7 }
+			country_event = {
+				id = alice_event.6
+				days = 7
+			}
 		}
 	}
 }
@@ -137,25 +155,29 @@ country_event = {
 	id = alice_event.6
 	title = alice_event.6.t
 	desc = alice_event.6.d
-	picture = GFX_report_event_generic_Einzbern
-	
+	picture = GFX_report_event_generic_einzbern
 	is_triggered_only = yes
-	
-	option = {	### Integral Arms Factory
+	option = {
+		### Integral Arms Factory
 		name = alice_event.6.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		hidden_effect = {
 			if = {
-				limit = { has_idea = ROM_Bucharest_Engineering_Station }
-				country_event = { id = alice_event.7  days = 27 }
+				limit = {
+					has_idea = ROM_Bucharest_Engineering_Station
+				}
+				country_event = {
+					id = alice_event.7
+					days = 27
+				}
 			}
-			
 			add_to_variable = {
 				var = ROM_Alice_power
 				value = 1
 			}
 		}
-		
 		add_political_power = -25
 		add_offsite_building = {
 			type = arms_factory
@@ -164,41 +186,51 @@ country_event = {
 	}
 	option = {
 		name = alice_event.6.b
-		ai_chance = { base = 3 }
+		ai_chance = {
+			base = 3
+		}
 		add_political_power = 5
 		trigger = {
-			NOT = { has_country_flag = ROM_Alice_Margatroid_Coup_happened }
+			NOT = {
+				has_country_flag = ROM_Alice_Margatroid_Coup_happened
+			}
 		}
 		hidden_effect = {
 			if = {
-				limit = { has_idea = ROM_Bucharest_Engineering_Station }
-				country_event = { id = alice_event.7  days = 27 }
+				limit = {
+					has_idea = ROM_Bucharest_Engineering_Station
+				}
+				country_event = {
+					id = alice_event.7
+					days = 27
+				}
 			}
 		}
 	}
 }
 
-
 country_event = {
 	id = alice_event.7
 	title = alice_event.7.t
 	desc = alice_event.7.d
-	picture = GFX_report_event_generic_Einzbern
-	
+	picture = GFX_report_event_generic_einzbern
 	is_triggered_only = yes
-	
-	option = {	### Integrate Logistic System
+	option = {
+		### Integrate Logistic System
 		name = alice_event.7.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		hidden_effect = {
-			country_event = { id = alice_event.8  days = 50 }
-
+			country_event = {
+				id = alice_event.8
+				days = 50
+			}
 			add_to_variable = {
 				var = ROM_Alice_power
 				value = 1
 			}
 		}
-		
 		add_political_power = -25
 		swap_ideas = {
 			remove_idea = ROM_Bucharest_Engineering_Station
@@ -207,31 +239,41 @@ country_event = {
 	}
 	option = {
 		name = alice_event.7.b
-		ai_chance = { base = 3 }
+		ai_chance = {
+			base = 3
+		}
 		add_political_power = 5
 		trigger = {
-			NOT = { has_country_flag = ROM_Alice_Margatroid_Coup_happened }
+			NOT = {
+				has_country_flag = ROM_Alice_Margatroid_Coup_happened
+			}
 		}
 		hidden_effect = {
-			country_event = { id = alice_event.8  days = 50 }
+			country_event = {
+				id = alice_event.8
+				days = 50
+			}
 		}
 	}
 }
-
 
 country_event = {
 	id = alice_event.8
 	title = alice_event.8.t
 	desc = alice_event.8.d
 	picture = GFX_report_event_touhou_alice_do
-	
 	is_triggered_only = yes
-	
-	option = {	### Integrate Electricity System
+	option = {
+		### Integrate Electricity System
 		name = alice_event.8.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		hidden_effect = {
-			country_event = { id = alice_event.9  days = 45 }
+			country_event = {
+				id = alice_event.9
+				days = 45
+			}
 			add_to_variable = {
 				var = ROM_Alice_power
 				value = 1
@@ -264,32 +306,36 @@ country_event = {
 	}
 	option = {
 		name = alice_event.8.b
-		ai_chance = { base = 3 }
+		ai_chance = {
+			base = 3
+		}
 		trigger = {
-			NOT = { has_country_flag = ROM_Alice_Margatroid_Coup_happened }
+			NOT = {
+				has_country_flag = ROM_Alice_Margatroid_Coup_happened
+			}
 		}
 		add_political_power = 5
 	}
-	
 }
 
 country_event = {
 	id = alice_event.9
 	title = alice_event.9.t
 	desc = alice_event.9.d
-	picture = GFX_report_event_generic_Homunculus
-	
+	picture = GFX_report_event_generic_homunculus
 	is_triggered_only = yes
-	
-	option = {	### Integrate Armor Research Department
+	option = {
+		### Integrate Armor Research Department
 		name = alice_event.9.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		hidden_effect = {
 			add_to_variable = {
 				var = ROM_Alice_power
 				value = 1
 			}
-		} 
+		}
 		add_political_power = -2
 		if = {
 			limit = {
@@ -328,13 +374,16 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = alice_event.9.b
-		ai_chance = { base = 3 }
+		ai_chance = {
+			base = 3
+		}
 		add_political_power = 5
 		trigger = {
-			NOT = { has_country_flag = ROM_Alice_Margatroid_Coup_happened }
+			NOT = {
+				has_country_flag = ROM_Alice_Margatroid_Coup_happened
+			}
 		}
 	}
 }
@@ -350,21 +399,28 @@ country_event = {
 		ROM_darnic_prestone_yggdmillennia = {
 			is_country_leader = yes
 		}
-		check_variable = { ROM_Alice_power > 3 }
+		check_variable = {
+			ROM_Alice_power > 3
+		}
 	}
 	mean_time_to_happen = {
 		days = 75
 	}
-	
-	option = {	
+	option = {
 		name = alice_event.10.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		#hidden_effect = {
 		#	set_country_flag = ger_einzbern_revealed
 		#} 
 		retire_country_leader = yes
 		if = {
-			limit = { NOT = { has_government = neutrality } }
+			limit = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
 			set_politics = {
 				ruling_party = neutrality
 				last_election = "1933.12.20"
@@ -379,15 +435,20 @@ country_event = {
 			character = "ROM_alice_margatroid"
 			country_leader = {
 				ideology = stratocracy
-				traits = { Puppeteer_of_Bucharest }
+				traits = {
+					Puppeteer_of_Bucharest
+				}
 				expire = "1965.1.1"
 				id = 5666
 			}
-			promote_leader = yes 
+			promote_leader = yes
 		}
-    	add_stability = -0.05
+		add_stability = -0.05
 		hidden_effect = {
-			news_event = { id = more_News.86  hours = 20 }
+			news_event = {
+				id = more_News.86
+				hours = 20
+			}
 		}
 	}
 }
@@ -397,12 +458,13 @@ country_event = {
 	title = alice_event.11.t
 	desc = alice_event.11.d
 	picture = GFX_report_event_touhou_alice_has_reply
-	
 	is_triggered_only = yes
-	
-	option = {	 ### The Judgement
+	option = {
+		### The Judgement
 		name = alice_event.11.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		retire_character = ROM_ion_antonescu
 		retire_character = ROM_ion_mota
 		retire_character = ROM_vasile_marin
@@ -411,7 +473,6 @@ country_event = {
 			ideology = fascism
 			popularity = -0.15
 		}
-		
 	}
 }
 
@@ -420,14 +481,14 @@ country_event = {
 	title = alice_event.12.t
 	desc = alice_event.12.d
 	picture = GFX_report_event_touhou_alice_has_reply
-	
 	is_triggered_only = yes
-	
-	option = {	
+	option = {
 		name = alice_event.12.a
-		ai_chance = { base = 10 }
-    add_political_power = -10
-    add_stability = -0.01
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -10
+		add_stability = -0.01
 	}
 }
 
@@ -436,32 +497,35 @@ country_event = {
 	title = alice_event.13.t
 	desc = alice_event.13.d
 	picture = GFX_report_event_touhou_alice_do_win
-	
 	trigger = {
 		tag = ROM
-    has_civil_war = no
-    is_subject = no
-    date > 1937.4.1
-    OR = {
-		has_government = fascism
-		has_government = communism
-    }
-    
-    has_global_flag = rom_alice_invited
-    NOT = { has_country_flag = ger_alice_detained }
-    NOT = { has_global_flag = alice_run_away }
-	}	
+		has_civil_war = no
+		is_subject = no
+		date > 1937.4.1
+		OR = {
+			has_government = fascism
+			has_government = communism
+		}
+		has_global_flag = rom_alice_invited
+		NOT = {
+			has_country_flag = ger_alice_detained
+		}
+		NOT = {
+			has_global_flag = alice_run_away
+		}
+	}
 	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 30
 	}
-	
-	option = {	
+	option = {
 		name = alice_event.13.a
-		ai_chance = { base = 10 }
+		ai_chance = {
+			base = 10
+		}
 		hidden_effect = {
 			set_global_flag = alice_run_away
 		}
-    	add_stability = -0.025
+		add_stability = -0.025
 	}
 }

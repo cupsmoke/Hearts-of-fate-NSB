@@ -958,7 +958,7 @@ country_event = {    # UFO Table Evasion
 	id = trs_japan.21
 	title = trs_japan.21.t
 	desc = trs_japan.21.d
-	picture = GFX_report_event_UFO_table_report
+	picture = GFX_report_event_ufo_table_report
 
 	trigger = {
 		TAG = JAP

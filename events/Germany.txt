@@ -533,7 +533,7 @@ country_event = {
 	id = germany.529
 	title = germany.529.t
 	desc = germany.529.d
-    picture = GFX_report_event_generic_nero
+	picture = GFX_report_event_generic_nero
 	fire_only_once = no
 	is_triggered_only = yes
 
@@ -587,7 +587,7 @@ country_event = {
 	id = germany.531
 	title = germany.531.t
 	desc = germany.531.d
-    picture = GFX_report_event_generic_nero
+	picture = GFX_report_event_generic_nero
 	fire_only_once = no
 	is_triggered_only = yes
 
@@ -607,7 +607,7 @@ country_event = {
 	id = germany.532
 	title = germany.532.t
 	desc = germany.532.d
-    picture = GFX_report_event_generic_nero
+	picture = GFX_report_event_generic_nero
 	fire_only_once = no
 	is_triggered_only = yes
 

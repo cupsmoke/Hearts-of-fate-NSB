@@ -477,7 +477,7 @@ country_event = {
 	id = france.29
 	title = france.29.t
 	desc = france.29.d
-	picture = GFX_report_event_agree_allies
+	picture = GFX_report_event_pact_agree_allies
 
 	is_triggered_only	= yes
 
@@ -491,7 +491,7 @@ country_event = {
 	id = france.30
 	title = france.30.t
 	desc = france.30.d
-	picture = GFX_report_event_refuse_allies
+	picture = GFX_report_event_pact_refuse_allies
 
 	is_triggered_only	= yes
 
@@ -1333,7 +1333,7 @@ country_event = { #黑色雨月
 	id = france.91
 	title = france.91.t
 	desc = france.91.d
-	picture = GFX_report_event_generic_black_Pluviose
+	picture = GFX_report_event_generic_black_pluviose
 	
 	trigger = {
 		tag = FRA
@@ -1363,7 +1363,7 @@ country_event = { #黑色雨月的影响
 	id = france.92
 	title = france.92.t
 	desc = france.92.d
-	picture = GFX_report_event_generic_black_Pluviose
+	picture = GFX_report_event_generic_black_pluviose
 	
 	is_triggered_only = yes
 	
@@ -1419,7 +1419,7 @@ country_event = { #军队恢复秩序
 	id = france.915
 	title = france.915.t
 	desc = france.915.d
-	picture = GFX_report_event_generic_jeanne_dArc
+	picture = GFX_report_event_generic_jeanne_darc
 	
 	fire_only_once = yes
 	
@@ -1953,7 +1953,7 @@ country_event = { #巴黎会议
 	id = france.181
 	title = france.181.t
 	desc = france.181.d
-	picture = GFX_report_event_agree_allies
+	picture = GFX_report_event_pact_agree_allies
 	
 	is_triggered_only = yes
 	
