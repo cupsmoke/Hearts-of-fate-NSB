@@ -1,6 +1,81 @@
 ideas = {
 	country = {
 
+		SOV_politicized_military = {
+
+			picture = generic_reserve_divisions
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				original_tag = SOV #Every SOV has this
+				has_government = communism # Not if exiles, right?
+			}
+
+			modifier = {
+				command_abilities_cost_factor = 0.1
+				land_doctrine_cost_factor = 0.2
+				naval_doctrine_cost_factor = 0.2
+				air_doctrine_cost_factor = 0.2
+
+				drift_defence_factor = 0.1
+				army_core_defence_factor = 0.03
+			}
+		}
+
+		SOV_politicized_military_keep = {
+			name = SOV_politicized_military
+
+			picture = generic_reserve_divisions
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			modifier = {
+				command_abilities_cost_factor = 0.1
+				land_doctrine_cost_factor = 0.2
+				naval_doctrine_cost_factor = 0.2
+				air_doctrine_cost_factor = 0.2
+
+				drift_defence_factor = 0.15
+				army_core_defence_factor = 0.03
+				army_core_attack_factor = 0.03
+				max_command_power = 50
+
+				army_org_factor = 0.05
+				army_morale_factor = -0.1
+			}
+		}
+
+		SOV_politicized_military_swap = {
+
+			picture = generic_reserve_divisions
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			modifier = {
+				land_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.1
+
+				drift_defence_factor = 0.1
+				army_core_defence_factor = 0.03
+				command_power_gain_mult = 0.1
+
+				army_morale_factor = 0.1
+			}
+		}
+
 		SOV_the_rush_for_berlin = {
 
 			picture = SPR_anti_fascist_crusade
@@ -640,58 +715,6 @@ ideas = {
 			}
 		}	
 
-		SOV_defense_industry_1_idea = {
-
-			name = SOV_defense_industry_idea
-
-			allowed = {
-				original_tag = SOV
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			removal_cost = -1
-
-			picture = man_five_year_plan_tank
-
-			modifier = {
-				conversion_cost_civ_to_mil_factor = -0.2
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor -0.05
-			}
-		}
-
-		SOV_defense_industry_2_idea = {
-
-			name = SOV_defense_industry_idea
-
-			allowed = {
-				original_tag = SOV
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			removal_cost = -1
-
-			picture = man_five_year_plan_tank
-
-			modifier = {
-				conversion_cost_civ_to_mil_factor = -0.2
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor -0.05
-
-				production_speed_coastal_bunker_factor = 0.05
-				production_speed_bunker_factor = 0.05
-				max_dig_in_factor = 0.05
-			}
-		}	
-
 		SOV_Update_Assault_Gear_idea = {
 
 			allowed = {
@@ -749,50 +772,6 @@ ideas = {
 			}
 		}
 
-		SOV_Simplify_production_1_idea = {
-
-			available = {
-				has_war = yes
-			}
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = generic_artillery_regiments
-
-			equipment_bonus = {
-
-				infantry_equipment = {
-					build_cost_ic = -0.10 
-					reliability = -0.05
-					instant = yes 
-
-				}
-
-				support_equipment = {
-					build_cost_ic = -0.10
-					reliability = -0.05
-					instant = yes
-				}
-
-				motorized_equipment = {
-					build_cost_ic = -0.10
-					reliability = -0.05
-
-					instant = yes 
-				}
-
-		    }
-
-		}
-
 		SOV_Simplify_production_4_idea = {
 
 			available = {
@@ -809,7 +788,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = generic_artillery_regiments
+			picture = man_five_year_plan_tank
 
 			equipment_bonus = {
 
@@ -853,30 +832,6 @@ ideas = {
 					instant = yes
 				}
 
-		    }
-
-		}
-
-		SOV_Simplify_production_2_idea = {
-
-			available = {
-				has_war = yes
-			}
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-
-			equipment_bonus = {
-
 				armor = {
 					build_cost_ic = -0.15 
 					reliability = -0.1
@@ -908,23 +863,142 @@ ideas = {
 
 			equipment_bonus = {
 
-				fighter_equipment = {				
+				infantry_equipment = {
+					build_cost_ic = -0.10 
+					reliability = -0.05
+					instant = yes 
+
+				}
+
+				support_equipment = {
+					build_cost_ic = -0.10
+					reliability = -0.05
+					instant = yes
+				}
+
+				motorized_equipment = {
+					build_cost_ic = -0.10
+					reliability = -0.05
+
+					instant = yes 
+				}
+
+				artillery_equipment = {
+					build_cost_ic = -0.10 
+					reliability = -0.05
+					instant = yes 
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = -0.10 
+					reliability = -0.05
+
+					instant = yes
+				}
+
+				anti_tank_equipment = {
+					build_cost_ic = -0.10 
+					reliability = -0.05
+
+					instant = yes
+				}
+
+				armor = {
 					build_cost_ic = -0.15 
 					reliability = -0.1
 
 					instant = yes 
 				}
 
-				CAS_equipment = {
+				small_plane_airframe = {				
 					build_cost_ic = -0.15 
 					reliability = -0.1
 
 					instant = yes 
 				}
 
-				tac_bomber_equipment = {				
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.15 
+					reliability = -0.1
+
+					instant = yes 
+				}
+
+				medium_plane_airframe = {				
 					build_cost_ic = -0.1
 					reliability = -0.05
+
+					instant = yes 
+				}
+
+		    }
+
+		}
+
+		SOV_Armor_quality_declines_idea = {
+
+			available = {
+				has_war = yes
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_tank
+
+			equipment_bonus = {
+
+				armor = {
+					armor_value = -0.15
+
+					instant = yes 
+				}
+
+		    }
+
+		}
+
+		SOV_plane_losing_mass_idea = {
+
+			available = {
+				has_war = yes
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_air
+
+			equipment_bonus = {
+
+				small_plane_airframe = {				
+                    air_defence = -0.15
+
+					instant = yes 
+				}
+
+				small_plane_cas_airframe = {
+                    air_defence = -0.15
+
+					instant = yes 
+				}
+
+				medium_plane_airframe = {				
+                    air_defence = -0.15
 
 					instant = yes 
 				}
@@ -1174,6 +1248,7 @@ ideas = {
 				intelligence_agency_defense = 0.2
 				enemy_operative_capture_chance_factor = 0.2
 				subversive_activites_upkeep = -0.2
+				operative_slot = 1
 			}
 		}
 
@@ -1194,6 +1269,7 @@ ideas = {
 				enemy_operative_capture_chance_factor = 0.2
 				subversive_activites_upkeep = -0.2
 				resistance_damage_to_garrison = -0.20	
+				operative_slot = 1
 			}
 		}
 
@@ -1215,7 +1291,7 @@ ideas = {
 				enemy_operative_capture_chance_factor = 0.2
 				subversive_activites_upkeep = -0.2
 				land_reinforce_rate = 0.05
-				operative_slot = 1
+				operative_slot = 2
 			}
 		}
 
@@ -1238,6 +1314,10 @@ ideas = {
 				enemy_operative_capture_chance_factor = 0.3
 				subversive_activites_upkeep = -0.3
 				resistance_damage_to_garrison = -0.30	
+				operative_slot = 1
+
+				modifier_army_sub_unit_military_police_defence_factor = 0.1
+				modifier_army_sub_unit_military_police_max_org_factor = 0.1
 			}
 		}
 
@@ -1260,8 +1340,11 @@ ideas = {
 				enemy_operative_capture_chance_factor = 0.3
 				subversive_activites_upkeep = -0.3
 				resistance_damage_to_garrison = -0.30
-				land_reinforce_rate = 0.1
-				operative_slot = 1
+				land_reinforce_rate = 0.05
+				operative_slot = 2
+
+				modifier_army_sub_unit_military_police_defence_factor = 0.2
+				modifier_army_sub_unit_military_police_max_org_factor = 0.2
 			}
 		}
 
@@ -1283,7 +1366,7 @@ ideas = {
 				enemy_operative_capture_chance_factor = 0.1
 				subversive_activites_upkeep = -0.1
 				land_reinforce_rate = 0.03
-				operative_slot = 1
+				operative_slot = 2
 			}
 		}
 

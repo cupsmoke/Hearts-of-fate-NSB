@@ -120,86 +120,84 @@
  RUS_armored_car_at_equipment:0 "Kolyesnaya SUGZkhodnaya Pushka NAZ-76"
  RUS_armored_car_at_equipment_short:0 "KSP-76"
 
- RUS_CAS_equipment_1:0 "Grushin Shturmovik mod.1" #Sh-Tandem
- RUS_CAS_equipment_1_short:0 "Sh-1"
- RUS_cv_CAS_equipment_1:0 "Sukhoy Blizhniy Bombardirovshchik mod.1P" #Su-2P
- RUS_cv_CAS_equipment_1_short:0 "BB-1P"
- RUS_CAS_equipment_2:0 "Ilyushin Bronirovanny Shturmovik mod.2" #Initially Su-2, changed to Il-2
- RUS_CAS_equipment_2_short:0 "BSh-2"
- RUS_cv_CAS_equipment_2:0 "Kocherigin Bronirovanny Shturmovik mod.5P" #OPB-5P
- RUS_cv_CAS_equipment_2_short:0 "BSh-5P"
- RUS_CAS_equipment_3:0 "Sukhoy Bronirovanny Shturmovik mod.6" #Su-6
- RUS_CAS_equipment_3_short:0 "BSh-6"
- RUS_cv_CAS_equipment_3:0 "Severskiy Istrebitel mod.22P" #Sev-47P
- RUS_cv_CAS_equipment_3_short:0 "I-22P"
+ RUS_CAS_equipment_1:0 "Kochyerigin LBSh" #
+ RUS_CAS_equipment_1_short:0 "LBSh"
+ RUS_cv_CAS_equipment_1:0 "Tumansky Palubniy M-88" #
+ RUS_cv_CAS_equipment_1_short:0 "PM-88"
+ RUS_CAS_equipment_2:0 "Ilyushin IL-2 Sturmovik" #
+ RUS_CAS_equipment_2_short:0 "IL-2 Sturmovik"
+ RUS_cv_CAS_equipment_2:0 "Ilyushin Il-2T" #
+ RUS_cv_CAS_equipment_2_short:0 "Il-2T"
+ RUS_CAS_equipment_3:0 "Ilyushin IL-10" #
+ RUS_CAS_equipment_3_short:0 "IL-10"
+ RUS_cv_CAS_equipment_3:0 "Ilyushin IL-10T"
+ RUS_cv_CAS_equipment_3_short:0 "IL-10T"
 
- RUS_fighter_equipment_0:0 "Polikarpov Istrebitel mod.16" #Previously I-5
- RUS_fighter_equipment_0_short:0 "I-16"
- RUS_cv_fighter_equipment_0:0 "Polikarpov Istrebitel mod.16P" #Previously I-15
- RUS_cv_fighter_equipment_0_short:0 "I-16P"
- RUS_fighter_equipment_1:0 "Yatsenko Istrebitel mod.17" #I-28
- RUS_fighter_equipment_1_short:0 "I-17"
- RUS_cv_fighter_equipment_1:0 "Yatsenko Istrebitel mod.17P"
- RUS_cv_fighter_equipment_1_short:0 "I-17P"
- RUS_fighter_equipment_2:0 "Polikarpov Istrebitel mod.18M" #I-185
- RUS_fighter_equipment_2_short:0 "I-18M"
- RUS_cv_fighter_equipment_2:0 "Lavochkin-Gorbunov-Gudkov Istrebitel mod.20P" #LaGG-3P
- RUS_cv_fighter_equipment_2_short:0 "I-20P"
- RUS_fighter_equipment_3:0 "Mikoyan-Gurevich Istrebitel mod.21" #I-210
- RUS_fighter_equipment_3_short:0 "I-21"
- RUS_cv_fighter_equipment_3:0 "Lavochkin Istrebitel mod.23P" #La-7P
- RUS_cv_fighter_equipment_3_short:0 "I-23P"
- RUS_jet_fighter_equipment_1:0 "Mikoyan-Gurevich Istrebitel mod.25R" #MiG-9
- RUS_jet_fighter_equipment_1_short:0 "I-25R" 
- RUS_jet_fighter_equipment_2:0 "Mikoyan-Gurevich Reaktivny Istrebitel mod.2" #MiG-15
- RUS_jet_fighter_equipment_2_short:0 "RI-2"
+ RUS_fighter_equipment_0:0 "Polikarpov I-15"
+ RUS_fighter_equipment_0_short:0 "I-15"
+ RUS_cv_fighter_equipment_0:0 "Polikarpov I-15UD"
+ RUS_cv_fighter_equipment_0_short:0 "I-15UD"
+ RUS_fighter_equipment_1:0 "Polikarpov I-16"
+ RUS_fighter_equipment_1_short:0 "I-16"
+ RUS_cv_fighter_equipment_1:0 "Polikarpov I-153"
+ RUS_cv_fighter_equipment_1_short:0 "I-153"
+ RUS_fighter_equipment_2:0 "Seversky Kartveli SK-47" #P-47
+ RUS_fighter_equipment_2_short:0 "SK-47"
+ RUS_cv_fighter_equipment_2:0 "Seversky Kartveli SK-47T" #P-47
+ RUS_cv_fighter_equipment_2_short:0 "SK-47T"
+ RUS_fighter_equipment_3:0 "Seversky Kartveli SK-47N" #P-47N
+ RUS_fighter_equipment_3_short:0 "SK-47N"
+ RUS_cv_fighter_equipment_3:0 "Seversky Kartveli SK-47NT" #P-47N
+ RUS_cv_fighter_equipment_3_short:0 "SK-47NT"
+ RUS_jet_fighter_equipment_1:0 "Mikoyan-Guerevich MiG-9"
+ RUS_jet_fighter_equipment_1_short:0 "MiG-9"
+ RUS_jet_fighter_equipment_2:0 "Mikoyan-Guerevich MiG-15"
+ RUS_jet_fighter_equipment_2_short:0 "MiG-15"
 
- RUS_nav_bomber_equipment_1:0 "Ilyushin Dalniy Bombardirovshchik mod.3T" #DB-3T
- RUS_nav_bomber_equipment_1_short:0 "DB-3T"
- RUS_cv_nav_bomber_equipment_1:0 "Ilyushin Dalniy Bombardirovshchik mod.3TP" #DB-3P
- RUS_cv_nav_bomber_equipment_1_short:0 "DB-3TP"
- RUS_nav_bomber_equipment_2:0 "Ilyushin Dalniy Bombardirovshchik mod.4T" #Il-4T
- RUS_nav_bomber_equipment_2_short:0 "DB-4T"
- RUS_cv_nav_bomber_equipment_2:0 "Ilyushin Dalniy Bombardirovshchik mod.4TP" #Il-4P
- RUS_cv_nav_bomber_equipment_2_short:0 "DB-4TP"
- RUS_nav_bomber_equipment_3:0 "Ilyushin Dalniy Bombardirovshchik-Torpedonosets mod.1" #Il-6T
- RUS_nav_bomber_equipment_3_short:0 "DBT-1"
- RUS_cv_nav_bomber_equipment_3:0 "Ilyushin Dalniy Bombardirovshchik-Torpedonosets mod.1P" #Il-6P
- RUS_cv_nav_bomber_equipment_3_short:0 "DBT-1P"
+ RUS_nav_bomber_equipment_1:0 "Ilyushin Il-4"
+ RUS_nav_bomber_equipment_1_short:0 "Il-4"
+ RUS_cv_nav_bomber_equipment_1:0 "Ilyushin Palubniy Il-4"
+ RUS_cv_nav_bomber_equipment_1_short:0 "PIl-4"
+ RUS_nav_bomber_equipment_2:0 "Tupolev ANT-62T"
+ RUS_nav_bomber_equipment_2_short:0 "ANT-62T"
+ RUS_cv_nav_bomber_equipment_2:0 "Tupolev Palubniy ANT-62T"
+ RUS_cv_nav_bomber_equipment_2_short:0 "PANT-62T"
+ RUS_nav_bomber_equipment_3:0 "Ilyushin Il-6"
+ RUS_nav_bomber_equipment_3_short:0 "Il-6"
+ RUS_cv_nav_bomber_equipment_3:0 "Ilyushin Palubniy Il-6"
+ RUS_cv_nav_bomber_equipment_3_short:0 "PIl-6"
 
- RUS_heavy_fighter_equipment_1:0 "Petlyakov Vysotny Istrebitel STO-M" #VI-100
- RUS_heavy_fighter_equipment_1_short:0 "VI-100M"
- RUS_heavy_fighter_equipment_2:0 "Petlyakov Vysotny Istrebitel STO mod.4" #Pe-3
- RUS_heavy_fighter_equipment_2_short:0 "VI-104"
- RUS_heavy_fighter_equipment_3:0 "Tupolev Tyazhely Istrebitel STO mod.5" #Tu-1
- RUS_heavy_fighter_equipment_3_short:0 "TI-105"
+ RUS_heavy_fighter_equipment_1:0 "Petlyakov Pe-2"
+ RUS_heavy_fighter_equipment_1_short:0 "Pe-2"
+ RUS_heavy_fighter_equipment_2:0 "Petlyakov Pe-3"
+ RUS_heavy_fighter_equipment_2_short:0 "Pe-3"
+ RUS_heavy_fighter_equipment_3:0 "Tupolev Tu-2"
+ RUS_heavy_fighter_equipment_3_short:0 "Tu-2"
 
- RUS_tac_bomber_equipment_0:0 "Tupolev Tyazhely Bombardirovshchik mod.3"
- RUS_tac_bomber_equipment_0_short:0 "TB-3"
- RUS_tac_bomber_equipment_1:0 "Arkhangelskiy Skorostnoy Bombardirovshchik mod.2" #Ar-2
- RUS_tac_bomber_equipment_1_short:0 "SB-2"
- RUS_tac_bomber_equipment_2:0 "Yermolayev Skorostnoy Bombardirovshchik mod.6" #Er-2
- RUS_tac_bomber_equipment_2_short:0 "SB-6"
- RUS_tac_bomber_equipment_3:0 "Tupolev Skorostnoy Bombardirovshchik mod.10" #Tu-10
- RUS_tac_bomber_equipment_3_short:0 "SB-10"
- RUS_jet_tac_bomber_equipment_1:0 "Ilyushin Reaktivny Bombardirovshchik mod.1" #Il-22
- RUS_jet_tac_bomber_equipment_1_short:0 "RB-1"
- RUS_jet_tac_bomber_equipment_2:0 "Ilyushin Reaktivny Bombardirovshchik mod.2" #Il-28
- RUS_jet_tac_bomber_equipment_2_short:0 "RB-2"
+ RUS_tac_bomber_equipment_0:0 "Sikorsky S-27 Ilya Muromets"
+ RUS_tac_bomber_equipment_0_short:0 "S-27 Ilya Muromets"
+ RUS_tac_bomber_equipment_1:0 "Tupolev SB-2M"
+ RUS_tac_bomber_equipment_1_short:0 "SB-2M"
+ RUS_tac_bomber_equipment_2:0 "Sikorsky S-28 Muravyov"
+ RUS_tac_bomber_equipment_2_short:0 "S-28 Muravyov"
+ RUS_tac_bomber_equipment_3:0 "Tupolev Tu-2"
+ RUS_tac_bomber_equipment_3_short:0 "Tu-2"
+ RUS_jet_tac_bomber_equipment_1:0 "Ilyushin Il-28"
+ RUS_jet_tac_bomber_equipment_1_short:0 "Il-28"
+ RUS_jet_tac_bomber_equipment_2:0 "Tupolev Tu-16"
+ RUS_jet_tac_bomber_equipment_2_short:0 "Tu-16"
 
- RUS_strat_bomber_equipment_1:0 "Petlyakov Tyazhely Bombardirovshchik mod.7"
- RUS_strat_bomber_equipment_1_short:0 "TB-7"
- RUS_strat_bomber_equipment_2:0 "Petlyakov-Nezval Tyazhely Bombardirovshchik mod.8" #Pe-8M
- RUS_strat_bomber_equipment_2_short:0 "TB-8"
- RUS_strat_bomber_equipment_3:0 "Tupolev Tyazhely Bombardirovshchik mod.10" #Tu-4
- RUS_strat_bomber_equipment_3_short:0 "TB-10"
- RUS_jet_strat_bomber_equipment_1:0 "Tupolev Reaktivny Bombardirovshchik mod.4" #Tu-16
- RUS_jet_strat_bomber_equipment_1_short:0 "RB-4"
+ RUS_strat_bomber_equipment_1:0 "Petlyakov Pe-8"
+ RUS_strat_bomber_equipment_1_short:0 "Pe-8"
+ RUS_strat_bomber_equipment_2:0 "Sikorsky S-30 Alexander Nevsky" #
+ RUS_strat_bomber_equipment_2_short:0 "S-30 Alexander Nevsky"
+ RUS_strat_bomber_equipment_3:0 "Sikorsky S-33 Ilya Muromets II" #
+ RUS_strat_bomber_equipment_3_short:0 "S-33 Ilya Muromets II"
+ RUS_jet_strat_bomber_equipment_1:0 "Sikorsky S-35 Catherine" #
+ RUS_jet_strat_bomber_equipment_1_short:0 "S-35 Catherine"
  
- RUS_scout_plane_equipment_1:0 "KUGZv Avtozhir mod.1" #A-7
- RUS_scout_plane_equipment_1_short:0 "A-1"
- RUS_scout_plane_equipment_2:0 "Yakovlev Blizhniy Bombardirovshchik mod.3" #Yak-2
- RUS_scout_plane_equipment_2_short:0 "BB-3" 
+ RUS_scout_plane_equipment_1:0 "R-10"
+ RUS_scout_plane_equipment_2:0 "Sikorsky S-29"
  
  RUS_EQUIPMENT_VERSION_1:0 "A"
  RUS_EQUIPMENT_VERSION_2:0 "A-1"

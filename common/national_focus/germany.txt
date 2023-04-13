@@ -1,3 +1,5 @@
+#!gfx:interface\goal_GER.gfx
+#!gfx:interface\goal_generic.gfx
 focus_tree = {
 	id = german_focus
 	country = {
@@ -137,7 +139,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Siegfried_spirit
-		icon = GFX_focus_Siegfried
+		icon = GFX_focus_GER_Siegfried
 		prerequisite = {
 			focus = GER_Entering_the_school
 		}
@@ -468,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_four_year_plan
-		icon = GFX_goal_start_the_four_year_plan
+		icon = GFX_focus_GER_start_the_four_year_plan
 		prerequisite = {
 			focus = GER_DAF
 		}
@@ -545,7 +547,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Befriend_the_industrial_giants
-		icon = GFX_GER_krupp_in_charge
+		icon = GFX_focus_GER_alliance_of_steel_and_blood
 		prerequisite = {
 			focus = GER_Goring_Project
 		}
@@ -896,7 +898,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Armaments_payment_promissory_note
-		icon = GFX_GER_swiss_cash
+		icon = GFX_focus_GER_swiss_money_laundry
 		prerequisite = {
 			focus = GER_Befriend_the_industrial_giants
 		}
@@ -987,7 +989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Bring_in_foreign_workers
-		icon = GFX_GER_arbeitseinsatz
+		icon = GFX_focus_GER_arbeitsinsatz
 		prerequisite = {
 			focus = GER_Authorize_the_new_armaments_minister
 		}
@@ -1025,7 +1027,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Rectify_military_production
-		icon = GFX_goal_money_chains
+		icon = GFX_focus_GER_money_chains
 		prerequisite = {
 			focus = GER_Authorize_the_new_armaments_minister
 		}
@@ -1051,7 +1053,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_General_Mobilization_Act
-		icon = GFX_goal_state_economy
+		icon = GFX_focus_generic_state_economy
 		prerequisite = {
 			focus = GER_Bring_in_foreign_workers
 		}
@@ -1593,7 +1595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_IG_Farben
-		icon = GFX_GER_ig_faben_focus
+		icon = GFX_focus_GER_ig_faben
 		prerequisite = {
 			focus = GER_coal_liquidization
 			focus = GER_synthetic_rubber
@@ -1668,7 +1670,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Sharing_technology_confidentiality
-		icon = GFX_Mask_of_Valkisim
+		icon = GFX_focus_GER_Mask_of_Valkisim
 		prerequisite = {
 			focus = GER_Continental_Power_Circle
 		}
@@ -2444,7 +2446,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Power_of_the_people
-		icon = GFX_GER_specialization_of_worker_skills
+		icon = GFX_focus_GER_specialization_of_worker_skills
 		prerequisite = {
 			focus = GER_Start_the_wartime_economy
 		}
@@ -2506,7 +2508,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Fight_at_the_factory
-		icon = GFX_goal_conscription
+		icon = GFX_focus_generic_conscription
 		prerequisite = {
 			focus = GER_Power_of_the_people
 		}
@@ -2527,7 +2529,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_More_people_weapons
-		icon = GFX_GER_volksgewehr
+		icon = GFX_focus_GER_volksgewehr
 		prerequisite = {
 			focus = GER_Power_of_the_people
 		}
@@ -2551,7 +2553,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Overall_war
-		icon = GFX_ger_goal_werewolf
+		icon = GFX_focus_GER_goal_werewolf
 		prerequisite = {
 			focus = GER_Fight_at_the_factory
 		}
@@ -2581,7 +2583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Wehrmacht
-		icon = GFX_goal_heer
+		icon = GFX_focus_GER_heer
 		x = 13
 		y = -1
 		relative_position_id = GER_four_year_plan
@@ -2599,7 +2601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_New_tactics
-		icon = GFX_goal_wooden_panzers
+		icon = GFX_focus_GER_wooden_panzers
 		prerequisite = {
 			focus = GER_Wehrmacht
 		}
@@ -2625,7 +2627,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_actung_panzer
-		icon = GFX_goal_Panzertruppe
+		icon = GFX_focus_GER_Panzertruppe
 		prerequisite = {
 			focus = GER_New_tactics
 		}
@@ -2673,7 +2675,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 6
 						tank_nsb_armor_upgrade = 3
 					}
-					icon = "GFX_GER_basic_medium_tank_medium"
+					icon = "GFX_focus_GER_basic_medium_tank_medium"
 				}
 				create_equipment_variant = {
 					name = "Panzer IV Ausf. A"
@@ -2692,14 +2694,14 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 6
 						tank_nsb_armor_upgrade = 2
 					}
-					icon = "GFX_GER_basic_medium_tank_medium"
+					icon = "GFX_focus_GER_basic_medium_tank_medium"
 				}
 			}
 		}
 	}
 	focus = {
 		id = GER_30_ton_tank_project
-		icon = GFX_goal_army_innovations_2
+		icon = GFX_focus_GER_army_innovations_2
 		prerequisite = {
 			focus = GER_actung_panzer
 		}
@@ -2779,7 +2781,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Panzergrenadier
-		icon = GFX_goal_a_mechanized_army
+		icon = GFX_focus_GER_a_mechanized_army
 		prerequisite = {
 			focus = GER_Surprise_preparation
 		}
@@ -2977,7 +2979,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Ensure_air_superiority
-		icon = GFX_GER_ace_fighter_pilot
+		icon = GFX_focus_GER_luftwaffe_expansion
 		prerequisite = {
 			focus = GER_Lessons_from_the_war
 		}
@@ -3094,14 +3096,14 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Jet_prototype
-		icon = GFX_GER_Me262
+		icon = GFX_focus_GER_Me262
 		prerequisite = {
 			focus = GER_rocketry_focus
 		}
 		x = 0
 		y = 1
 		relative_position_id = GER_rocketry_focus
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 150
 			modifier = {
@@ -3115,20 +3117,21 @@ focus_tree = {
 			}
 		}
 		available = {
-			has_tech = rocket_engines
+			OR = {
+				AND = {
+					has_completed_focus = GER_messerschmitt_1
+					date > 1943.1.1
+				}
+				has_tech = rocket_engines
+			}
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			if = {
-				limit = {
-					has_tech = jet_fighter1
-				}
-				add_tech_bonus = {
-					name = GER_Jet_prototype
-					bonus = 1
-					uses = 1
-					category = jet_technology
-				}
+			add_tech_bonus = {
+				name = GER_Jet_prototype
+				bonus = 3
+				uses = 1
+				category = air_equipment
 			}
 			if = {
 				limit = {
@@ -3142,25 +3145,139 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_tech = jet_fighter1
-					}
+					has_completed_focus = GER_messerschmitt_1
 				}
-				set_technology = {
-					jet_fighter1 = 1
+				create_equipment_variant = {
+					name = "Me 262 A-1a"
+					type = small_plane_airframe_3
+					parent_version = 1
+					modules = {
+						fixed_main_weapon_slot = aircraft_cannon_2_2x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+						fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_1x
+						fixed_auxiliary_weapon_slot_3 = empty
+						engine_type_slot = jet_engine_2x
+						special_type_slot_1 = radio_navigation_2
+						special_type_slot_2 = armor_plate_small
+						special_type_slot_3 = self_sealing_fuel_tanks_small
+					}
+					icon = "GFX_focus_GER_jet_plane_1_medium"
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_4
+					amount = 100
+					variant_name = "Me 262 A-1a"
 				}
 			}
-			add_tech_bonus = {
-				name = GER_Jet_prototype
-				bonus = 1
-				uses = 1
-				category = jet_technology
+			if = {
+				limit = {
+					has_completed_focus = GER_messerschmitt_1
+					has_war_with = USA
+				}
+				create_equipment_variant = {
+					name = "Me 264 Amerikabomber"
+					type = large_plane_airframe_4
+					parent_version = 1
+					modules = {
+						fixed_main_weapon_slot = large_bomb_bay
+						fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+						fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+						fixed_auxiliary_weapon_slot_3 = large_bomb_bay
+						fixed_auxiliary_weapon_slot_4 = large_bomb_bay
+						engine_type_slot = engine_4_6x
+						special_type_slot_1 = cannon_defense_turret_2x
+						special_type_slot_2 = fuel_tanks_large
+						special_type_slot_3 = fuel_tanks_large
+						special_type_slot_4 = self_sealing_fuel_tanks_large
+						special_type_slot_5 = air_ground_radar_2
+					}
+					icon = "GFX_focus_GER_strategic_bomber3_medium"
+				}
+				add_equipment_to_stockpile = {
+					type = large_plane_airframe_4
+					amount = 1
+					variant_name = "Me 264 Amerikabomber"
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = GER_Offshore_defense
+				}
+				add_ideas = GER_FX
+				create_equipment_variant = {
+					name = "Fw190 F-8/U3"
+					type = small_plane_naval_bomber_airframe_2
+					parent_version = 1
+					modules = {
+						fixed_main_weapon_slot = guided_anti_ship_missile
+						fixed_auxiliary_weapon_slot_1 = recon_camera
+						fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+						engine_type_slot = engine_3_1x
+						special_type_slot_1 = armor_plate_small
+						special_type_slot_2 = air_ground_radar_2
+						special_type_slot_3 = self_sealing_fuel_tanks_small
+					}
+					icon = "GFX_focus_GER_fighter2_medium"
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_naval_bomber_airframe_2
+					amount = 100
+					variant_name = "Fw190 F-8/U3"
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = GER_More_people_weapons
+				}
+				create_equipment_variant = {
+					name = "He162 A-2"
+					type = small_plane_airframe_2
+					parent_version = 1
+					modules = {
+						fixed_main_weapon_slot = aircraft_cannon_2_1x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+						engine_type_slot = jet_engine_1x
+						special_type_slot_1 = non_strategic_materials_small
+						special_type_slot_2 = armor_plate_small
+					}
+					icon = "GFX_focus_GER_jet_plane_1_medium"
+					obsolete = yes
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_2
+					amount = 200
+					variant_name = "He162 A-2"
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = GER_More_people_weapons
+				}
+				create_equipment_variant = {
+					name = "Me163 Walkure"
+					type = small_plane_airframe_2
+					parent_version = 1
+					modules = {
+						fixed_main_weapon_slot = aircraft_cannon_2_1x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+						engine_type_slot = rocket_engine_3
+						special_type_slot_1 = non_strategic_materials_small
+						special_type_slot_2 = armor_plate_small
+					}
+					icon = "GFX_focus_GER_rocket_plane_1_medium"
+					obsolete = yes
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_2
+					amount = 200
+					variant_name = "Me163 Walkure"
+				}
 			}
 		}
 	}
 	focus = {
 		id = GER_New_bomber
-		icon = GFX_GER_strategic_bombing_doctrine
+		icon = GFX_focus_GER_strategic_bombing
 		prerequisite = {
 			focus = GER_Ensure_air_superiority
 		}
@@ -3193,7 +3310,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Offense_is_the_best_defense
-		icon = GFX_GER_offense_is_the_best_defense
+		icon = GFX_focus_GER_offense_best_defense
 		prerequisite = {
 			focus = GER_Lessons_from_the_war
 		}
@@ -3232,7 +3349,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Complete_the_20_ton_tank_project
-		icon = GFX_goal_bewegungskrieg
+		icon = GFX_focus_GER_bewegungskrieg
 		prerequisite = {
 			focus = GER_Offense_is_the_best_defense
 		}
@@ -3275,7 +3392,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Standard_tank_design
-		icon = GFX_GER_standard_panzer
+		icon = GFX_focus_GER_standard_panzer
 		prerequisite = {
 			focus = GER_Complete_the_20_ton_tank_project
 		}
@@ -3317,7 +3434,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Modern_infantry
-		icon = GFX_GER_modern_grenadiers
+		icon = GFX_focus_GER_modern_infantry
 		prerequisite = {
 			focus = GER_Offense_is_the_best_defense
 		}
@@ -3360,7 +3477,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Strengthen_the_support_system
-		icon = GFX_GER_division_support_structure
+		icon = GFX_focus_GER_modern_support_structure
 		prerequisite = {
 			focus = GER_Modern_infantry
 		}
@@ -3392,7 +3509,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_German_Glory
-		icon = GFX_GER_Valkist_glory
+		icon = GFX_focus_GER_Valkist_glory
 		prerequisite = {
 			focus = GER_Standard_tank_design
 		}
@@ -3433,7 +3550,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_air_innovation
-		icon = GFX_GER_trust_in_the_luftwaffe
+		icon = GFX_focus_GER_trust_in_the_luftwaffe
 		prerequisite = {
 			focus = GER_Wehrmacht
 		}
@@ -3604,7 +3721,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_messerschmitt_1
-		icon = GFX_goal_messerschmitt
+		icon = GFX_focus_GER_messerschmitt
 		prerequisite = {
 			focus = GER_air_innovation
 		}
@@ -3626,26 +3743,24 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = messerschmitt_2
-			add_equipment_to_stockpile = {
-				type = fighter_equipment
-				amount = 350
-				producer = GER
-			}
 			create_equipment_variant = {
-				name = "Bf 109 G"
-				type = fighter_equipment_1
-				upgrades = {
-					plane_gun_upgrade = 4
-					plane_range_upgrade = 1
-					plane_engine_upgrade = 4
-					plane_reliability_upgrade = 1
+				name = "BF 109 F"
+				type = small_plane_airframe_1
+				parent_version = 1
+				modules = {
+					fixed_main_weapon_slot = light_mg_2x
+					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+					engine_type_slot = engine_2_1x
+					special_type_slot_1 = armor_plate_small
+					special_type_slot_2 = self_sealing_fuel_tanks_small
 				}
+				icon = "GFX_focus_GER_fighter1_medium"
 			}
 		}
 	}
 	focus = {
 		id = GER_focke
-		icon = GFX_goal_focker_wulf
+		icon = GFX_focus_GER_focker_wulf
 		prerequisite = {
 			focus = GER_air_innovation
 		}
@@ -3685,7 +3800,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Stuka
-		icon = GFX_GER_junkers_CAS
+		icon = GFX_focus_GER_junkers_company
 		prerequisite = {
 			focus = GER_messerschmitt_1
 			focus = GER_focke
@@ -3710,7 +3825,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_High_speed_bomber
-		icon = GFX_GER_Fast_Bomber
+		icon = GFX_focus_GER_sonic_planes
 		prerequisite = {
 			focus = GER_messerschmitt_1
 			focus = GER_focke
@@ -3735,7 +3850,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_CAS_doctrine
-		icon = GFX_GER_CAS_doctrine
+		icon = GFX_focus_GER_german_cas_doctrine
 		prerequisite = {
 			focus = GER_Stuka
 		}
@@ -3968,7 +4083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Assault_gun_concept
-		icon = GFX_GER_support_tanks
+		icon = GFX_focus_GER_support_tanks
 		prerequisite = {
 			focus = GER_New_artillery
 		}
@@ -4020,14 +4135,14 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 4
 						tank_nsb_armor_upgrade = 5
 					}
-					icon = "GFX_GER_basic_medium_td"
+					icon = "GFX_focus_GER_basic_medium_td"
 				}
 			}
 		}
 	}
 	focus = {
 		id = GER_Legacy_of_the_weltkrieg
-		icon = GFX_goal_renewed_militarism
+		icon = GFX_focus_GER_renewed_militarism
 		prerequisite = {
 			focus = GER_Legacy_of_the_Commando
 		}
@@ -4230,7 +4345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Defense_first
-		icon = GFX_GER_festung_principle
+		icon = GFX_focus_GER_festung_principle
 		prerequisite = {
 			focus = GER_Lessons_from_the_war
 		}
@@ -4276,7 +4391,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Fortified_position
-		icon = GFX_GER_artillery_expansion
+		icon = GFX_focus_GER_artillery_expansion
 		prerequisite = {
 			focus = GER_Defense_first
 		}
@@ -4318,7 +4433,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Anti_armor_unit
-		icon = GFX_GER_ambush_tactics
+		icon = GFX_focus_GER_pakfront
 		prerequisite = {
 			focus = GER_Fortified_position
 		}
@@ -4356,7 +4471,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_No_step_back
-		icon = GFX_GER_award_heroes
+		icon = GFX_focus_GER_award_heroes
 		prerequisite = {
 			focus = GER_Defense_first
 		}
@@ -4419,7 +4534,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_The_startin_point_of_the_Kriegsmarine
-		icon = GFX_goal_ger_kriegsmarine
+		icon = GFX_focus_GER_GER_kriegsmarine
 		x = 13
 		y = 0
 		relative_position_id = GER_Wehrmacht
@@ -4518,7 +4633,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Landing_battle_drill
-		icon = GFX_goal_navy_hat_ships
+		icon = GFX_focus_GER_navy_hat_ships
 		prerequisite = {
 			focus = GER_Reorganizing_the_Marine_Corps
 		}
@@ -4585,7 +4700,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Plan_Z
-		icon = GFX_goal_ger_raeder_plan
+		icon = GFX_focus_GER_raeder_plan
 		prerequisite = {
 			focus = GER_The_startin_point_of_the_Kriegsmarine
 		}
@@ -4894,7 +5009,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			add_ideas = GER_FX
 			add_tech_bonus = {
 				name = GER_Offshore_defense
 				bonus = 1.5
@@ -4922,20 +5036,9 @@ focus_tree = {
 			show_ideas_tooltip = GER_graf_zeppelin
 			add_tech_bonus = {
 				name = GER_Test_carrier_aircraft
-				bonus = 1
-				uses = 1
-				technology = cv_early_fighter
-				technology = cv_fighter1
-				technology = cv_fighter2
-				technology = cv_fighter3
-			}
-			add_tech_bonus = {
-				name = GER_Test_carrier_aircraft
-				bonus = 1
-				uses = 1
-				# technology = # cv_naval_bomber1
-				technology = cv_naval_bomber2
-				technology = cv_naval_bomber3
+				bonus = 0.75
+				uses = 2
+				category = air_equipment
 			}
 		}
 	}
@@ -5162,7 +5265,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Complete_integration_of_intelligence_services
-		icon = GFX_goal_purges
+		icon = GFX_focus_GER_Purges
 		x = 0
 		y = 1
 		relative_position_id = GER_Integrating_the_wartime_economy
@@ -5296,7 +5399,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Established_the_Supreme_Command
-		icon = GFX_Valkist_Germany
+		icon = GFX_focus_GER_Valkist_Germany
 		prerequisite = {
 			focus = GER_Clean_up_Juncker
 		}
@@ -5469,7 +5572,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Full_control
-		icon = GFX_racial_valkist
+		icon = GFX_focus_GER_racial_valkist
 		prerequisite = {
 			focus = GER_Established_the_Supreme_Command
 		}
@@ -5523,7 +5626,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_enigma
-		icon = GFX_GER_siemens_concern
+		icon = GFX_focus_GER_siemens_concern
 		prerequisite = {
 			focus = GER_German_Dutch_intelligence_cooperation
 		}
@@ -5691,7 +5794,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Preparing_for_the_Great_Europa_War
-		icon = GFX_Valkist_Germany_Wolf
+		icon = GFX_focus_GER_Valkist_Germany_Wolf
 		prerequisite = {
 			focus = GER_Reiterate_Greater_Germany
 		}
@@ -6507,7 +6610,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_RHI_Anschluss
-		icon = GFX_Rhineland_French
+		icon = GFX_focus_GER_Rhineland_French
 		prerequisite = {
 			focus = GER_west_wall
 		}
@@ -6661,7 +6764,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_second_Schlieffen_plan
-		icon = GFX_Target_France
+		icon = GFX_focus_GER_Target_France
 		prerequisite = {
 			focus = GER_RHI_Anschluss
 		}
@@ -7973,7 +8076,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_deutsches_afrikakorps
-		icon = GFX_umc_goal_rommel
+		icon = GFX_focus_GER_goal_rommel
 		prerequisite = {
 			focus = GER_Operation_Alaric
 		}
@@ -8110,31 +8213,6 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = armored_car_equipment
 				amount = 100
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = light_tank_equipment
-				amount = 50
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = fighter_equipment
-				amount = 200
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = CAS_equipment
-				amount = 100
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = nav_bomber_equipment
-				amount = 50
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment
-				amount = 50
 				producer = GER
 			}
 		}
@@ -8993,7 +9071,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_nibelungen_steyr_werke_tank_plant
-		icon = GFX_goal_valkist_mil_factory
+		icon = GFX_focus_GER_valkist_mil_factory
 		prerequisite = {
 			focus = GER_anschluss
 		}
@@ -9483,7 +9561,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Take_over_the_Czech_arms_industry
-		icon = GFX_goal_valkist_mil_factory
+		icon = GFX_focus_GER_valkist_mil_factory
 		prerequisite = {
 			focus = GER_demand_sudetenland
 		}
@@ -10298,7 +10376,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_ROM_Ultimatum
-		icon = GFX_goal_puppet_romania
+		icon = GFX_focus_GER_puppet_romania
 		prerequisite = {
 			focus = GER_HUN_Ultimatum
 			focus = GER_second_vienna_award
@@ -10483,7 +10561,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_secure_vital_resources_from_sweden
-		icon = GFX_umc_goal_flag_sweden
+		icon = GFX_focus_GER_goal_flag_sweden
 		prerequisite = {
 			focus = GER_Reiterate_Greater_Germany
 		}
@@ -10566,7 +10644,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Friends_from_the_north
-		icon = GFX_Lion_of_the_North
+		icon = GFX_focus_GER_Lion_of_the_North
 		prerequisite = {
 			focus = GER_secure_vital_resources_from_sweden
 		}
@@ -11201,7 +11279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Operation_Himmler
-		icon = GFX_Conquer_Poland
+		icon = GFX_focus_GER_Conquer_Poland
 		prerequisite = {
 			focus = GER_Coastal_Defense
 		}
@@ -12058,7 +12136,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Eastern_Front_Command
-		icon = GFX_GER_endless_offensives
+		icon = GFX_focus_GER_endless_offensives
 		prerequisite = {
 			focus = GER_Operation_Barbarossa
 		}

@@ -1,6 +1,10 @@
+#!gfx:interface\goal_HUN.gfx
+#!gfx:interface\goal_SOV.gfx
+#!gfx:interface\goal_GER.gfx
+#!gfx:interface\goal_generic.gfx
 shared_focus = {
 	id = HUN_revenge
-	icon = GFX_KRA_war
+	icon = GFX_focus_HUN_war
 	cost = 5
 	x = 5
 	y = 0
@@ -895,7 +899,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_glory
-	icon = GFX_HUN_Greater_Hungary
+	icon = GFX_focus_HUN_Greater_Hungary
 	cost = 5
 	x = 0
 	y = 2
@@ -956,7 +960,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Develop_Slovakia
-	icon = GFX_SLO_Slovakian_Investments
+	icon = GFX_focus_HUN_Slovakian_Investments
 	cost = 5
 	prerequisite = {
 		focus = HUN_glory
@@ -1103,7 +1107,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Develop_Banat
-	icon = GFX_GENERIC_orange_industry
+	icon = GFX_focus_HUN_orange_industry
 	cost = 5
 	prerequisite = {
 		focus = HUN_glory
@@ -1186,7 +1190,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Develop_Pannonia
-	icon = GFX_GENERIC_Oil_Wells
+	icon = GFX_focus_HUN_Oil_Wells
 	cost = 5
 	prerequisite = {
 		focus = HUN_Develop_Banat
@@ -1267,7 +1271,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Alpad_Line_more
-	icon = GFX_HUN_Arpad_Line
+	icon = GFX_focus_HUN_Arpad_Line
 	cost = 5
 	prerequisite = {
 		focus = HUN_glory
@@ -1426,7 +1430,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Transylvania_Steel
-	icon = GFX_GENERIC_Steel_Shovel
+	icon = GFX_focus_HUN_Steel_Shovel
 	cost = 5
 	prerequisite = {
 		focus = HUN_Alpad_Line_more
@@ -1505,7 +1509,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Hungary_stands_tall_in_the_Balkans
-	icon = GFX_HUN_expansion_outward
+	icon = GFX_focus_HUN_expansion_outward
 	cost = 2
 	prerequisite = {
 		focus = HUN_Csejte_vara
@@ -1719,7 +1723,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Wartime_communism
-	icon = GFX_goal_Focus_Military_Mobilisation
+	icon = GFX_focus_SOV_Wartime_communism
 	prerequisite = {
 		focus = HUN_the_hungarian_red_army
 	}
@@ -2216,7 +2220,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_revolution_will_win
-	icon = GFX_SOV_For_the_world_revolution
+	icon = GFX_focus_SOV_For_the_world_revolution
 	prerequisite = {
 		focus = HUN_Revenge_on_the_Allies
 		focus = HUN_Eradicate_fascism
@@ -2268,7 +2272,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Catholic_Cultural_Exchange
-	icon = GFX_GENERIC_Catholic_Education
+	icon = GFX_focus_HUN_Catholic_Education
 	prerequisite = {
 		focus = HUN_Rekindling_medieval_ideals
 	}
@@ -2355,7 +2359,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Forcibly_claim_the_Polish_throne
-	icon = GFX_Conquer_Poland
+	icon = GFX_focus_GER_Conquer_Poland
 	prerequisite = {
 		focus = HUN_Concluded_the_Treaty_of_St_Stephen
 	}
@@ -2376,7 +2380,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Rule_Bohemia
-	icon = GFX_Conquer_Zapdslavia
+	icon = GFX_focus_HUN_Conquer_Zapdslavia
 	prerequisite = {
 		focus = HUN_Take_over_the_crown_of_Poland
 	}
@@ -3140,7 +3144,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_microphone_diplomacy
-	icon = GFX_goal_generic_microphone_diplomacy
+	icon = GFX_focus_generic_microphone_diplomacy
 	x = 11
 	y = 2
 	relative_position_id = HUN_Hungary_stands_tall_in_the_Balkans
@@ -4465,7 +4469,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Conquer_homeland
-	icon = GFX_HUN_expansion_outward
+	icon = GFX_focus_HUN_expansion_outward
 	prerequisite = {
 		focus = HUN_Long_live_Attila
 	}
@@ -4927,13 +4931,14 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Advance_into_the_Baltic_Sea
-	icon = GFX_Conquer_Poland
+	icon = GFX_focus_GER_Conquer_Poland
 	prerequisite = {
 		focus = HUN_Honor_Warrior
 	}
 	prerequisite = {
 		focus = HUN_Immortality
 	}
+
 	x = -1
 	y = 1
 	relative_position_id = HUN_Honor_Warrior
@@ -5448,13 +5453,14 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_The_dream_of_the_Union
-	icon = GFX_HUN_Liberal_Hungary
+	icon = GFX_focus_HUN_Liberal_Hungary
 	cost = 5
 	x = 13
 	y = 0
 	ai_will_do = {
 		factor = 1
 	}
+
 	available = {
 	}
 	bypass = {
@@ -5498,7 +5504,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Empowering_Parliament
-	icon = GFX_GENERIC_government_power
+	icon = GFX_focus_HUN_government_power
 	prerequisite = {
 		focus = HUN_The_dream_of_the_Union
 	}
@@ -5520,7 +5526,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Rebuilding_free_elections
-	icon = GFX_ENG_vote_upper_assembly
+	icon = GFX_focus_HUN_vote_upper_assembly
 	prerequisite = {
 		focus = HUN_De_authoritarianism
 	}
@@ -5576,7 +5582,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Social_welfare_policy
-	icon = GFX_USA_expand_welfare
+	icon = GFX_focus_HUN_expand_welfare
 	prerequisite = {
 		focus = HUN_cafe_culture
 	}
@@ -5600,7 +5606,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Danube_ethnic_theory
-	icon = GFX_GENERIC_The_Noose
+	icon = GFX_focus_HUN_The_Noose
 	prerequisite = {
 		focus = HUN_Rebuilding_free_elections
 	}
@@ -5705,7 +5711,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_improve_danube
-	icon = GFX_GENERIC_dam
+	icon = GFX_focus_HUN_dam
 	prerequisite = {
 		focus = HUN_develop_spa
 	}
@@ -5726,7 +5732,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_United_forces
-	icon = GFX_GENERIC_The_Noose
+	icon = GFX_focus_HUN_The_Noose
 	prerequisite = {
 		focus = HUN_Social_welfare_policy
 	}
@@ -5753,13 +5759,14 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Unimagined_victory
-	icon = GFX_GENERIC_Communist_Icon
+	icon = GFX_focus_HUN_Communist_Icon
 	cost = 1
 	x = 13
 	y = 0
 	ai_will_do = {
 		factor = 300
 	}
+
 	available = {
 	}
 	bypass = {
@@ -5780,7 +5787,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Revolutionary_Court
-	icon = GFX_GENERIC_The_Noose
+	icon = GFX_focus_HUN_The_Noose
 	prerequisite = {
 		focus = HUN_Unimagined_victory
 	}
@@ -5831,7 +5838,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_International_triumph
-	icon = GFX_GENERIC_Global_Revolution
+	icon = GFX_focus_HUN_Global_Revolution
 	prerequisite = {
 		focus = HUN_Constitutional_assembly
 	}
@@ -5861,7 +5868,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Learn_from_the_Soviet_experience
-	icon = GFX_SOV_leninism
+	icon = GFX_focus_HUN_leninism
 	prerequisite = {
 		focus = HUN_International_triumph
 	}
@@ -5925,7 +5932,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Militarization_of_labor
-	icon = GFX_goal_conscription
+	icon = GFX_focus_generic_conscription
 	prerequisite = {
 		focus = HUN_Learn_from_the_Soviet_experience
 	}
@@ -5949,7 +5956,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Build_socialism_in_one_country
-	icon = GFX_SOV_stalinism
+	icon = GFX_focus_HUN_stalinism
 	prerequisite = {
 		focus = HUN_Compulsory_collectivization
 	}
@@ -6006,7 +6013,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Ministry_of_National_Security
-	icon = GFX_SOV_NKVD_remain
+	icon = GFX_focus_HUN_NKVD_remain
 	prerequisite = {
 		focus = HUN_Constitutional_assembly
 	}
@@ -6047,7 +6054,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_The_fate_of_the_counter_revolution
-	icon = GFX_reign_of_terror
+	icon = GFX_focus_SOV_Public_execution
 	prerequisite = {
 		focus = HUN_Ministry_of_National_Security
 	}
@@ -6069,7 +6076,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Native_triumph
-	icon = GFX_GENERIC_Socialist_Revolution
+	icon = GFX_focus_HUN_Socialist_Revolution
 	prerequisite = {
 		focus = HUN_Constitutional_assembly
 	}
@@ -6126,7 +6133,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Investment_promotion
-	icon = GFX_GENERIC_Trading
+	icon = GFX_focus_HUN_Trading
 	prerequisite = {
 		focus = HUN_Goulash_with_potatoes
 	}
@@ -6154,7 +6161,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Workers_and_Peasants_Union
-	icon = GFX_goal_RAJ_agricultural_aid
+	icon = GFX_focus_SOV_Ensure_the_worker_peasant_alliance
 	prerequisite = {
 		focus = HUN_Goulash_with_potatoes
 	}
@@ -6178,7 +6185,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Establish_a_new_economic_system
-	icon = GFX_GEN_economic_friendship
+	icon = GFX_focus_HUN_economic_friendship
 	prerequisite = {
 		focus = HUN_Investment_promotion
 	}
@@ -6216,6 +6223,7 @@ shared_focus = {
 	}
 	available = {
 	}
+
 	bypass = {
 	}
 	completion_reward = {
@@ -6234,7 +6242,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Disrupt_extremism
-	icon = GFX_SER_focus_death_to_fascism
+	icon = GFX_focus_HUN_focus_death_to_fascism
 	prerequisite = {
 		focus = HUN_Who_else
 	}
@@ -6286,7 +6294,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_National_Military_Control
-	icon = GFX_HUN_Emergency_Law
+	icon = GFX_focus_HUN_Emergency_Law
 	prerequisite = {
 		focus = HUN_Who_else
 	}
@@ -6344,7 +6352,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_New_state_system
-	icon = GFX_HUN_21st_Hungary
+	icon = GFX_focus_HUN_21st_Hungary
 	prerequisite = {
 		focus = HUN_Appease_workers
 	}
@@ -6439,7 +6447,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_I_am_a_soldier_in_Batori
-	icon = GFX_HUN_soldier
+	icon = GFX_focus_HUN_soldier
 	prerequisite = {
 		focus = HUN_National_Military_Control
 	}
@@ -6482,7 +6490,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Military_dictatorship
-	icon = GFX_HUN_Military_Junta
+	icon = GFX_focus_HUN_Military_Junta
 	prerequisite = {
 		focus = HUN_I_am_a_soldier_in_Batori
 	}
@@ -6539,13 +6547,14 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Awaken_Hungarian
-	icon = GFX_HUN_New_Hungarian_State
+	icon = GFX_focus_HUN_New_Hungarian_State
 	cost = 1
 	x = 13
 	y = 0
 	ai_will_do = {
 		factor = 300
 	}
+
 	available = {
 	}
 	bypass = {
@@ -6710,7 +6719,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Rewriting_history
-	icon = GFX_GENERIC_Adapt_Constitution
+	icon = GFX_focus_HUN_Adapt_Constitution
 	prerequisite = {
 		focus = HUN_good_civilization
 	}
@@ -6735,7 +6744,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Nomadism_is_a_good_civilization
-	icon = GFX_BUL_fight_for_our_ancestors
+	icon = GFX_focus_HUN_fight_for_our_ancestors
 	prerequisite = {
 		focus = HUN_Rewriting_history
 	}
@@ -6759,7 +6768,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_War_is_a_good_civilization
-	icon = GFX_GENERIC_Axe
+	icon = GFX_focus_HUN_Axe
 	prerequisite = {
 		focus = HUN_Rewriting_history
 	}
@@ -6783,7 +6792,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Our_journey_is_the_sea_of_stars
-	icon = GFX_GER_global_industry
+	icon = GFX_focus_HUN_globally_hunting
 	prerequisite = {
 		focus = HUN_Nomadism_is_a_good_civilization
 	}
@@ -6880,7 +6889,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_White_horror
-	icon = GFX_reign_of_terror
+	icon = GFX_focus_SOV_Public_execution
 	prerequisite = {
 		focus = HUN_Whip_of_god
 		focus = HUN_Cross_and_triangle
@@ -6905,7 +6914,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Disposal_of_Batori
-	icon = GFX_focus_bathory_arrested
+	icon = GFX_focus_HUN_bathory_arrested
 	prerequisite = {
 		focus = HUN_White_horror
 	}
@@ -6947,7 +6956,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Banat_TST
-	icon = GFX_Valkist_Army
+	icon = GFX_focus_HUN_Valkist_Army
 	prerequisite = {
 		focus = HUN_Cross_and_triangle
 	}
@@ -6979,7 +6988,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Emergency_Authorization_Act
-	icon = GFX_HUN_Emergency_Law
+	icon = GFX_focus_HUN_Emergency_Law
 	prerequisite = {
 		focus = HUN_White_horror
 	}
@@ -7004,7 +7013,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Ethnic_purity
-	icon = GFX_GENERIC_Political_Purge
+	icon = GFX_focus_HUN_Political_Purge
 	prerequisite = {
 		focus = HUN_Emergency_Authorization_Act
 	}
@@ -7045,7 +7054,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Hungarian_labor_front
-	icon = GFX_GENERIC_Workers_Right
+	icon = GFX_focus_HUN_Workers_Right
 	prerequisite = {
 		focus = HUN_Ethnic_purity
 	}
@@ -7069,7 +7078,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Great_Land_Reform_Plan
-	icon = GFX_SAF_Seize_Land
+	icon = GFX_focus_HUN_Seize_Land
 	prerequisite = {
 		focus = HUN_Ethnic_purity
 	}
@@ -7093,7 +7102,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_One_mind
-	icon = GFX_HUN_Prepare_For_Great_Hungary
+	icon = GFX_focus_HUN_Prepare_For_Great_Hungary
 	prerequisite = {
 		focus = HUN_Hungarian_labor_front
 	}
@@ -7122,7 +7131,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Hungarian_economy
-	icon = GFX_HUN_recovery
+	icon = GFX_focus_HUN_recovery
 	cost = 2
 	x = 23
 	y = 0
@@ -7193,7 +7202,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Land_redistribution
-	icon = GFX_GENERIC_socialist_agriculture
+	icon = GFX_focus_HUN_socialist_agriculture
 	prerequisite = {
 		focus = HUN_Renaissance_Agriculture
 	}
@@ -7373,7 +7382,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Subsidized_agriculture
-	icon = GFX_GENERIC_agriculture
+	icon = GFX_focus_HUN_agriculture
 	prerequisite = {
 		focus = HUN_Renaissance_Agriculture
 		focus = HUN_Balanced_development
@@ -7415,7 +7424,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_product_diversification
-	icon = GFX_GENERIC_agricultural_subsidies
+	icon = GFX_focus_HUN_agricultural_subsidies
 	prerequisite = {
 		focus = HUN_Subsidized_agriculture
 	}
@@ -7453,7 +7462,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Complete_land_reform
-	icon = GFX_GENERIC_Strong_Farming
+	icon = GFX_focus_HUN_Strong_Farming
 	prerequisite = {
 		focus = HUN_Revitalize_the_rural_economy
 	}
@@ -7661,7 +7670,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_announce_the_gyor_program
-	icon = GFX_r56_goal_generic_bills
+	icon = GFX_focus_HUN_bills
 	prerequisite = {
 		focus = HUN_product_diversification
 	}
@@ -7761,7 +7770,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Land_nationalization
-	icon = GFX_GENERIC_Modernize_The_Farmers
+	icon = GFX_focus_HUN_Modernize_The_Farmers
 	prerequisite = {
 		focus = HUN_Planning_industry
 	}
@@ -7880,7 +7889,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_national_eco_plan_committee
-	icon = GFX_SLO_german_control
+	icon = GFX_focus_HUN_german_control
 	prerequisite = {
 		focus = HUN_support_urbanization
 	}
@@ -8573,7 +8582,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Our_oil_field
-	icon = GFX_GENERIC_Oil_Planning
+	icon = GFX_focus_HUN_Oil_Planning
 	prerequisite = {
 		focus = HUN_autarky
 	}
@@ -8710,7 +8719,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_High_quality_fuel_supply
-	icon = GFX_GENERIC_Oil_Production
+	icon = GFX_focus_HUN_Oil_Production
 	prerequisite = {
 		focus = HUN_expand_the_technical_university_of_budapest
 	}
@@ -8808,7 +8817,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Hungarian_army
-	icon = GFX_HUN_armed_forces
+	icon = GFX_focus_HUN_armed_forces
 	cost = 2
 	x = 33
 	y = 1
@@ -9127,7 +9136,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Air_Force_Development_Direction
-	icon = GFX_GENERIC_skilled_fighters
+	icon = GFX_focus_HUN_skilled_fighters
 	prerequisite = {
 		focus = HUN_establish_the_air_force
 	}
@@ -9801,7 +9810,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Huba
-	icon = GFX_deploy_reserve_division_big
+	icon = GFX_focus_HUN_deploy_reserve_divisions
 	prerequisite = {
 		focus = HUN_Military_reform
 	}
@@ -9890,7 +9899,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Turan
-	icon = GFX_hungarianturantank1
+	icon = GFX_focus_HUN_hungaryturantank
 	prerequisite = {
 		focus = HUN_the_botond
 	}
@@ -9941,7 +9950,7 @@ shared_focus = {
 					tank_nsb_engine_upgrade = 4
 					tank_nsb_armor_upgrade = 0
 				}
-				icon = "GFX_HUN_basic_medium_tank"
+				icon = "GFX_focus_HUN_basic_medium_tank"
 			}
 		}
 		add_tech_bonus = {
@@ -9994,7 +10003,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Danuvia_39
-	icon = GFX_GOAL_infantry_equipment
+	icon = GFX_focus_HUN_infantry_equipment
 	prerequisite = {
 		focus = HUN_Huba
 	}
@@ -10151,7 +10160,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_arpad
-	icon = GFX_goal_generic_partisans
+	icon = GFX_focus_HUN_partisans
 	prerequisite = {
 		focus = HUN_Turan
 	}
@@ -10190,7 +10199,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Hussar_mech
-	icon = GFX_HUN_expand_rapid_corps
+	icon = GFX_focus_HUN_expand_rapid_corps
 	prerequisite = {
 		focus = HUN_arpad
 	}
@@ -10230,7 +10239,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Zrinyi
-	icon = GFX_hungarianzyrintank2
+	icon = GFX_focus_HUN_zyrinltank2
 	prerequisite = {
 		focus = HUN_Hussar_mech
 	}
@@ -10276,14 +10285,14 @@ shared_focus = {
 				tank_nsb_engine_upgrade = 6
 				tank_nsb_armor_upgrade = 3
 			}
-			icon = "GFX_HUN_basic_medium_tank"
+			icon = "GFX_focus_HUN_basic_medium_tank"
 		}
 	}
 }
 
 shared_focus = {
 	id = HUN_Danuvia_43
-	icon = GFX_GER_volksgewehr
+	icon = GFX_focus_GER_volksgewehr
 	prerequisite = {
 		focus = HUN_arpad
 	}
@@ -10330,7 +10339,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Individual_anti_tank_weapons
-	icon = GFX_GER_consolidate_production_lines
+	icon = GFX_focus_HUN_consolidation_of_production_lines
 	prerequisite = {
 		focus = HUN_Danuvia_43
 	}
@@ -10372,7 +10381,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_villam
-	icon = GFX_GENERIC_Tank_through_Wall
+	icon = GFX_focus_HUN_Tank_through_Wall
 	prerequisite = {
 		focus = HUN_Zrinyi
 	}
@@ -10415,7 +10424,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Fekete_sereg
-	icon = GFX_HUN_grenadier_training_forgun
+	icon = GFX_focus_HUN_grenadier_training
 	prerequisite = {
 		focus = HUN_Zrinyi
 	}
@@ -10455,7 +10464,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Death_comes_from_the_sky
-	icon = GFX_HUN_elite_paratroopers
+	icon = GFX_focus_HUN_elite_paratroopers
 	prerequisite = {
 		focus = HUN_Individual_anti_tank_weapons
 	}
@@ -10516,7 +10525,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Horty_Plan
-	icon = GFX_HUN_Horthy_Soldiers
+	icon = GFX_focus_HUN_Horthy_Soldiers
 	prerequisite = {
 		focus = HUN_naval_warfare
 	}
@@ -10614,7 +10623,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HUN_Conquer_the_world
-	icon = GFX_GER_global_industry
+	icon = GFX_focus_HUN_global_industry
 	prerequisite = {
 		focus = HUN_Shipbuilding_plan
 	}

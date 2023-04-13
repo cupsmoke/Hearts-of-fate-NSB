@@ -1497,11 +1497,7 @@ country_event = {
 				idea = officers_purged_3
 				days = 1168
 			}
-			if = {
-				limit = { has_idea = SOV_great_patriotic_war }
-				remove_ideas = SOV_great_patriotic_war
-				add_ideas = SOV_great_patriotic_war_2
-			}
+
 			country_event = { id = soviet.39 days = 146 }
 		}
 	}
@@ -1554,11 +1550,7 @@ country_event = {
 				idea = officers_purged_5
 				days = 876
 			}
-			if = {
-				limit = { has_idea = SOV_great_patriotic_war_2 }
-				remove_ideas = SOV_great_patriotic_war_2
-				add_ideas = SOV_great_patriotic_war_3
-			}			
+			
 			country_event = { id = soviet.41 days = 146 }
 		}
 	}
@@ -1611,11 +1603,7 @@ country_event = {
 				idea = officers_purged_7
 				days = 584
 			}
-			if = {
-				limit = { has_idea = SOV_great_patriotic_war_3 }
-				remove_ideas = SOV_great_patriotic_war_3
-				add_ideas = SOV_great_patriotic_war_4
-			}			
+		
 			country_event = { id = soviet.43 days = 146 }
 		}
 	}
@@ -1668,11 +1656,7 @@ country_event = {
 				idea = officers_purged_9
 				days = 292
 			}
-			if = {
-				limit = { has_idea = SOV_great_patriotic_war_4 }
-				remove_ideas = SOV_great_patriotic_war_4
-				add_ideas = SOV_great_patriotic_war_5
-			}					
+				
 			country_event = { id = soviet.45 days = 146 }
 		}
 	}

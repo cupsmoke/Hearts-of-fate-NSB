@@ -1,3 +1,7 @@
+#!gfx:interface\goal_FRA.gfx
+#!gfx:interface\goal_GER.gfx
+#!gfx:interface\goal_ENG.gfx
+#!gfx:interface\goal_generic.gfx
 focus_tree = {
 	id = french_focus
 	country = {
@@ -42,7 +46,7 @@ focus_tree = {
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = FRA_napoléon_bonaparte
+					character = FRA_napoleon_bonaparte
 					ruling_only = yes
 				}
 			}
@@ -216,7 +220,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_stablize_status_quo
-		icon = GFX_goal_CAN_new_status_quebec
+		icon = GFX_focus_FRA_stablize_status_quo
 		cost = 3
 		x = 14
 		y = 0
@@ -232,7 +236,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_overthrow_bourbon
-		icon = GFX_goal_CAN_quebec_flames
+		icon = GFX_focus_FRA_overthrow_bourbon
 		cost = 10
 		x = 32
 		y = 0
@@ -248,7 +252,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Diplomatic_Effort
-		icon = GFX_goal_foreign_diplomacy
+		icon = GFX_focus_generic_foreign_diplomacy
 		cost = 3
 		x = 12
 		y = 10
@@ -304,7 +308,7 @@ focus_tree = {
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = FRA_napoléon_bonaparte
+					character = FRA_napoleon_bonaparte
 					ruling_only = yes
 				}
 				has_country_leader = {
@@ -356,7 +360,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_invest_in_our_weaker_allies
-		icon = GFX_goal_economic_stuff
+		icon = GFX_focus_generic_invest_in_our_weaker_allies
 		cost = 5
 		x = 0
 		y = 1
@@ -437,7 +441,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -488,7 +492,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -511,7 +515,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_promote_entrepeneurship
-		icon = GFX_VIN_Rights_of_Corporation
+		icon = GFX_focus_generic_promote_entrepeneurship
 		cost = 3
 		prerequisite = {
 			focus = FRA_encourage_bankruptcy
@@ -548,7 +552,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_royal_authority
-		icon = GFX_NFA_French_Kingdom
+		icon = GFX_focus_FRA_royal_authority
 		cost = 4
 		prerequisite = {
 			focus = FRA_stablize_status_quo
@@ -580,7 +584,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_princess_of_loveliness
-		icon = GFX_focus_marie_antoinette
+		icon = GFX_focus_FRA_princess_of_loveliness
 		cost = 5
 		prerequisite = {
 			focus = FRA_royal_authority
@@ -603,7 +607,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Atlas
-		icon = GFX_focus_research3
+		icon = GFX_focus_generic_research3
 		cost = 5
 		prerequisite = {
 			focus = FRA_national_grid_focus
@@ -629,7 +633,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Shield_of_France
-		icon = GFX_focus_defence_fgo
+		icon = GFX_focus_generic_defence_fgo
 		cost = 5
 		prerequisite = {
 			focus = FRA_Atlas
@@ -650,7 +654,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_land_versailles
-		icon = GFX_goal_Paris_royal
+		icon = GFX_focus_FRA_land_versailles
 		cost = 3
 		prerequisite = {
 			focus = FRA_royal_authority
@@ -731,7 +735,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_viva_la_france
-		icon = GFX_NATFRA_flags1
+		icon = GFX_focus_FRA_viva_la_france
 		cost = 4
 		prerequisite = {
 			focus = FRA_Diplomatic_Effort
@@ -867,7 +871,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_ban_the_radicals
-		icon = GFX_COS_Ferrer_Coup
+		icon = GFX_focus_generic_ban_the_radicals
 		cost = 1
 		prerequisite = {
 			focus = FRA_stablize_status_quo
@@ -1190,7 +1194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_republican_struggle
-		icon = GFX_NATFRA_flagalone
+		icon = GFX_focus_FRA_democrazy_start
 		cost = 10
 		prerequisite = {
 			focus = FRA_overthrow_bourbon
@@ -1240,7 +1244,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_the_vatican
-		icon = GFX_focus_BEL_Improve_Catholic_Relations
+		icon = GFX_focus_generic_befriend_catholic
 		cost = 5
 		prerequisite = {
 			focus = FRA_land_versailles
@@ -1277,7 +1281,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_grace_of_god
-		icon = GFX_goal_action_francaise
+		icon = GFX_focus_FRA_grace_of_god
 		cost = 5
 		prerequisite = {
 			focus = FRA_the_vatican
@@ -1403,7 +1407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_military_coup
-		icon = GFX_goal_firm_arg2
+		icon = GFX_focus_generic_military_coup
 		cost = 4
 		prerequisite = {
 			focus = FRA_overthrow_bourbon
@@ -1794,7 +1798,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_emperor_imperial_guard
-		icon = GFX_foreign_legion
+		icon = GFX_focus_FRA_emperor_imperial_guard
 		cost = 3
 		prerequisite = {
 			focus = FRA_retribution_for_sedan
@@ -1975,7 +1979,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_cross_the_channel
-		icon = GFX_goal_AST_upgrade_reserves
+		icon = GFX_focus_generic_cross_the_channel
 		cost = 7
 		prerequisite = {
 			focus = FRA_avenge_waterloo
@@ -2063,7 +2067,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_unite_royalist
-		icon = GFX_goal_white_flag
+		icon = GFX_focus_FRA_unite_royalist
 		cost = 3
 		prerequisite = {
 			focus = FRA_land_versailles
@@ -2087,7 +2091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_puppet_austria
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_FRA_puppet_austria
 		cost = 5
 		prerequisite = {
 			focus = FRA_princess_of_loveliness
@@ -2242,7 +2246,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_rebuild_carolingian_empire
-		icon = GFX_focus_rebuild_carolingian
+		icon = GFX_focus_FRA_rebuild_carolingian_empire
 		cost = 5
 		prerequisite = {
 			focus = FRA_Military_Government
@@ -2664,7 +2668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_letat_cest_moi
-		icon = GFX_Sword_Through_Crown
+		icon = GFX_focus_generic_letat_cest_moi
 		cost = 5
 		prerequisite = {
 			focus = FRA_guillotine_breaker
@@ -2767,7 +2771,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_unified_Franco_Iberia
-		icon = GFX_ZHI_no_agreements_shine
+		icon = GFX_focus_generic_unified_franco_iberia
 		cost = 5
 		prerequisite = {
 			focus = FRA_claim_spain
@@ -2843,7 +2847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Luminosite_Eternelle
-		icon = GFX_focus_invincible
+		icon = GFX_focus_generic_invincible
 		cost = 4
 		prerequisite = {
 			focus = FRA_France_Idealism
@@ -2931,7 +2935,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_revalation
-		icon = GFX_focus_revelation
+		icon = GFX_focus_FRA_revalation
 		cost = 5
 		prerequisite = {
 			focus = FRA_France_Idealism
@@ -2962,7 +2966,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_national_construction_plan
-		icon = GFX_goal_Catholic_construction
+		icon = GFX_focus_generic_catholic_construction
 		cost = 5
 		prerequisite = {
 			focus = FRA_relief_committee
@@ -3015,7 +3019,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_nationalism_mobilization
-		icon = GFX_NATFRA_francefirst
+		icon = GFX_focus_FRA_nationalism_mobilization
 		cost = 5
 		prerequisite = {
 			focus = FRA_Luminosite_Eternelle
@@ -3135,7 +3139,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_patriotism_first
-		icon = GFX_goal_firm_arg1
+		icon = GFX_focus_generic_patriotism_first
 		cost = 4
 		prerequisite = {
 			focus = FRA_nationalism_mobilization
@@ -4035,7 +4039,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Introduce_German_workers
-		icon = GFX_goal_GBR_fate_of_unions
+		icon = GFX_focus_generic_introduce_german_workers
 		cost = 5
 		prerequisite = {
 			focus = FRA_Introduce_German_capital
@@ -4286,7 +4290,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Invite_Heidrich
-		icon = GFX_racial_valkist
+		icon = GFX_focus_GER_racial_valkist
 		cost = 5
 		prerequisite = {
 			focus = FRA_Introduce_the_German_police
@@ -4669,7 +4673,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Royal_bonds
-		icon = GFX_goal_endless_money
+		icon = GFX_focus_generic_royal_bonds
 		cost = 5
 		prerequisite = {
 			focus = FRA_fireside_talk
@@ -4697,7 +4701,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_National_Relief_Agency
-		icon = GFX_DAH_FR_Prod
+		icon = GFX_focus_FRA_national_relief_agency
 		cost = 5
 		prerequisite = {
 			focus = FRA_fireside_talk
@@ -4719,7 +4723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industrial_Renaissance_Act
-		icon = GFX_DAH_Fra_Cop
+		icon = GFX_focus_FRA_industrial_renaissance_act
 		cost = 5
 		prerequisite = {
 			focus = FRA_Royal_bonds
@@ -4819,7 +4823,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Out_of_the_darkness
-		icon = GFX_France_Planned_Economy
+		icon = GFX_focus_FRA_out_of_the_darkness
 		cost = 5
 		prerequisite = {
 			focus = FRA_Industrial_Renaissance_Act
@@ -5263,7 +5267,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Research_Assembly_line
-		icon = GFX_goal_GBR_fate_of_unions
+		icon = GFX_focus_generic_introduce_german_workers
 		cost = 5
 		prerequisite = {
 			focus = FRA_national_grid_focus
@@ -5441,7 +5445,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Expanding_Industrial_Networks
-		icon = GFX_VIN_State_Industrialization
+		icon = GFX_focus_generic_expanding_industrial_networks
 		cost = 7
 		prerequisite = {
 			focus = FRA_national_power_corporation
@@ -5571,7 +5575,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_national_Labour_Union
-		icon = GFX_goal_syndicalist_workers
+		icon = GFX_focus_generic_syndicalist_workers
 		cost = 5
 		prerequisite = {
 			focus = FRA_Research_Assembly_line
@@ -5625,7 +5629,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Advanced_assembly_line
-		icon = GFX_VIN_State_above_All
+		icon = GFX_focus_generic_advanced_assembly_line
 		cost = 5
 		prerequisite = {
 			focus = FRA_national_Labour_Union
@@ -5772,7 +5776,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Amendments_to_Labor_Law
-		icon = GFX_goal_workers_rights
+		icon = GFX_focus_generic_workers_rights
 		cost = 5
 		prerequisite = {
 			focus = FRA_national_Labour_Union
@@ -5797,7 +5801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Black_blood
-		icon = GFX_focus_oil_exploit_center
+		icon = GFX_focus_generic_oil_exploit_center
 		cost = 5
 		prerequisite = {
 			focus = FRA_Central_Military_Factory
@@ -5890,7 +5894,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_controlled_fission
-		icon = GFX_focus_fission
+		icon = GFX_focus_ENG_controlled_reaction
 		cost = 5
 		prerequisite = {
 			focus = FRA_Paris_Conference
@@ -5981,7 +5985,7 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_country_leader = {
-					character = FRA_napoléon_bonaparte
+					character = FRA_napoleon_bonaparte
 					ruling_only = yes
 				}
 			}
@@ -6007,7 +6011,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6054,7 +6058,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6169,7 +6173,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6231,7 +6235,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6419,7 +6423,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6478,7 +6482,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6529,7 +6533,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6574,7 +6578,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6630,7 +6634,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6672,7 +6676,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6721,7 +6725,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6853,7 +6857,7 @@ focus_tree = {
 				limit = {
 					or = {
 						has_country_leader = {
-							character = FRA_napoléon_bonaparte
+							character = FRA_napoleon_bonaparte
 							ruling_only = yes
 						}
 						has_country_leader = {
@@ -6936,7 +6940,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_clean_air
-		icon = GFX_focus_radar_fgo
+		icon = GFX_focus_generic_radar_fgo
 		cost = 5
 		prerequisite = {
 			focus = FRA_clairvoyance
@@ -7216,7 +7220,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_BSEB
-		icon = GFX_goal_generic_shipyard
+		icon = GFX_focus_generic_shipyard
 		cost = 5
 		prerequisite = {
 			focus = FRA_Return_to_World_Stage
@@ -8236,7 +8240,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Dassault_aircraft_company
-		icon = GFX_focus_dassault
+		icon = GFX_focus_FRA_dassault_aircraft_company
 		cost = 5
 		prerequisite = {
 			focus = FRA_Navy_Strike_Corp
@@ -8293,7 +8297,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Expanding_Air_Base
-		icon = GFX_goal_generic_railway_construction
+		icon = GFX_focus_generic_railway_construction
 		cost = 5
 		prerequisite = {
 			focus = FRA_Air_superiority
@@ -8586,7 +8590,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Restore_Austrian_Territory
-		icon = GFX_AUS_centralize
+		icon = GFX_focus_FRA_restore_austrian_territory
 		cost = 7
 		prerequisite = {
 			focus = FRA_puppet_austria
@@ -8887,7 +8891,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Let_them_eat_Cake
-		icon = GFX_focus_let_them_eat_cake
+		icon = GFX_focus_FRA_let_them_eat_cake
 		cost = 5
 		prerequisite = {
 			focus = FRA_Royal_Charity
@@ -9093,7 +9097,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Government
-		icon = GFX_french_military
+		icon = GFX_focus_FRA_military_government
 		cost = 5
 		prerequisite = {
 			focus = FRA_military_coup
@@ -9173,7 +9177,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Transport_Industry_To_Algeria
-		icon = GFX_goal_state_economy
+		icon = GFX_focus_generic_state_economy_2
 		cost = 6
 		prerequisite = {
 			focus = FRA_rulers_diplomacy
@@ -9350,7 +9354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_French_Islamic_Community
-		icon = GFX_focus_french_islamic_community
+		icon = GFX_focus_FRA_islamic_community
 		cost = 5
 		prerequisite = {
 			focus = FRA_Transport_Industry_To_Algeria
@@ -9418,7 +9422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_North_African_holistic_citizenship
-		icon = GFX_focus_french_north_africa_nationalities
+		icon = GFX_focus_FRA_north_africa_nationalities
 		cost = 6
 		prerequisite = {
 			focus = FRA_anti_discrimination
@@ -9545,7 +9549,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_disband_unions_by_force
-		icon = GFX_UK_ban_unions
+		icon = GFX_focus_FRA_disband_unions_by_force
 		cost = 5
 		prerequisite = {
 			focus = FRA_reemployment_guidance
@@ -9579,7 +9583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_attract_investment
-		icon = GFX_DAH_Topke
+		icon = GFX_focus_generic_attract_investment
 		cost = 5
 		prerequisite = {
 			focus = FRA_disband_bank_la_France
@@ -9629,7 +9633,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_curtail_expenditure
-		icon = GFX_goal_consolidating_coalitionv2
+		icon = GFX_focus_generic_curtail_expenditure
 		cost = 5
 		prerequisite = {
 			focus = FRA_disband_unions_by_force
@@ -9652,7 +9656,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Miraculous_recovery
-		icon = GFX_SOV_planned_economies
+		icon = GFX_focus_generic_planned_economies
 		cost = 5
 		prerequisite = {
 			focus = FRA_curtail_expenditure
@@ -9785,7 +9789,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_revolutionary_zeal
-		icon = GFX_goal_ideology_libertarian_socialism
+		icon = GFX_focus_FRA_revolutionary_zeal
 		cost = 5
 		prerequisite = {
 			focus = FRA_massive_mobilization
@@ -10306,7 +10310,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_strengthen_government_support
-		icon = GFX_goal_laicism
+		icon = GFX_focus_generic_strengthen_government_support
 		cost = 5
 		prerequisite = {
 			focus = FRA_republican_struggle
@@ -10384,7 +10388,7 @@ focus_tree = {
 		available = {
 			has_country_flag = Autocracy_Settled
 			has_country_leader = {
-				character = FRA_napoléon_bonaparte
+				character = FRA_napoleon_bonaparte
 				ruling_only = yes
 			}
 			is_subject = no
@@ -10493,7 +10497,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_La_Pucelle
-		icon = GFX_goal_jeanne
+		icon = GFX_focus_FRA_jeanne
 		cost = 5
 		prerequisite = {
 			focus = FRA_egalite_liberte_solidarite
@@ -10515,7 +10519,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_necessary_sacrifice
-		icon = GFX_goal_The_Phoenix
+		icon = GFX_focus_generic_the_phoenix
 		cost = 5
 		prerequisite = {
 			focus = FRA_La_Pucelle
@@ -10754,7 +10758,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_defensive_strategems
-		icon = GFX_america_goal_national_guard
+		icon = GFX_focus_generic_defensive_strategems
 		cost = 5
 		prerequisite = {
 			focus = FRA_strengthen_government_support

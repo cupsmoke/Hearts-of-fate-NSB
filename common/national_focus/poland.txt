@@ -1,6 +1,6 @@
-#!gfx:interface\goalsFate_rom.gfx
-#!gfx:interface\goalsFate_POL.gfx
-#!gfx:interface\goalsFate.gfx
+#!gfx:interface\goal_POL.gfx
+#!gfx:interface\goal_SOV.gfx
+#!gfx:interface\goal_generic.gfx
 focus_tree = {
 	id = polish_focus_new
 	country = {
@@ -519,7 +519,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Centrolew
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_enforce_labor_regulation
 		cost = 10
 		x = 70
 		y = 7
@@ -539,7 +539,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Socialist_Radical_Program
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_red_star_gold_wreath
 		cost = 10
 		x = 64
 		y = 7
@@ -3638,24 +3638,24 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_Firewatch_Reverse_German_Policy
-		allow_branch = {
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = POL_complete_april_constitution
-						has_completed_focus = POL_organize_the_peasants_strike
-						has_completed_focus = POL_restore_the_sejm
-					}
-				}
-			}
-		}
+		# allow_branch = {
+		# 	has_dlc = "No Step Back"
+		# 	if = {
+		# 		limit = {
+		# 			has_game_rule = {
+		# 				rule = obsolete_focus_branches_visibility
+		# 				option = HIDE
+		# 			}
+		# 		}
+		# 		NOT = {
+		# 			OR = {
+		# 				has_completed_focus = POL_complete_april_constitution
+		# 				has_completed_focus = POL_organize_the_peasants_strike
+		# 				has_completed_focus = POL_restore_the_sejm
+		# 			}
+		# 		}
+		# 	}
+		# }
 		offset = {
 			x = 2
 			y = 0
@@ -5335,7 +5335,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_raise_the_black_madonna
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_focus_POL_raise_the_black_madonna
 		cost = 5
 		prerequisite = {
 			focus = POL_the_Great_Separation
@@ -6156,7 +6156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_invest_in_the_peasantry
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_focus_generic_invest_rural
 		cost = 10
 		prerequisite = {
 			focus = POL_PSL_Government
@@ -6944,7 +6944,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_firewatch
-		icon = GFX_focus_poland_firewatch
+		icon = GFX_focus_POL_firewatch
 		cost = 5
 		prerequisite = {
 			focus = POL_eastern_conscripts
@@ -7289,7 +7289,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Glory_of_Kazimierz
-		icon = GFX_focus_Kazimierz
+		icon = GFX_focus_POL_Kazimierz
 		cost = 7
 		prerequisite = {
 			focus = POL_plan_west
@@ -7912,7 +7912,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Catholic_Trade_Unions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_catholic_construction
 		cost = 5
 		prerequisite = {
 			focus = POL_empower_the_morges
@@ -8002,7 +8002,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Bataliony_Chlopskie
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_mass_concentration_of_army
 		cost = 10
 		prerequisite = {
 			focus = POL_militarize_Pinus_Sylvestris
@@ -8016,7 +8016,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PSL_invite_foreign_investors
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_foreign_investments
 		cost = 10
 		prerequisite = {
 			focus = POL_PSL_old_program
@@ -8030,7 +8030,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PSL_land_reform
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_agriculture2
 		cost = 10
 		prerequisite = {
 			focus = POL_invest_in_the_peasantry
@@ -8044,7 +8044,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PSL_dissolve_old_bureaucrats
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tackle_corruption
 		cost = 10
 		prerequisite = {
 			focus = POL_PSL_Government
@@ -8096,7 +8096,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PSL_new_army
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_drafted_army
 		cost = 10
 		prerequisite = {
 			focus = POL_militarize_Pinus_Sylvestris
@@ -8110,7 +8110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PSL_Nationalization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_state_economy_3
 		cost = 10
 		prerequisite = {
 			focus = POL_PSL_Radicalization
@@ -8133,7 +8133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PSL_Populist_Country
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_ideology_national_populist
 		cost = 10
 		prerequisite = {
 			focus = POL_PSL_Nationalization
@@ -8148,7 +8148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PSL_Curtail_Agricultural_Taxes
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_bag_of_money
 		cost = 10
 		prerequisite = {
 			focus = POL_PSL_dissolve_old_bureaucrats
@@ -8159,7 +8159,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Socialist_Strengthen_Social_Security
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_promote_the_red_cross
 		cost = 10
 		prerequisite = {
 			focus = POL_Socialist_Radical_Program
@@ -8170,7 +8170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Socialist_Traditions_of_Trade_Unions
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_workers_democracy
 		cost = 10
 		prerequisite = {
 			focus = POL_Socialist_Radical_Program
@@ -8195,7 +8195,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Socialist_joint_infrastructure_investment
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_social_reforms
 		cost = 10
 		prerequisite = {
 			focus = POL_Socialist_Nationalization
@@ -8209,7 +8209,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Socialist_Worker_Voluntary_Forces
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_Decentralization
 		cost = 10
 		prerequisite = {
 			focus = POL_Socialist_Traditions_of_Trade_Unions
@@ -8220,7 +8220,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_PSL_Rural_Education
-		icon = GFX_focus_research
+		icon = GFX_focus_generic_eduction_1
 		cost = 10
 		prerequisite = {
 			focus = POL_PSL_dissolve_old_bureaucrats
@@ -8231,7 +8231,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Centrolew_Cooperate_with_BUND
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_Bund
 		cost = 10
 		prerequisite = {
 			focus = POL_Centrolew
@@ -8242,7 +8242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Centrolew_reorganize_regional_parliments
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_DOM_Call_Special_Election
 		cost = 10
 		prerequisite = {
 			focus = POL_Centrolew
@@ -8264,7 +8264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Centrolew_Secularism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_mex_triumph_over_the_cristeros
 		cost = 10
 		prerequisite = {
 			focus = POL_Socialist_consolidate_Farmer_Labour_alliance
@@ -8275,7 +8275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Centrolew_Limited_Collectivization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_Land_Reform
 		cost = 10
 		prerequisite = {
 			focus = POL_Socialist_consolidate_Farmer_Labour_alliance
@@ -8286,7 +8286,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Centrolew_National_Railways
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_railway_construction
 		cost = 10
 		prerequisite = {
 			focus = POL_Socialist_consolidate_Farmer_Labour_alliance
@@ -8319,7 +8319,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Sanacja_empower_the_president
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_ban_the_radicals
 		cost = 10
 		prerequisite = {
 			focus = POL_Sanacja_maintained
@@ -8330,7 +8330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Sanacja_censor_the_press
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_investigate_corruption
 		cost = 10
 		prerequisite = {
 			focus = POL_Sanacja_maintained
@@ -8352,7 +8352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Sanacja_National_Industrial_Department
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_economic_control
 		cost = 10
 		prerequisite = {
 			focus = POL_Sanacja_maintained
@@ -8473,7 +8473,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Nearl_Social_Security
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_promote_the_red_cross
 		cost = 10
 		prerequisite = {
 			focus = POL_Sanacja_Land_Reform
@@ -8487,7 +8487,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Nearl_Military_training_for_Citizens
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_Palestine_Defence
 		cost = 10
 		prerequisite = {
 			focus = POL_Nearl_Social_Security
@@ -8595,7 +8595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Morges_Befriend_France
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_reach_out_to_france
 		cost = 10
 		prerequisite = {
 			focus = POL_Catholic_Trade_Unions
@@ -8749,7 +8749,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Endecja_expropriate_German_and_Jewish_property
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_seize_money
 		cost = 10
 		prerequisite = {
 			focus = POL_Endecja_realist_chauvinism
@@ -8868,7 +8868,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Firewatch_Reverse_German_Policy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 10
 		prerequisite = {
 			focus = POL_Firewatch_Road_to_Revenge
@@ -8890,7 +8890,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Firewatch_Baltic_strategy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_baltic_sea
 		cost = 10
 		prerequisite = {
 			focus = POL_Firewatch_Expand_Firewatch_Organization
@@ -8901,7 +8901,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Firewatch_contact_Finland
-		icon = GFX_goal_unknown
+		icon = GFX_focus_invite_finland
 		cost = 10
 		prerequisite = {
 			focus = POL_Firewatch_Expand_Firewatch_Organization
@@ -8967,7 +8967,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Firewatch_unlimited_guerrilla
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_army_mass_assault
 		cost = 10
 		prerequisite = {
 			focus = POL_Firewatch_eliminate_traitors
@@ -8978,7 +8978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Firewatch_final_resolution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_strike_at_the_source
 		cost = 10
 		prerequisite = {
 			focus = POL_FIrewatch_keep_alert

@@ -672,9 +672,10 @@ country_event = { # 提前的爆炸
 			remove_idea = UKR_DniproHES_idea
 			add_idea = UKR_DniproHES_damaged_idea
 		}
-
+		
         country_event = ukr.2 # 为了乌克兰！
-
+		set_country_flag = KR_Makhno_flag
+		
 	}
 }
 
@@ -696,7 +697,12 @@ country_event = {
 		add_political_power = -30
 
 		#UKR_nikita_khrushchev = { set_nationality = SOV }
-		retire_character = UKR_nikita_khrushchev
+		hidden_effect = {
+			retire_character = UKR_nikita_khrushchev
+		}
+		effect_tooltip = {
+			UKR_nikita_khrushchev = { set_nationality = SOV }
+		}
 		add_country_leader_role = {
 			character = "SOV_leonid_brezhnev"
 			country_leader = {
@@ -741,7 +747,7 @@ country_event = { # 为了乌克兰！
 
 		add_political_power = 300
 
-		white_peace = RUS	
+		white_peace = RUS
 		white_peace = MON
 
 		remove_ideas = UKR_caviar_idea
@@ -802,7 +808,7 @@ country_event = { # 为了乌克兰！
 				}
 			    load_oob = "UKR_army_221"
 			}
-			else_if = {
+			else = {
 				UKR = {
 					division_template = {
 						name = "Ukrainska Strelkovaya Diviziya"			
@@ -938,13 +944,13 @@ country_event = { # 为了乌克兰！
 				load_oob = "UKR_tank_202"
 				load_oob = "UKR_tank_202_half"
 			}
-			else_if = {
-				limit = {
-					has_country_flag = UKR_Iona_Yakir_killed_flag
-				}
-				hidden_effect = {
-					load_oob = "UKR_tank_202"
-				}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = UKR_Iona_Yakir_killed_flag
+			}
+			hidden_effect = {
+				load_oob = "UKR_tank_202"
 			}
 		}
 
@@ -1049,9 +1055,11 @@ country_event = { # 为了乌克兰！
 			load_oob = "UKR_Otaman_Sich"
 			load_oob = "UKR_rebel_1936"
 			load_focus_tree = { 
-					tree = ukr_focus_2
+				tree = ukr_focus_2
 			}
 			country_event = { id = ukr.10  days = 3 }
+
+			UKR_young_guy_show = yes
 		}
 
 	}
@@ -1890,7 +1898,7 @@ country_event = {  ### Bandera's coup against Petlura
 				set_nationality = FRA
 			}
 		}
-		else_if = {
+		else = {
 		    retire_character = UKR_Nestor_Makhno
 		}
 

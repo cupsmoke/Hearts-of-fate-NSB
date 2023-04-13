@@ -1,9 +1,0 @@
-spriteTypes = {	
-
-	SpriteType = {
-		name = "GFX_GER_Valkist_glory"
-		texturefile = "gfx/interface/goals/focus_GER_Valkist_glory.png"
-	}
-
- 
-}

@@ -623,7 +623,7 @@ country_event = {
 			ideology = neutrality
 			popularity = 0.1
 		}
-		FRA_napoléon_bonaparte = {
+		FRA_napoleon_bonaparte = {
 			add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {
@@ -750,7 +750,7 @@ country_event = {
 			long_name = FRA_bonepartist_party_long
 			name = FRA_bonepartist_party
 		}
-		FRA_napoléon_bonaparte = {
+		FRA_napoleon_bonaparte = {
 			add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {
@@ -1095,7 +1095,7 @@ country_event = {
 			base = 30
 			modifier = {
 				NOT = {
-					FRA_napoléon_bonaparte = {
+					FRA_napoleon_bonaparte = {
 						is_country_leader = yes
 					}
 				}
@@ -1542,7 +1542,7 @@ country_event = {
 		}
 		FRA = {
 			has_country_leader = {
-				character = FRA_napoléon_bonaparte
+				character = FRA_napoleon_bonaparte
 				ruling_only = yes
 			}
 		}
@@ -4449,7 +4449,7 @@ country_event = {
 					}
 					has_country_leader = {
 						ruling_only = yes
-						character = FRA_napoléon_bonaparte
+						character = FRA_napoleon_bonaparte
 					}
 				}
 			}

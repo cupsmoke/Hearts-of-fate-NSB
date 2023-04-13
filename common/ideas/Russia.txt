@@ -2,6 +2,292 @@
 ideas = {
 	country = {
 
+		RUS_Army_equipment_simplifies_production_idea = {
+
+			available = {
+
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_tank
+
+			equipment_bonus = {
+
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes 
+
+				}
+
+				support_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+
+				motorized_equipment = {
+					build_cost_ic = -0.05
+
+					instant = yes 
+				}
+
+				artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes 
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = -0.05
+
+					instant = yes
+				}
+
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+
+					instant = yes
+				}
+
+				armor = {
+					build_cost_ic = -0.05
+
+					instant = yes 
+				}
+
+		    }
+
+		}
+
+		RUS_Army_equipment_simplifies_production_mech_idea = {
+
+			available = {
+
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_tank
+
+			equipment_bonus = {
+
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes 
+
+				}
+
+				support_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+
+				motorized_equipment = {
+					build_cost_ic = -0.05
+
+					instant = yes 
+				}
+
+				artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes 
+				}
+
+				anti_air_equipment = {
+					build_cost_ic = -0.05
+
+					instant = yes
+				}
+
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+
+					instant = yes
+				}
+
+				armor = {
+					build_cost_ic = -0.05
+
+					instant = yes 
+				}
+
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+
+					instant = yes
+				}
+
+		    }
+
+		}
+
+		RUS_Simplified_production_of_Air_Force_equipment_idea = {
+
+			available = {
+
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_air
+
+			equipment_bonus = {
+
+				small_plane_airframe = {				
+					build_cost_ic = -0.05
+
+					instant = yes 
+				}
+
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.05
+
+					instant = yes 
+				}
+
+				medium_plane_airframe = {				
+					build_cost_ic = -0.1
+
+					instant = yes 
+				}
+
+		    }
+
+		}
+
+		RUS_Simplified_production_of_Air_Force_equipment_large_idea = {
+
+			available = {
+
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_air
+
+			equipment_bonus = {
+
+				small_plane_airframe = {				
+					build_cost_ic = -0.05
+
+					instant = yes 
+				}
+
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.05
+
+					instant = yes 
+				}
+
+				medium_plane_airframe = {				
+					build_cost_ic = -0.1
+
+					instant = yes 
+				}
+
+				large_plane_airframe = {
+					build_cost_ic = -0.15
+
+					instant = yes 
+				}
+
+		    }
+
+		}
+
+		SOV_the_iron_wall_of_russian_resolve = {
+			picture = man_five_year_plan_tank
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				original_tag = SOV
+			}
+
+			equipment_bonus = {
+				armor = {
+					armor_value = 0.1
+
+					instant = yes 
+				}
+
+				super_heavy_tank_chassis = {
+					build_cost_ic = -0.2
+
+					instant = yes
+				}
+			}
+		}
+
+		rus_Flying_tank_idea = {
+
+			available = {
+				has_war = yes
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_air
+
+			equipment_bonus = {
+
+				small_plane_airframe = {				
+                    air_defence = 0.05
+
+					instant = yes 
+				}
+
+				small_plane_cas_airframe = {
+                    air_defence = 0.05
+
+					instant = yes 
+				}
+
+		    }
+
+		}
+
 		rus_organize_black_youth = {
 			allowed = {
 				original_tag = RUS

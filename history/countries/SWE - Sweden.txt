@@ -8,6 +8,25 @@ if = {
 		set_naval_oob = "SWE_1936_naval_legacy"
 	}
 }
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "SWE_1936_air_bba"
+		set_technology = {
+			iw_small_airframe = 1
+			aa_lmg = 1
+			engines_1 = 1
+		}
+	else = {
+		set_air_oob = "SWE_1936_air_legacy"
+		set_technology = {
+			CAS1 = 1
+			early_fighter = 1
+			naval_bomber1 = 1
+			cv_naval_bomber1 = 1
+			early_bomber = 1
+		}
+	}
+}
 
 set_research_slots = 3
 starting_train_buffer = 2
@@ -105,11 +124,11 @@ if = {
 		sonar = 1
 		smoke_generator = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
+		# basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_secondary_battery = 1
+		# improved_secondary_battery = 1
 		basic_fire_control_system = 1
         improved_ship_torpedo_launcher = 1
 	}

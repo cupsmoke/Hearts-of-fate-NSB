@@ -1,3 +1,5 @@
+#!gfx:interface\goal_HUN.gfx
+#!gfx:interface\goal_generic.gfx
 focus_tree = {
 	id = hungarian_Politics_focus
 	country = {
@@ -14,7 +16,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = HUN_New_legend
-		icon = GFX_HUN_Greater_Hungary
+		icon = GFX_focus_HUN_Greater_Hungary
 		cost = 1
 		mutually_exclusive = {
 			focus = HUN_Glory_is_not_there
@@ -56,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_Meeting_important_people
-		icon = GFX_HUN_SocDem_Hungary
+		icon = GFX_focus_HUN_SocDem_Hungary
 		prerequisite = {
 			focus = HUN_National_celebration
 		}
@@ -172,7 +174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_Glory_is_not_there
-		icon = GFX_ROM_Police_The_Buffer
+		icon = GFX_focus_HUN_Police_The_Buffer
 		mutually_exclusive = {
 			focus = HUN_New_legend
 		}

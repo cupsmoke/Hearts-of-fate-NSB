@@ -1708,6 +1708,9 @@ news_event = {
 	option = {
 		name = more_News.40.c
 		trigger = {
+			NOT = {
+				TAG = SOV
+			}
 			is_in_faction_with = SOV
 		}
 	}
@@ -1746,6 +1749,9 @@ news_event = {
 	option = {
 		name = more_News.41.c
 		trigger = {
+			NOT = {
+				TAG = SOV
+			}
 			is_in_faction_with = SOV
 		}
 	}
@@ -1784,6 +1790,9 @@ news_event = {
 	option = {
 		name = more_News.42.c
 		trigger = {
+			NOT = {
+				TAG = SOV
+			}
 			is_in_faction_with = SOV
 		}
 	}
@@ -1822,6 +1831,9 @@ news_event = {
 	option = {
 		name = more_News.43.c
 		trigger = {
+			NOT = {
+				TAG = SOV
+			}
 			is_in_faction_with = SOV
 		}
 	}
@@ -1860,6 +1872,9 @@ news_event = {
 	option = {
 		name = more_News.44.c
 		trigger = {
+			NOT = {
+				TAG = SOV
+			}
 			is_in_faction_with = SOV
 		}
 	}

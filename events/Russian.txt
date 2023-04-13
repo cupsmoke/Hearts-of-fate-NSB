@@ -887,7 +887,7 @@ country_event = {
 		hidden_effect = {
 			# remove_unit_leader = 462
 			retire_character = RUS_lavr_kornilov
-			set_country_flag = RUS_Kornilov_dead
+			# set_country_flag = RUS_Kornilov_dead
 		}
 	}
 	mean_time_to_happen = {
@@ -1038,16 +1038,18 @@ country_event = {
 	picture = GFX_report_event_rus_siberia1
 	fire_only_once = yes
 	trigger = {
-		has_country_leader = {
-			name = "Alexander Kolchak"
-			ruling_only = yes
-		}
+		# has_country_leader = {
+		# 	name = "Alexander Kolchak"
+		# 	ruling_only = yes
+		# }
+		has_country_leader = { ruling_only = yes character = RUS_aleksandr_kolchak }
 		date > 1938.1.2
 	}
 	immediate = {
 		hidden_effect = {
-			remove_unit_leader = 50001
-			set_country_flag = rus_kolchack_dead
+			# remove_unit_leader = 50001
+			# set_country_flag = rus_kolchack_dead
+			retire_character = RUS_aleksandr_kolchak
 		}
 	}
 	mean_time_to_happen = {
@@ -1058,7 +1060,8 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		kill_ideology_leader = neutrality
+		retire_character = RUS_aleksandr_kolchak
+		# kill_ideology_leader = neutrality
 		add_country_leader_role = {
 			character = "RUS_nataliya_andreyevich_rostova"
 			country_leader = {
@@ -1100,7 +1103,7 @@ country_event = {
 		name = russian.13.b		### A new government should be formed
 		unlock_national_focus = rus_power_politics
 		unlock_national_focus = rus_keep_military_supervision
-		kill_ideology_leader = neutrality
+		retire_character = RUS_aleksandr_kolchak
 		add_country_leader_role = {
 			character = "RUS_nyto_isomer"
 			country_leader = {
@@ -1132,7 +1135,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		kill_ideology_leader = neutrality
+		retire_character = RUS_aleksandr_kolchak
 		hidden_effect = {
 			add_country_leader_role = {
 				character = "RUS_kadoc_zemiupus"
@@ -1174,9 +1177,10 @@ country_event = {
 	trigger = {
 		date > 1938.1.1
 		original_tag = RUS
-		NOT = {
-			has_country_flag = rus_wranger_dead
-		}
+		# NOT = {
+		# 	has_country_flag = rus_wranger_dead
+		# }
+		has_character = RUS_pyotr_wrangel
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1188,10 +1192,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_leader = {
-					name = "Pyotr Wranger"
-					ruling_only = yes
-				}
+				# has_country_leader = {
+				# 	name = "Pyotr Wranger"
+				# 	ruling_only = yes
+				# }
+				has_country_leader = { ruling_only = yes character = RUS_pyotr_wrangel }
+
+				# RUS_pyotr_wrangel
 			}
 			add_country_leader_role = {
 				character = "RUS_Provisional_Government"
@@ -1225,10 +1232,13 @@ country_event = {
 				RUS_political_uncertainty
 			}
 		}
-		remove_unit_leader = 460
-		hidden_effect = {
-			set_country_flag = rus_wranger_dead_flag
-		}
+		retire_character = RUS_pyotr_wrangel
+		
+		# remove_unit_leader = 460
+		# hidden_effect = {
+		# 	set_country_flag = rus_wranger_dead_flag
+		# }
+		
 	}
 	option = {
 		name = russian.14.b		### Wrangel did not dead
@@ -1237,10 +1247,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_leader = {
-					name = "Pyotr Wranger"
-					ruling_only = yes
-				}
+				# has_country_leader = {
+				# 	name = "Pyotr Wranger"
+				# 	ruling_only = yes
+				# }
+				has_country_leader = { ruling_only = yes character = RUS_pyotr_wrangel }
 			}
 			remove_ideas = {
 				RUS_political_uncertainty
@@ -5368,7 +5379,8 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
-			set_country_flag = RUS_Kornilov_dead
+			# set_country_flag = RUS_Kornilov_dead
+			retire_character = RUS_lavr_kornilov
 		}
 	}
 	mean_time_to_happen = {
@@ -5403,8 +5415,9 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
-			remove_unit_leader = 50001
-			set_country_flag = rus_kolchack_dead
+			# remove_unit_leader = 50001
+			# set_country_flag = rus_kolchack_dead
+			retire_character = RUS_aleksandr_kolchak
 		}
 	}
 	option = {

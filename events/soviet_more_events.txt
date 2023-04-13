@@ -652,20 +652,12 @@ country_event = {     #
 		set_country_flag = SOV_Purged_by_Stalin_flag
 
 		retire_character = SOV_mikhail_tukhachevsky
-		custom_effect_tooltip = remove_theorist
-		show_ideas_tooltip = mikhail_tukhachevsky
 
 		retire_character = SOV_aleksandr_yegorov
 		retire_character = SOV_vasily_blyukher
-		custom_effect_tooltip = remove_chief_of_army
-		show_ideas_tooltip = alexander_yegorov
-		show_ideas_tooltip = vasily_blucher
 
 		retire_character = SOV_pyotr_smirnov
 		retire_character = SOV_mikhail_frinovsky
-		custom_effect_tooltip = remove_chief_of_navy
-		show_ideas_tooltip = pyotr_smirnov
-		show_ideas_tooltip = mikhail_frinovsky
 
 		custom_effect_tooltip = soviet.27_tt
 		hidden_effect = {
@@ -1837,23 +1829,23 @@ country_event = {     #
 
 		retire_character = SOV_ivan_konev
 		retire_character = SOV_arseniy_golovko
-		retire_character = pavel_zhigarev
+		retire_character = SOV_pavel_zhigarev
 		retire_character = SOV_stepan_krasovsky
-		custom_effect_tooltip = remove_high_command
-		show_ideas_tooltip = ivan_konev
-		show_ideas_tooltip = arseniy_golovko
-		show_ideas_tooltip = pavel_zhigarev
-		show_ideas_tooltip = stepan_krasovsky
+
 
 		retire_character = SOV_sergey_gorshkov
 		retire_character = SOV_sergey_rudenko
-		custom_effect_tooltip = remove_theorist
-		show_ideas_tooltip = sergey_gorshkov
-		show_ideas_tooltip = sergei_rudenko
+
+		retire_character = SOV_semyon_timoshenko
+		retire_character = SOV_kliment_voroshilov
+		retire_character = SOV_semyon_budyonny
+		retire_character = SOV_grigory_kulik
+
+		retire_character = SOV_aleksandr_yegorov
 
 		add_timed_idea = {
-		  idea = officers_purged_5
-		  days = 730
+			idea = officers_purged_7
+			days = 730
 		}
 
 		hidden_effect = {

@@ -1,3 +1,5 @@
+#!gfx:interface\goal_generic.gfx
+#!gfx:interface\goal_ENG.gfx
 focus_tree = {
 	id = british_focus
 	country = {
@@ -5994,7 +5996,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_reinforce_the_king_focus
-		icon = GFX_focus_god_save_the_king
+		icon = GFX_focus_ENG_god_save_the_king
 		cost = 5
 		prerequisite = {
 			focus = uk_round_table_focus
@@ -6186,7 +6188,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_radiant_path_focus
-		icon = GFX_focus_radiant_path
+		icon = GFX_focus_ENG_radiant_path_true
 		cost = 6
 		prerequisite = {
 			focus = uk_ideal_king_focus
@@ -6207,7 +6209,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_king_for_once_and_future_focus
-		icon = GFX_focus_strengthen_the_king
+		icon = GFX_focus_ENG_strengthen_the_king
 		cost = 6
 		prerequisite = {
 			focus = uk_radiant_path_focus
@@ -7855,7 +7857,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_build_the_holy_city
-		icon = GFX_focus_build_the_holy_city
+		icon = GFX_focus_ENG_build_the_holy_city
 		cost = 10
 		prerequisite = {
 			focus = uk_fortify_palestine
@@ -7947,7 +7949,7 @@ focus_tree = {
 	}
 	focus = {
 		id = arturia_move_capitals
-		icon = GFX_focus_new_camelot
+		icon = GFX_focus_ENG_new_camelot
 		cost = 8
 		prerequisite = {
 			focus = uk_build_the_holy_city
@@ -8257,7 +8259,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UK_triple_hermes
-		icon = GFX_focus_atlas
+		icon = GFX_focus_ENG_triple_hermes
 		cost = 7
 		prerequisite = {
 			focus = uk_cooperation_with_atlas
@@ -8763,7 +8765,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_wild_hunt
-		icon = GFX_focus_francis_drake
+		icon = GFX_focus_ENG_francis_drake
 		cost = 6
 		prerequisite = {
 			focus = uk_carrier_focus
@@ -10005,7 +10007,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_chaledean
-		icon = GFX_focus_chaledeas
+		icon = GFX_focus_ENG_chaledeas
 		cost = 10
 		prerequisite = {
 			focus = uk_secret_research
@@ -10080,7 +10082,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_controlled_reaction
-		icon = GFX_focus_fission
+		icon = GFX_focus_ENG_controlled_reaction
 		cost = 5
 		prerequisite = {
 			focus = uk_chaledean
@@ -10420,7 +10422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_lord_camelot
-		icon = GFX_focus_build_the_holy_city
+		icon = GFX_focus_ENG_build_the_holy_city
 		cost = 6
 		prerequisite = {
 			focus = uk_defend_cities
@@ -11334,7 +11336,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_befriend_finland
-		icon = GFX_focus_finland
+		icon = GFX_focus_ENG_befriend_finland
 		cost = 3
 		prerequisite = {
 			focus = uk_plan_r4
@@ -11635,7 +11637,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_unsinkable_air_craft_carrier
-		icon = GFX_focus_defend_britain
+		icon = GFX_focus_ENG_defend_britain
 		cost = 5
 		ai_will_do = {
 			factor = 1.5
@@ -11808,7 +11810,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_Expand_english_shipbuilding
-		icon = GFX_focus_england_navy
+		icon = GFX_focus_ENG_england_navy
 		cost = 5
 		available = {
 			controls_state = 130
@@ -11871,7 +11873,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_expand_Scotland_shipbuilding
-		icon = GFX_focus_scotland_navy
+		icon = GFX_focus_ENG_scotland_navy
 		cost = 7
 		prerequisite = {
 			focus = uk_workshop_of_the_empire
@@ -11928,7 +11930,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_workshop_of_the_empire
-		icon = GFX_focus_scotland_industry
+		icon = GFX_focus_ENG_scotland_industry
 		cost = 8
 		prerequisite = {
 			focus = shadow_scheme_focus
@@ -12002,7 +12004,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_exploit_welsh
-		icon = GFX_focus_wales_industry
+		icon = GFX_focus_ENG_wales_industry
 		cost = 5
 		prerequisite = {
 			focus = uk_workshop_of_the_empire
@@ -12039,7 +12041,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_coal_export_docks
-		icon = GFX_focus_wales_navy
+		icon = GFX_focus_ENG_wales_navy
 		cost = 5
 		prerequisite = {
 			focus = uk_exploit_welsh
@@ -12156,7 +12158,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_concentrated_fire_enhance
-		icon = GFX_goal_generic_lucha_libre
+		icon = GFX_focus_generic_lucha_libre
 		cost = 5
 		prerequisite = {
 			focus = uk_Gringolet
@@ -12175,7 +12177,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_CBI
-		icon = GFX_focus_CBI
+		icon = GFX_focus_ENG_CBI
 		cost = 5
 		prerequisite = {
 			focus = uk_industrial_focus
@@ -12307,7 +12309,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_Nightingale_act
-		icon = GFX_focus_Nightingale_act
+		icon = GFX_focus_ENG_nightingale_act
 		cost = 2
 		prerequisite = {
 			focus = uk_public_order_act

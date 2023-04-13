@@ -1,5 +1,4 @@
 ﻿capital = 285
-
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
@@ -7,7 +6,7 @@ set_war_support = 0.3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
@@ -20,31 +19,23 @@ set_technology = {
 	# early_bomber = 1
 	# CAS1 = 1
 	motorised_infantry = 1
-
 	interwar_artillery = 1
 	interwar_antitank = 1
-
 	support_weapons = 1
-
-
 	trench_warfare = 1
 	fuel_silos = 1
-
 	fleet_in_being = 1
-
 	british_professionalism = 1
 }
 
 set_research_slots = 4
-
-
 puppet = INS
-
 set_cosmetic_tag = AST_UNION
-
 if = {
 	limit = {
-		not = { has_dlc = "Man the Guns" }
+		not = {
+			has_dlc = "Man the Guns"
+		}
 	}
 	set_technology = {
 		early_destroyer = 1
@@ -52,16 +43,16 @@ if = {
 		early_heavy_cruiser = 1
 		early_submarine = 1
 		transport = 1
-    
-    fleet_in_being = 1
+		fleet_in_being = 1
 		battlefleet_concentration = 1
 		submarine_operations = 1
 	}
 	set_naval_oob = "AST_1936_naval_legacy"
 }
+
 if = {
 	limit = {
-		 has_dlc = "Man the Guns"
+		has_dlc = "Man the Guns"
 	}
 	set_technology = {
 		basic_naval_mines = 1
@@ -69,26 +60,26 @@ if = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
-    early_ship_hull_heavy = 1
-    basic_ship_hull_heavy = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
 		early_ship_hull_submarine = 1
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
+		# basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		mtg_transport = 1
-    
-    basic_ship_hull_light = 1
-    early_ship_hull_carrier = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_carrier = 1
 		basic_ship_hull_carrier = 1
-    basic_light_battery = 1
-    sonar = 1
-    improved_sonar = 1
-    improved_depth_charges = 1
+		basic_light_battery = 1
+		sonar = 1
+		improved_sonar = 1
+		improved_depth_charges = 1
 	}
 	set_naval_oob = "AST_1936_naval"
 }
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -99,6 +90,7 @@ if = {
 	add_ideas = AST_White_Australia_Policy
 	add_to_tech_sharing_group = commonwealth_research
 }
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -110,7 +102,23 @@ if = {
 	}
 }
 
-
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_air_oob = "AST_1936_air_bba"
+	else = {
+		set_air_oob = "AST_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			cv_early_fighter = 1
+			cv_naval_bomber1 = 1
+			naval_bomber1 = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
 
 set_politics = {
 	ruling_party = democratic
@@ -122,38 +130,17 @@ set_politics = {
 set_popularities = {
 	democratic = 90
 	fascism = 2
-  neutrality = 8
+	neutrality = 8
 }
-
 
 recruit_character = AST_George_V
 recruit_character = AST_Koharu_F_Riedenflaus
 recruit_character = AST_George_VI
 recruit_character = AST_Edward_VIII
 recruit_character = AST_Arc_Royal
-
 set_convoys = 100
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1937.10.23"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-
-	set_popularities = {
-		democratic = 99
-		communism = 1
-	}
-
-	set_convoys = 100
-}
-
 recruit_character = AST_leslie_morshead
-
 recruit_character = AST_Koharu_F_Riedenflaus
-
 recruit_character = AST_thomas_blamey
 recruit_character = AST_henry_wynter
 recruit_character = AST_alan_vasey
@@ -161,15 +148,17 @@ recruit_character = AST_horace_robertson
 recruit_character = AST_john_northcott
 recruit_character = AST_harold_farncomb
 recruit_character = AST_victor_crutchley
-
 recruit_character = AST_George_V
 add_country_leader_role = {
 	character = AST_George_V
 	country_leader = {
-		expire="1965.1.1.1"
+		expire = "1965.1.1.1"
 		ideology = authoritarian_democracy
 		traits = {
-			grand_fleet_proponent  navy_capital_ship_3  navy_chief_reform_3  popular_figurehead
+			grand_fleet_proponent
+			navy_capital_ship_3
+			navy_chief_reform_3
+			popular_figurehead
 		}
 	}
 	promote_leader = yes
@@ -178,7 +167,6 @@ add_country_leader_role = {
 recruit_character = AST_George_VI
 recruit_character = AST_Edward_VIII
 recruit_character = AST_Arc_Royal
-
 recruit_character = AST_leslie_morshead
 recruit_character = AST_thomas_blamey
 recruit_character = AST_henry_wynter
@@ -211,12 +199,13 @@ recruit_character = AST_lance_sharkey
 recruit_character = AST_herbert_v_evatt
 recruit_character = AST_generic_fascist_demagogue
 recruit_character = AST_arthur_calwell
-
-
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
-	
 	create_equipment_variant = {
 		name = "Sydney Class"
 		type = light_cruiser_1
@@ -227,7 +216,6 @@ if = {
 			ship_anti_air_upgrade = 2
 		}
 	}
-	
 	create_equipment_variant = {
 		name = "Canberra Class"
 		type = heavy_cruiser_1
@@ -241,7 +229,9 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "Man the Guns" } 
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	### Ship Variants ###
 	# Light Cruisers #
 	create_equipment_variant = {
@@ -333,9 +323,7 @@ if = {
 		}
 		obsolete = yes
 	}
-  
-  
-  create_equipment_variant = {
+	create_equipment_variant = {
 		name = "KGV Class"
 		type = ship_hull_heavy_1
 		name_group = ENG_BB_HISTORICAL
@@ -354,8 +342,7 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-  
-  create_equipment_variant = {
+	create_equipment_variant = {
 		name = "Courageous Class"
 		type = ship_hull_carrier_conversion_bb
 		name_group = ENG_CV_HISTORICAL
@@ -371,13 +358,14 @@ if = {
 		}
 		obsolete = yes
 	}
-  
 }
 
 1939.1.1 = {
 	if = {
 		limit = {
-			not = { has_dlc = "Man the Guns" }
+			not = {
+				has_dlc = "Man the Guns"
+			}
 		}
 		create_equipment_variant = {
 			name = "Arunta Class"

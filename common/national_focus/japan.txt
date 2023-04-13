@@ -1,3 +1,6 @@
+#!gfx:interface\goal_JAP.gfx
+#!gfx:interface\goal_RUS.gfx
+#!gfx:interface\goal_generic.gfx
 focus_tree = {
 	id = japan_wtt_focus
 	country = {
@@ -14,7 +17,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = JAP_showa_democracy
-		icon = GFX_goal_japanese_democracy
+		icon = GFX_focus_JAP_japanese_democracy
 		cost = 5
 		x = 7
 		y = 0
@@ -73,7 +76,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_the_rising_sun
-		icon = GFX_goal_japanese_imperialism
+		icon = GFX_focus_JAP_japanese_imperialism
 		cost = 3
 		x = 32
 		y = 8
@@ -97,7 +100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_the_longest_day
-		icon = GFX_goal_RUS_japan
+		icon = GFX_focus_JAP_the_longest_day
 		cost = 10
 		x = 30
 		y = 0
@@ -150,7 +153,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_lessons_from_the_crisis
-		icon = GFX_Maritime_Silkroad_2
+		icon = GFX_focus_JAP_Maritime_Silkroad_2
 		cost = 5
 		x = 58
 		y = 0
@@ -180,7 +183,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_convene_tokyo_conference
-		icon = GFX_goal_JAP_tokyo_conf
+		icon = GFX_focus_JAP_tokyo_conf
 		cost = 5
 		prerequisite = {
 			focus = JAP_the_rising_sun
@@ -223,7 +226,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_pacific_guardian
-		icon = GFX_JAP_Peace_On_the_Pacific
+		icon = GFX_focus_JAP_Peace_On_the_Pacific
 		cost = 5
 		prerequisite = {
 			focus = JAP_convene_tokyo_conference
@@ -267,7 +270,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_the_korean_question
-		icon = GFX_umc_goal_flag_south_korea
+		icon = GFX_focus_JAP_flag_south_korea
 		cost = 5
 		prerequisite = {
 			focus = JAP_pacific_guardian
@@ -361,7 +364,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_active_finance
-		icon = GFX_JAP_The_Matsuoka_Plan
+		icon = GFX_focus_JAP_The_Matsuoka_Plan
 		cost = 5
 		prerequisite = {
 			focus = JAP_lessons_from_the_crisis
@@ -628,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_greater_east_asian_co_prosperity_sphere
-		icon = GFX_focus_co_prosperity_sphere
+		icon = GFX_focus_JAP_co_prosperity_sphere
 		cost = 5
 		prerequisite = {
 			focus = JAP_the_rising_sun
@@ -809,7 +812,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_youkusan_cabinet
-		icon = GFX_goal_JAP_PAR
+		icon = GFX_focus_JAP_PAR
 		cost = 3
 		prerequisite = {
 			focus = JAP_the_longest_day
@@ -940,7 +943,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Japanese_revolution
-		icon = GFX_focus_japanese_revolution
+		icon = GFX_focus_JAP_japanese_revolution
 		cost = 5
 		prerequisite = {
 			focus = JAP_the_longest_day
@@ -1026,7 +1029,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_army_expansion_law
-		icon = GFX_goal_japanese_officer
+		icon = GFX_focus_RUS_japanese_officer
 		cost = 5
 		prerequisite = {
 			focus = JAP_lessons_from_the_crisis
@@ -1089,7 +1092,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_japanese_youth
-		icon = GFX_focus_Japanese_youth_party
+		icon = GFX_focus_JAP_Japanese_youth_party
 		cost = 4
 		prerequisite = {
 			focus = JAP_army_expansion_law
@@ -1279,7 +1282,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_supremacy_of_will
-		icon = GFX_Japanese_Glory
+		icon = GFX_focus_JAP_Japanese_Glory
 		cost = 5
 		prerequisite = {
 			focus = JAP_spiritual_mobilization
@@ -1302,7 +1305,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_strengthen_the_divine_wind
-		icon = GFX_focus_divine_wind
+		icon = GFX_focus_JAP_divine_wind
 		cost = 5
 		prerequisite = {
 			focus = JAP_spiritual_mobilization
@@ -1331,7 +1334,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Chi_Ha_Tan
-		icon = GFX_focus_Ha_Go
+		icon = GFX_focus_JAP_Ha_Go
 		cost = 5
 		prerequisite = {
 			focus = JAP_warrior_spirit
@@ -1356,7 +1359,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Operation_Ketsugou
-		icon = GFX_focus_operation_ketsugou
+		icon = GFX_focus_JAP_operation_ketsugou
 		cost = 1
 		prerequisite = {
 			focus = JAP_Chi_Ha_Tan
@@ -1410,7 +1413,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_tm_industrial
-		icon = GFX_JAP_Make_the_Most_of_It_2
+		icon = GFX_focus_JAP_Make_the_Most_of_It_2
 		cost = 5
 		prerequisite = {
 			focus = JAP_active_finance
@@ -1457,7 +1460,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_supremacy_of_technology
-		icon = GFX_JAP_New_Age_Technology
+		icon = GFX_focus_JAP_New_Age_Technology
 		cost = 5
 		prerequisite = {
 			focus = JAP_army_expansion_law
@@ -1876,7 +1879,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_overlooking_the_scenery
-		icon = GFX_focus_overlooking_scenery
+		icon = GFX_focus_JAP_overlooking_scenery
 		cost = 5
 		prerequisite = {
 			focus = JAP_ADB_focus
@@ -2787,7 +2790,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_ADB_focus
-		icon = GFX_focus_adb
+		icon = GFX_focus_JAP_adb
 		cost = 7
 		prerequisite = {
 			focus = JAP_full_sovereignty_for_the_philippines
@@ -2863,7 +2866,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_support_the_red_swastika_focus
-		icon = GFX_focus_red_swastika
+		icon = GFX_focus_JAP_red_swastika
 		cost = 5
 		prerequisite = {
 			focus = JAP_negotiate_with_china
@@ -2905,7 +2908,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_expand_manchurian_railways
-		icon = GFX_focus_SMR
+		icon = GFX_focus_JAP_SMR
 		cost = 5
 		prerequisite = {
 			focus = JAP_line_of_life
@@ -3467,7 +3470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_rebuild_asian_myth_system
-		icon = GFX_focus_myth_of_aisa
+		icon = GFX_focus_JAP_myth_of_asia
 		cost = 5
 		prerequisite = {
 			focus = JAP_an_asia_for_asians
@@ -3714,7 +3717,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_shinsengumi_focus
-		icon = GFX_focus_shinsengumi 
+		icon = GFX_focus_JAP_shinsengumi 
 		cost = 5
 		prerequisite = {
 			focus = JAP_kyoto_militrary_academy_focus
@@ -3940,7 +3943,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Honno_ji_incident
-		icon = GFX_focus_assassinate_nobu
+		icon = GFX_focus_JAP_assassinate_nobu
 		cost = 5
 		prerequisite = {
 			focus = JAP_exclude_koziku_opposition
@@ -4048,7 +4051,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_intervene_in_china
-		icon = GFX_umc_goal_strike_china
+		icon = GFX_focus_JAP_strike_china
 		cost = 10
 		prerequisite = {
 			focus = JAP_line_of_life
@@ -4418,7 +4421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_secure_china
-		icon = GFX_umc_goal_ichigo
+		icon = GFX_focus_JAP_ichigo
 		cost = 5
 		prerequisite = {
 			focus = JAP_intervene_in_china
@@ -5106,7 +5109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_strike_south_doctrine
-		icon = GFX_umc_goal_strike_south
+		icon = GFX_focus_JAP_strike_south
 		cost = 5
 		prerequisite = {
 			focus = JAP_greater_east_asian_co_prosperity_sphere
@@ -5610,7 +5613,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_invade_australia_and_NZ
-		icon = GFX_goal_JAP_target_australasia
+		icon = GFX_focus_JAP_target_australasia
 		cost = 5
 		prerequisite = {
 			focus = JAP_indian_national_army
@@ -5710,7 +5713,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_far_land_fleet
-		icon = GFX_focus_Japanese_navy
+		icon = GFX_focus_JAP_Japanese_navy
 		cost = 5
 		prerequisite = {
 			focus = JAP_strike_on_the_southern_resource_area
@@ -6808,7 +6811,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_public_project
-		icon = GFX_JAP_Branching_the_Lines
+		icon = GFX_focus_JAP_Branching_the_Lines
 		cost = 5
 		prerequisite = {
 			focus = JAP_tm_industrial
@@ -6959,7 +6962,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Ni_Go_Industry
-		icon = GFX_JAP_Reverse_the_Nationalization
+		icon = GFX_focus_JAP_Reverse_the_Nationalization
 		cost = 7
 		prerequisite = {
 			focus = JAP_public_project
@@ -7013,7 +7016,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_F_Go_Industry
-		icon = GFX_JAP_a_streamlined_economy
+		icon = GFX_focus_JAP_a_streamlined_economy
 		cost = 7
 		prerequisite = {
 			focus = JAP_Sasebo_Dockyard
@@ -7254,7 +7257,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_experimental_electronic_development
-		icon = GFX_GFX_CHI_Japanese_Computers
+		icon = GFX_focus_JAP_Japanese_Computers
 		cost = 5
 		prerequisite = {
 			focus = JAP_special_lab
@@ -7283,7 +7286,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Moon_cell_prototype
-		icon = GFX_focus_mooncell_prototype
+		icon = GFX_focus_JAP_mooncell_prototype
 		cost = 7
 		prerequisite = {
 			focus = JAP_experimental_electronic_development
@@ -7374,7 +7377,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_secret_policy
-		icon = GFX_umc_goal_secret_police
+		icon = GFX_focus_JAP_secret_police
 		cost = 5
 		prerequisite = {
 			focus = JAP_intelligence
@@ -7416,7 +7419,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_small_arms_modernization
-		icon = GFX_goal_japanese_instructors
+		icon = GFX_focus_JAP_goal_japanese_instructors_2
 		cost = 5
 		prerequisite = {
 			focus = JAP_supremacy_of_technology
@@ -7577,7 +7580,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_army_expansion
-		icon = GFX_goal_reorg_JAP
+		icon = GFX_focus_JAP_reorg_JAP
 		cost = 5
 		prerequisite = {
 			focus = JAP_army_expansion_law
@@ -7613,7 +7616,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_tengu_focus
-		icon = GFX_focus_tangu
+		icon = GFX_focus_JAP_tangu
 		cost = 5
 		prerequisite = {
 			focus = JAP_fighter_modernization
@@ -7651,7 +7654,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_hinanawi_focus
-		icon = GFX_focus_hinanawi_bomber
+		icon = GFX_focus_JAP_hinanawi_bomber
 		cost = 5
 		prerequisite = {
 			focus = JAP_fighter_modernization
@@ -7811,7 +7814,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_jet_prototypes
-		icon = GFX_focus_tangu_jet
+		icon = GFX_focus_JAP_tangu_jet
 		cost = 5
 		prerequisite = {
 			focus = JAP_bomber_modernization
@@ -8111,7 +8114,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_the_ultimate_battleship
-		icon = GFX_goal_japanese_navy
+		icon = GFX_focus_JAP_goal_japanese_navy_2
 		cost = 5
 		prerequisite = {
 			focus = JAP_Sasebo_Dockyard
@@ -8318,7 +8321,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_liberals_win
-		icon = GFX_focus_liberals_win_hof
+		icon = GFX_focus_JAP_liberals_win_hof
 		cost = 4
 		prerequisite = {
 			focus = JAP_showa_democracy
@@ -8350,7 +8353,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_conservatives_win
-		icon = GFX_COS_Ferrer_Coup
+		icon = GFX_focus_generic_ban_the_radicals
 		cost = 7
 		prerequisite = {
 			focus = JAP_showa_democracy
@@ -8408,7 +8411,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_reformist_win
-		icon = GFX_goal_JAP_REF
+		icon = GFX_focus_JAP_REF
 		cost = 7
 		prerequisite = {
 			focus = JAP_showa_democracy
@@ -8500,7 +8503,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_touhoukai
-		icon = GFX_focus_touhoukai
+		icon = GFX_focus_JAP_touhoukai
 		cost = 5
 		prerequisite = {
 			focus = JAP_purge_kodoha_fate
@@ -8561,7 +8564,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_control_shinto
-		icon = GFX_focus_shinto_fate1
+		icon = GFX_focus_JAP_shinto_fate1
 		cost = 5
 		prerequisite = {
 			focus = JAP_blackbox_operation
@@ -8630,7 +8633,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Japanese_patriot_industry_association
-		icon = GFX_focus_japanese_patroit_industry
+		icon = GFX_focus_JAP_japanese_patroit_industry
 		cost = 5
 		prerequisite = {
 			focus = JAP_guide_the_zaibatsus
@@ -8649,7 +8652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_total_war
-		icon = GFX_JAP_the_empire
+		icon = GFX_focus_JAP_the_empire
 		cost = 5
 		prerequisite = {
 			focus = JAP_research_spending
@@ -8821,7 +8824,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_council_of_sage
-		icon = GFX_focus_council_of_saga
+		icon = GFX_focus_JAP_council_of_saga
 		cost = 5
 		prerequisite = {
 			focus = JAP_touhoukai
@@ -8852,7 +8855,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_kokutai_toseiha
-		icon = GFX_focus_yukari_eye
+		icon = GFX_focus_JAP_yukari_eye
 		cost = 5
 		prerequisite = {
 			focus = JAP_liaison_conference
@@ -8925,7 +8928,7 @@ focus_tree = {
 	focus = {
 		#### Showa Restoration Icons and Text
 		id = JAP_showa_resotration
-		icon = GFX_focus_showa_restoration
+		icon = GFX_focus_JAP_showa_restoration
 		cost = 5
 		prerequisite = {
 			focus = JAP_disband_kizuko_in
@@ -8973,7 +8976,7 @@ focus_tree = {
 	focus = {
 		#### Showa Restoration Icons and Text
 		id = JAP_shoutuku_resotration
-		icon = GFX_focus_shoutoku_restoration
+		icon = GFX_focus_JAP_shoutoku_restoration
 		cost = 5
 		prerequisite = {
 			focus = JAP_disband_kizuko_in
@@ -9017,7 +9020,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_kokutai_meicho
-		icon = GFX_focus_koutai
+		icon = GFX_focus_JAP_koutai
 		cost = 5
 		prerequisite = {
 			focus = JAP_showa_resotration
@@ -9053,7 +9056,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_jingi_in
-		icon = GFX_focus_shinto_fate2
+		icon = GFX_focus_JAP_shinto_fate2
 		cost = 5
 		prerequisite = {
 			focus = JAP_showa_resotration
@@ -9088,7 +9091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_unbroken_imperial_line
-		icon = GFX_JAP_the_new_imperial_mandate
+		icon = GFX_focus_JAP_the_new_imperial_mandate
 		cost = 5
 		prerequisite = {
 			focus = JAP_jingi_in
@@ -9140,7 +9143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_destroy_democracy
-		icon = GFX_focus_jap_destroy_democracy
+		icon = GFX_focus_JAP_destroy_democracy
 		cost = 5
 		prerequisite = {
 			focus = JAP_transitional_cabinet
@@ -9166,7 +9169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_purge_bureaucrat
-		icon = GFX_focus_purge_bureaucrat
+		icon = GFX_focus_JAP_purge_bureaucrat
 		cost = 5
 		prerequisite = {
 			focus = JAP_destroy_democracy
@@ -9192,7 +9195,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_nationalize_heavy_industry
-		icon = GFX_focus_industry_red
+		icon = GFX_focus_JAP_industry_red
 		cost = 7
 		prerequisite = {
 			focus = JAP_challenge_the_zaibatsus
@@ -9311,7 +9314,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_japanese_national_socialism
-		icon = GFX_Focus_japanese_national_socialism
+		icon = GFX_focus_JAP_japanese_national_socialism
 		cost = 5
 		prerequisite = {
 			focus = JAP_national_research_policy
@@ -9361,7 +9364,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_mind_exercise
-		icon = GFX_goal_JAP_kohoda
+		icon = GFX_focus_JAP_kohoda
 		cost = 5
 		prerequisite = {
 			focus = JAP_Japanese_revolution
@@ -9692,7 +9695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Russo_Japanese_co_prosperity
-		icon = GFX_focus_rebuild_russian_empire
+		icon = GFX_focus_JAP_rebuild_russian_monarchy
 		cost = 5
 		prerequisite = {
 			focus = JAP_establish_the_northern_resource_area
@@ -10023,7 +10026,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_reorganize_parties
-		icon = GFX_JAP_Strengthening_the_Civilian_Government
+		icon = GFX_focus_JAP_Strengthening_the_Civilian_Government
 		cost = 5
 		prerequisite = {
 			focus = JAP_dissolute_the_zaibatsus
@@ -10063,7 +10066,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_encourage_merger
-		icon = GFX_JAP_old_zaibatsus
+		icon = GFX_focus_JAP_old_zaibatsus
 		cost = 5
 		prerequisite = {
 			focus = JAP_ally_with_the_zaibatsus
@@ -10104,7 +10107,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_youkusankai
-		icon = GFX_focus_taisei_yokusankai
+		icon = GFX_focus_JAP_taisei_yokusankai
 		cost = 7
 		prerequisite = {
 			focus = JAP_bureaucrat_economics
@@ -10242,7 +10245,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_long_term_contract
-		icon = GFX_JAP_develop_home_islands
+		icon = GFX_focus_JAP_develop_home_islands
 		cost = 5
 		prerequisite = {
 			focus = JAP_ally_with_the_zaibatsus
@@ -10294,7 +10297,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_colonies_authorization
-		icon = GFX_JAP_Consumerize_the_Sphere_economy
+		icon = GFX_focus_JAP_Consumerize_the_Sphere_economy
 		cost = 5
 		prerequisite = {
 			focus = JAP_encourage_merger
@@ -10346,7 +10349,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_private_advisory_institute
-		icon = GFX_focus_japanese_brain
+		icon = GFX_focus_JAP_japanese_brain
 		cost = 5
 		prerequisite = {
 			focus = JAP_local_science_fund
@@ -10375,7 +10378,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_nobody_suffers_damage
-		icon = GFX_JAP_Never_Been_Better
+		icon = GFX_focus_JAP_nobody_suffers_damage
 		cost = 5
 		prerequisite = {
 			focus = JAP_private_advisory_institute
@@ -10401,7 +10404,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_mental_hygene
-		icon = GFX_focus_jap_democracy
+		icon = GFX_focus_JAP_democracy
 		cost = 5
 		prerequisite = {
 			focus = JAP_popular_education
@@ -10448,7 +10451,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_expand_departments
-		icon = GFX_JAP_Deciding_Our_Policy
+		icon = GFX_focus_JAP_proclaim_reformation
 		cost = 5
 		prerequisite = {
 			focus = JAP_capital_management_separation
@@ -10489,7 +10492,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_military_bureaucrat
-		icon = GFX_JAP_The_Militaries_Friendly_Rivalry
+		icon = GFX_focus_JAP_The_Militaries_Friendly_Rivalry
 		cost = 5
 		prerequisite = {
 			focus = JAP_expand_departments
@@ -10517,7 +10520,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_smaller_japan
-		icon = GFX_focus_smaller_japan
+		icon = GFX_focus_JAP_smaller_japan
 		cost = 5
 		prerequisite = {
 			focus = JAP_popular_education
@@ -10548,7 +10551,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_tokiwadai_special_service
-		icon = GFX_focus_tokiwadai
+		icon = GFX_focus_JAP_tokiwadai
 		cost = 5
 		prerequisite = {
 			focus = JAP_bicycle_battalions
@@ -10584,7 +10587,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_fuyuki_special_service
-		icon = GFX_focus_fuyuki
+		icon = GFX_focus_JAP_fuyuki
 		cost = 5
 		prerequisite = {
 			focus = JAP_bicycle_battalions
@@ -10647,7 +10650,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Riken
-		icon = GFX_focus_riken
+		icon = GFX_focus_JAP_riken
 		cost = 5
 		prerequisite = {
 			focus = JAP_supremacy_of_technology
@@ -10675,7 +10678,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Eirin_Plan
-		icon = GFX_focus_Yagokoro_Eirin_plan
+		icon = GFX_focus_JAP_Yagokoro_Eirin_plan
 		cost = 5
 		prerequisite = {
 			focus = JAP_tokiwadai_special_service
@@ -10715,7 +10718,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Sasebo_Dockyard
-		icon = GFX_focus_sesabo
+		icon = GFX_focus_JAP_sesabo
 		cost = 6
 		prerequisite = {
 			focus = JAP_new_naval_estimates
@@ -10752,7 +10755,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Kappa
-		icon = GFX_focus_kappa
+		icon = GFX_focus_JAP_kappa
 		cost = 7
 		prerequisite = {
 			focus = JAP_public_project
@@ -10798,7 +10801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Colonize_Taiwan
-		icon = GFX_Taiwan_Colony
+		icon = GFX_focus_JAP_Taiwan_Colony
 		cost = 5
 		prerequisite = {
 			focus = JAP_repress_the_resistance
@@ -10841,7 +10844,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Colonize_Korea
-		icon = GFX_Korea_Colony
+		icon = GFX_focus_JAP_Korea_Colony
 		cost = 5
 		prerequisite = {
 			focus = JAP_repress_the_resistance
@@ -10892,7 +10895,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Colonize_Manchuria
-		icon = GFX_goal_extend_territory
+		icon = GFX_focus_JAP_extend_territory
 		cost = 5
 		prerequisite = {
 			focus = JAP_repress_the_resistance
@@ -10975,7 +10978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Move_Capital
-		icon = GFX_goal_suppress_man
+		icon = GFX_focus_JAP_suppress_man
 		cost = 8
 		prerequisite = {
 			focus = JAP_Colonize_Manchuria
@@ -11000,7 +11003,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_japanese_shipbuilding
-		icon = GFX_focus_japan_ijn_sakura
+		icon = GFX_focus_JAP_japan_ijn_sakura
 		cost = 6
 		prerequisite = {
 			focus = JAP_Sasebo_Dockyard
@@ -11093,7 +11096,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_showa_research
-		icon = GFX_JAP_Political_Think_Tank_policy_Groups
+		icon = GFX_focus_JAP_Political_Think_Tank_policy_Groups
 		cost = 5
 		prerequisite = {
 			focus = JAP_blackbox_operation
@@ -11118,7 +11121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_japanese_economic_reorganization
-		icon = GFX_JAP_an_integrated_economy
+		icon = GFX_focus_JAP_an_integrated_economy
 		cost = 7
 		prerequisite = {
 			focus = JAP_showa_research
@@ -11144,7 +11147,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Nagae_Electronic
-		icon = GFX_focus_jap_nagae_electronics
+		icon = GFX_focus_JAP_nagae_electronics
 		cost = 4
 		prerequisite = {
 			focus = JAP_special_lab
@@ -11166,7 +11169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_japanese_air_power_theory
-		icon = GFX_focus_jap_air_theory
+		icon = GFX_focus_JAP_air_theory
 		cost = 7
 		prerequisite = {
 			focus = JAP_Nagae_Electronic

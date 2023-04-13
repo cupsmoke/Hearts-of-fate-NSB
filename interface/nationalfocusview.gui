@@ -722,7 +722,7 @@ guiTypes = {
 			maxWidth = 465
 			maxHeight = 105
 			scrollbarType = "standardtext_slider"
-			#format = center
+			format = center
 		}
 
 		iconType = {

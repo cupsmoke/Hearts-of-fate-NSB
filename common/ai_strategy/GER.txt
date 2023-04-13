@@ -94,35 +94,6 @@ GER_unit_production = {
 	}
 	
 	#Air unit factors
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = 100
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = cas
-		value = -35 #because doctrine this = 15
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = tactical_bomber
-		value = -40
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = strategic_bomber
-		value = -10
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = naval_bomber
-		value = 5
-	}	
 	
 	# Naval unit factors
 	ai_strategy = {
@@ -147,36 +118,6 @@ GER_unit_production = {
 		type = unit_ratio
 		id = convoy
 		value = 20
-	}
-	
-	ai_strategy = {
-		type = equipment_production_factor
-		id = fighter
-		value = 150
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = cas
-		value = -65
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = tactical_bomber
-		value = -80
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = naval_bomber
-		value = -120
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = strategic_bomber
-		value = -200
 	}
 	
 	ai_strategy = {
@@ -214,12 +155,6 @@ GER_unit_production = {
 		#id = artillery
 		#value = 3
 	#}
-
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = fighter
-		value = 4
-	}
 
 	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
 		type = railway_gun_divisions_ratio
@@ -2522,4 +2457,194 @@ GER_pause_in_SOV = { #We got this far but our home is under siege
 		execution_type = careful
 		execute_order = no
 	}
+}
+
+bba_air_prod_1 = {
+	# TODO BFW:
+	allowed = { original_tag = GER }
+	enable = {
+		date < 1940.1.1
+	}
+
+	abort_when_not_enabled = yes
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 6
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 25 #because doctrine this = 15
+	}
+
+ 	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 2
+	}
+
+}
+
+bba_air_prod_2 = {
+	# TODO BFW:
+	allowed = { original_tag = GER }
+	enable = {
+		date > 1940.1.1
+	}
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 300
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 8
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 25 #because doctrine this = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 0
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 3
+	}
+
 }

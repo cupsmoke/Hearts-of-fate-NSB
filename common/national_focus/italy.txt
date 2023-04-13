@@ -1,3 +1,5 @@
+#!gfx:interface\goal_ITA.gfx
+#!gfx:interface\goal_generic.gfx
 focus_tree = {
 	id = italian_focus
 	country = {
@@ -282,7 +284,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_rebuild_the_alpini
-		icon = GFX_ITA_armir
+		icon = GFX_focus_ITA_rebuild_the_alpini
 		prerequisite = { focus = ITA_New_firearms }
 
 		prerequisite = { focus = ITA_Multipurpose_artillery }
@@ -320,7 +322,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_Next_generation_tank
-		icon = GFX_goal_continue_the_development_of_the_l3
+		icon = GFX_focus_ITA_next_generation_tank
 
 		prerequisite = {
 			focus = ITA_Multipurpose_artillery
@@ -466,7 +468,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_New_Roman_Legion
-		icon = GFX_goal_rekindling_roman_sentiments
+		icon = GFX_focus_ITA_new_roman_legion
 		prerequisite = { focus = ITA_Army_modernization }
 
 		mutually_exclusive = {
@@ -559,7 +561,9 @@ focus_tree = {
 
 	focus = {
 		id = ITA_arditi_spirit
-		icon = GFX_goal_arditi
+		# icon = GFX_focus_ITA_arditi_spirit
+		icon = GFX_focus_ITA_moschettieri_del_duce
+
 		prerequisite = { focus = ITA_Army_modernization }
 
 		mutually_exclusive = {
@@ -617,7 +621,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_Eight_million_bayonet
-		icon = GFX_goal_8_million_bayonetts
+		icon = GFX_focus_ITA_eight_million_bayonet
 		prerequisite = { focus = ITA_New_Roman_Legion focus = ITA_arditi_spirit }
 
 		mutually_exclusive = {
@@ -657,7 +661,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_Motorized_artillery
-		icon = GFX_goal_self_proppelled_guns
+		icon = GFX_focus_ITA_motorized_artillery
 		prerequisite = { focus = ITA_Army_modernization }
 
 		mutually_exclusive = {
@@ -704,7 +708,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_tank_go_ahead
-		icon = GFX_goal_italian_medium_tanks
+		icon = GFX_focus_ITA_tank_go_ahead
 		prerequisite = { focus = ITA_arditi_spirit focus = ITA_Motorized_artillery }
 
 		mutually_exclusive = {
@@ -1365,7 +1369,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_Our_sea
-		icon = GFX_goal_novus_imperium_romanum
+		icon = GFX_focus_ITA_novus_imperium_romanum
 
 		prerequisite = {
 			focus = ITA_Mediterranean_overlord
@@ -1627,7 +1631,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_Continue_to_expand_the_air_force
-		icon = GFX_ITA_Regia_Aeronautica
+		icon = GFX_focus_ITA_regia_aeronautica
 
 		prerequisite = {
 			focus = ITA_Evaluate_the_army
@@ -2110,7 +2114,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_Development_of_new_aircraft
-		icon = GFX_goal_series_5_fighters
+		icon = GFX_focus_ITA_development_of_new_aircraft
 
 		prerequisite = {
 			focus = ITA_The_experience_of_the_colonial_war
@@ -4466,7 +4470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ita_fortify_rhode_island
-		icon = GFX_focus_faction_fortification
+		icon = GFX_focus_generic_faction_fortification
 		cost = 8.00
 		prerequisite = {
 			focus = ita_darmcia_problem
@@ -5467,7 +5471,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ita_red_blue_alliance
-		icon = GFX_goal_generic_red_blue_alliance
+		icon = GFX_focus_ITA_red_blue_alliance
 		cost = 5
 		prerequisite = {
 			focus = ita_expand_siciri
@@ -6393,7 +6397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ita_emperors_party
-		icon = GFX_focus_nero_petals
+		icon = GFX_focus_ITA_emperors_party
 		cost = 5
 		prerequisite = {
 			focus = ita_march_into_rome
@@ -6531,7 +6535,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ita_rebrith_of_roma
-		icon = GFX_focus_generic_rebirth_of_rome
+		icon = GFX_focus_ITA_rebrith_of_roma
 		cost = 5
 		prerequisite = {
 			focus = ita_corporativism_parliment
@@ -6558,7 +6562,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ita_spirit_of_fascism
-		icon = GFX_focus_sword_rose_fasces
+		icon = GFX_focus_ITA_spirit_of_fascism
 		cost = 5
 		prerequisite = {
 			focus = ita_rebrith_of_roma

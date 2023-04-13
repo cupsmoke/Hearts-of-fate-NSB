@@ -1,3 +1,6 @@
+#!gfx:interface\goal_generic.gfx
+#!gfx:interface\goal_SWE.gfx
+#!gfx:interface\goal_FRA.gfx
 focus_tree = {
 	id = sweden_great
 	country = {
@@ -30,7 +33,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_domestic_need
-		icon = GFX_SOV_planned_economies
+		icon = GFX_focus_generic_planned_economies
 		cost = 5.00
 		x = 27
 		y = 0
@@ -46,7 +49,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_baltic_sea
-		icon = GFX_goal_atlantic_coast
+		icon = GFX_focus_SWE_atlantic_coast
 		cost = 7.00
 		x = 7
 		y = 0
@@ -80,7 +83,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_increase_spending
-		icon = GFX_goal_SWE_pansartrupperna
+		icon = GFX_focus_SWE_pansartrupperna
 		cost = 5.00
 		x = 33
 		y = 0
@@ -95,7 +98,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_stable_government
-		icon = GFX_COS_Ferrer_Coup
+		icon = GFX_focus_generic_ban_the_radicals
 		cost = 5.00
 		prerequisite = {
 			focus = swe_beginning_of_myth
@@ -192,7 +195,7 @@ focus_tree = {
 	}
   focus = {
 		id = swe_fortify_shore_Copenhagen
-		icon = GFX_goal_nested_fortifications
+		icon = GFX_focus_generic_nested_fortifications
 		cost = 8.00
 		prerequisite = {
 			focus = swe_baltic_sea
@@ -255,7 +258,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_pan_scandinavia
-		icon = GFX_goal_NOR_nordic_council
+		icon = GFX_focus_SWE_pan_scandinavia
 		cost = 5.00
 		prerequisite = {
 			focus = swe_beginning_of_myth
@@ -350,7 +353,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_Kalmarunionen 
-		icon = GFX_goal_NOR_scandinavia
+		icon = GFX_focus_SWE_scandinavia
 		cost = 10.00
 		prerequisite = {
 			focus = swe_norway_vote
@@ -469,7 +472,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_budget
-		icon = GFX_goal_endless_money
+		icon = GFX_focus_generic_royal_bonds
 		cost = 5.00
 		prerequisite = {
 			focus = swe_domestic_need
@@ -511,7 +514,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_pan_german_league
-		icon = GFX_focus_pan_nordic_nationalism
+		icon = GFX_focus_SWE_pan_nordic_nationalism
 		cost = 5.00
 		prerequisite = {
 			focus = swe_Kalmarunionen 
@@ -584,7 +587,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_german_celtic_bond
-		icon = GFX_focus_celt_bond
+		icon = GFX_focus_SWE_celt_bond
 		cost = 5.00
 		prerequisite = {
 			focus = swe_Kalmarunionen 
@@ -659,7 +662,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_advanced_ship_building
-		icon = GFX_goal_generic_shipyard
+		icon = GFX_focus_generic_shipyard
 		cost = 5.00
 		prerequisite = {
 			focus = swe_baltic_sea
@@ -1665,7 +1668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_Oskarshamn
-		icon = GFX_goal_SWE_navy
+		icon = GFX_focus_SWE_navy
 		cost = 7.00
 		prerequisite = {
 			focus = swe_advanced_ship_building
@@ -1702,7 +1705,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_Hallberg_Rassy
-		icon = GFX_goal_AST_upgrade_reserves
+		icon = GFX_focus_generic_cross_the_channel
 		cost = 7.00
 		prerequisite = {
 			focus = swe_Oskarshamn
@@ -2021,7 +2024,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_gate_of_skye
-		icon = GFX_focus_scathach
+		icon = GFX_focus_SWE_scathach
 		cost = 5.00
 		prerequisite = {
 			focus = swe_german_celtic_bond
@@ -2477,7 +2480,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_king_of_norway_britain
-		icon = GFX_focus_nordic_kingship
+		icon = GFX_focus_SWE_nordic_kingship
 		cost = 5.00
 		prerequisite = {
 			focus = swe_coastal_headquarter
@@ -2789,7 +2792,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_improve_domestic_transportation
-		icon = GFX_goal_SWE_railroads
+		icon = GFX_focus_SWE_railroads
 		cost = 8.00
 		prerequisite = {
 			focus = swe_domestic_need
@@ -2912,7 +2915,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_four_year_plan
-		icon = GFX_VIN_State_above_All
+		icon = GFX_focus_generic_advanced_assembly_line
 		cost = 5.00
 		prerequisite = {
 			focus = swe_industrial_effort
@@ -2939,7 +2942,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_national_socialism
-		icon = GFX_focus_sweden_fascists
+		icon = GFX_focus_SWE_fascists
 		cost = 5.00
 		prerequisite = {
 			focus = swe_four_year_plan
@@ -3004,7 +3007,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_freedom_of_trade
-		icon = GFX_focus_swedish_democracy
+		icon = GFX_focus_SWE_democracy
 		cost = 5.00
 		prerequisite = {
 			focus = swe_outwards_eco
@@ -3116,7 +3119,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_advanced_manufacture
-		icon = GFX_goal_GBR_fate_of_unions
+		icon = GFX_focus_generic_introduce_german_workers
 		cost = 5.00
 		prerequisite = {
 			focus = swe_wondering_sea
@@ -3140,7 +3143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_minecraft
-		icon = GFX_focus_minecraft
+		icon = GFX_focus_SWE_minecraft
 		cost = 10.00
 		prerequisite = {
 			focus = swe_expand_iron_ore
@@ -3347,7 +3350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_nazification_of_north
-		icon = GFX_focus_nazification_nordic
+		icon = GFX_focus_SWE_nazification_nordic
 		cost = 5.00
 		prerequisite = {
 			focus = swe_german_myth
@@ -3536,7 +3539,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_democratic_reform
-		icon = GFX_DOM_End_Judicial_Corruption
+		icon = GFX_focus_SWE_democratic_reform
 		cost = 5.00
 		prerequisite = {
 			focus = swe_freedom_of_trade
@@ -3670,7 +3673,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_encourage_innovation
-		icon = GFX_goal_social_reforms
+		icon = GFX_focus_generic_social_reforms
 		cost = 5.00
 		prerequisite = {
 			focus = swe_freedom_of_trade
@@ -4129,7 +4132,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_air_effort
-		icon = GFX_goal_NOR_airforce
+		icon = GFX_focus_SWE_airforce
 		cost = 5.00
 		prerequisite = {
 			focus = swe_increase_spending
@@ -4815,7 +4818,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_Asgard
-		icon = GFX_goal_nested_fortifications
+		icon = GFX_focus_generic_nested_fortifications
 		cost = 10.00
 		prerequisite = {
 			focus = swe_Bifrost
@@ -5063,7 +5066,7 @@ focus_tree = {
 	}
 	focus = {
 		id = swe_sakkijaryen_polkkaa
-		icon = GFX_focus_finland_tank
+		icon = GFX_focus_SWE_finland_tank
 		cost = 5.00
 		prerequisite = {
 			focus = swe_protect_finland

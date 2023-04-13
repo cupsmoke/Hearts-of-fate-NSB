@@ -424,7 +424,7 @@ characters={
 			}
 		}
 	}
-	FRA_napoléon_bonaparte={
+	FRA_napoleon_bonaparte={
 		name=Napoleon
 		portraits={
 			army={

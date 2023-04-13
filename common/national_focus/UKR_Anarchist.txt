@@ -1,5 +1,5 @@
-#!gfx:interface\ukr_anarchist_focus.gfx
-#!gfx:interface\ukr_nationalism_focus.gfx
+#!gfx:interface\goal_UKR.gfx
+#!gfx:interface\goal_generic.gfx
 shared_focus = {
 	id = UKR_Anarchist_Anarchy_Mama_loves_her_sons
 	icon = GFX_goal_generic_war_with_comintern

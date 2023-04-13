@@ -148,7 +148,7 @@ FRA_civil_war_south = {
 		every_character = {
 			limit = {
 			OR = {
-				is_character = FRA_napoléon_bonaparte
+				is_character = FRA_napoleon_bonaparte
 				is_character = FRA_bradamante
 				is_character = FRA_charlemagne
 				is_character = FRA_astolfo
@@ -294,7 +294,7 @@ FRA_civil_war_north = {
 						OR = {
 							is_character = FRA_charlemagne
 							is_character = FRA_leo_b_harwey
-							is_character = FRA_napoléon_bonaparte
+							is_character = FRA_napoleon_bonaparte
 							is_character = FRA_bradamante
 							is_character = FRA_astolfo
 						}
@@ -311,7 +311,7 @@ FRA_civil_war_north = {
 			}
 			set_cosmetic_tag = FRA_junta
 
-			FRA_napoléon_bonaparte = {
+			FRA_napoleon_bonaparte = {
 				add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {

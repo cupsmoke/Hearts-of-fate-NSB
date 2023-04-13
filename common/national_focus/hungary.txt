@@ -1,3 +1,5 @@
+#!gfx:interface\goal_HUN.gfx
+#!gfx:interface\goal_generic.gfx
 focus_tree = {
 	id = hungarian_focus
 	country = {
@@ -14,7 +16,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = HUN_years_of_glory
-		icon = GFX_HUN_Flag_From_Wall
+		icon = GFX_focus_HUN_Flag_From_Wall
 		cost = 3
 		x = 5
 		y = 0
@@ -63,7 +65,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_Alpad_Line
-		icon = GFX_HUN_Arpad_Line
+		icon = GFX_focus_HUN_Arpad_Line
 		prerequisite = {
 			focus = HUN_years_of_glory
 		}
@@ -348,7 +350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_Building_the_Slovak_Army
-		icon = GFX_SLO_Tuka_Government
+		icon = GFX_focus_HUN_Tuka_Government
 		prerequisite = {
 			focus = HUN_Alpad_Line
 		}
@@ -417,7 +419,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_hungarians_are_united
-		icon = GFX_HUN_expand_the_Levente
+		icon = GFX_focus_HUN_expand_the_Levente
 		prerequisite = {
 			focus = HUN_szekler_mountain_infantry
 		}
@@ -751,7 +753,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_Victory_is_certain
-		icon = GFX_ROM_Head_Hung_low
+		icon = GFX_focus_HUN_Head_Hung_low
 		prerequisite = {
 			focus = HUN_Hussar
 		}

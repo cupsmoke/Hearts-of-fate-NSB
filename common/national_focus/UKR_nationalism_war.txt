@@ -1,3 +1,6 @@
+#!gfx:interface\goal_UKR.gfx
+#!gfx:interface\goal_generic.gfx
+
 shared_focus = {
 	id = UKR_modernization_of_the_armed_forces
 	icon = GFX_focus_UKR_army
@@ -313,7 +316,7 @@ shared_focus = {
 
 shared_focus = {
 	id = UKR_besiege_and_annihilate
-	icon = GFX_focus_offensive_army
+	icon = GFX_focus_generic_offensive_army
 	cost = 5.00
 	x = 1
 	y = 1
@@ -1264,7 +1267,7 @@ shared_focus = {
 
 shared_focus = {
 	id = UKR_Sich
-	icon = GFX_focus_mass_concentration_of_army
+	icon = GFX_focus_generic_mass_concentration_of_army
 	cost = 5.00
 	x = 1
 	y = 1

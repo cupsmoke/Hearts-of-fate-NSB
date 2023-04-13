@@ -1,7 +1,0 @@
-spriteTypes = {
-	SpriteType = {
-		name = "GFX_goal_JAP_yen"
-		texturefile = "gfx/interface/goals/JAP_yen.png"
-	}
-
-}

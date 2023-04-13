@@ -1007,6 +1007,9 @@ characters={
 				original_tag = ROM
 				has_dlc = "Death or Dishonor"
 			}
+			available = {
+				has_completed_focus = ROM_malaxa
+			}
 			traits = { captain_of_industry }
 		}		
 	}

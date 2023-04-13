@@ -1,3 +1,6 @@
+#!gfx:interface\goal_IRQ.gfx
+#!gfx:interface\goal_MEX.gfx
+#!gfx:interface\goal_generic.gfx
 focus_tree = {
 	id = Iraq_great
 	country = {
@@ -145,7 +148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_rule_of_ishtar
-		icon = GFX_focus_ishtar2
+		icon = GFX_focus_IRQ_ishtar2
 		cost = 5
 		x = 39
 		y = 0
@@ -164,7 +167,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_rule_of_ereshkigal
-		icon = GFX_focus_ereshkigal
+		icon = GFX_focus_IRQ_ereshkigal
 		cost = 5
 		x = 43
 		y = 0
@@ -686,7 +689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_ally_kurds
-		icon = GFX_focus_kurdistan_ally
+		icon = GFX_focus_IRQ_kurdistan_ally
 		cost = 6
 		prerequisite = {
 			focus = ira_national_coup
@@ -896,7 +899,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_Wise_Queen_of_Assyria
-		icon = GFX_focus_Semiramis
+		icon = GFX_focus_IRQ_semiramis
 		cost = 5
 		prerequisite = {
 			focus = ira_national_coup
@@ -1542,7 +1545,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_hanging_garden_of_babylon
-		icon = GFX_focus_hanged_garden
+		icon = GFX_focus_IRQ_hanged_garden
 		cost = 7
 		prerequisite = {
 			focus = ira_Sikera_Usum
@@ -1935,7 +1938,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_Atra_Hasis
-		icon = GFX_focus_altra_hasis
+		icon = GFX_focus_IRQ_altra_hasis
 		cost = 6
 		prerequisite = {
 			focus = ira_Ziusudra
@@ -1977,7 +1980,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_enuma_elish
-		icon = GFX_focus_enuma_elish
+		icon = GFX_focus_IRQ_enuma_elish
 		cost = 7
 		prerequisite = {
 			focus = ira_hold_the_apsu
@@ -1996,7 +1999,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_wake_tiamat
-		icon = GFX_focus_tiamat
+		icon = GFX_focus_IRQ_tiamat
 		cost = 7
 		prerequisite = {
 			focus = ira_Atra_Hasis
@@ -2109,7 +2112,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ire_tablet_of_destiny
-		icon = GFX_focus_tablet_of_destiny
+		icon = GFX_focus_IRQ_tablet_of_destiny
 		cost = 7
 		prerequisite = {
 			focus = ira_Mesopotamia_railway
@@ -2373,7 +2376,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_star_of_shamash
-		icon = GFX_focus_Star_of_shamash
+		icon = GFX_focus_IRQ_Star_of_shamash
 		cost = 8
 		prerequisite = {
 			focus = ira_army_training
@@ -2400,7 +2403,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_star_of_ishtar
-		icon = GFX_focus_Star_of_ishtar
+		icon = GFX_focus_IRQ_Star_of_ishtar
 		cost = 5
 		prerequisite = {
 			focus = ira_army_training
@@ -2613,7 +2616,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ire_baathism
-		icon = GFX_focus_baathism
+		icon = GFX_focus_IRQ_baathism
 		cost = 7
 		prerequisite = {
 			focus = ire_king_of_heros
@@ -2689,7 +2692,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_dingir
-		icon = GFX_focus_melammu_dingir
+		icon = GFX_focus_IRQ_melammu_dingir
 		cost = 7
 		prerequisite = {
 			focus = ira_his_majestys_arsenal
@@ -2744,7 +2747,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_appease_kurds
-		icon = GFX_focus_kurdistan_appease
+		icon = GFX_focus_IRQ_kurdistan_appease
 		cost = 5
 		prerequisite = {
 			focus = ira_unity_progress_kingship
@@ -3477,7 +3480,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_anzu
-		icon = GFX_focus_anzu
+		icon = GFX_focus_IRQ_anzu
 		cost = 6
 		prerequisite = {
 			focus = ira_aviation_industry_group
@@ -3702,7 +3705,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ira_unreasonable_deal
-		icon = GFX_focus_new_myth
+		icon = GFX_focus_MEX_new_american_myth
 		cost = 6
 		prerequisite = {
 			focus = ira_arbitrary_diplomacy

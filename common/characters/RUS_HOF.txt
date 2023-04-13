@@ -80,4 +80,52 @@ characters={
 			}
 		}
 	}
+
+
+	###young guys
+	RUS_George_Mikhailovich_Romanov={
+		name = "RUS_George_Mikhailovich_Romanov"
+		portraits={
+			army={
+				small="GFX_idea_RUS_sergey_taboritsky"
+			}
+			army={
+				large="gfx/leaders/RUS/Portrait_RUS_George_Mikhailovich_Romanov.png"
+			}
+		}
+	}
+	RUS_Peter_Wrangel_jr={
+		name = "RUS_Peter_Wrangel_jr"
+		portraits={
+			army={
+				small="GFX_idea_RUS_sergey_taboritsky"
+			}
+			army={
+				large="gfx/leaders/RUS/Portrait_RUS_Peter_Wrangel_jr.png"
+			}
+		}
+	}
+
+	RUS_Rostislav_Kolchak={
+		name = "RUS_Rostislav_Kolchak"
+		portraits={
+			army={
+				small="GFX_idea_RUS_sergey_taboritsky"
+			}
+			army={
+				large="gfx/leaders/RUS/Portrait_RUS_Rostislav_Kolchak.png"
+			}
+		}
+	}
+	RUS_Yuri_Kornilov={
+		name = "RUS_Yuri_Kornilov"
+		portraits={
+			army={
+				small="GFX_idea_RUS_sergey_taboritsky"
+			}
+			army={
+				large="gfx/leaders/RUS/Portrait_RUS_Yuri_Kornilov.png"
+			}
+		}
+	}
 }
